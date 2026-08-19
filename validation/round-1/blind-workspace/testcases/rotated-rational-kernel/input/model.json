@@ -1,0 +1,198 @@
+{
+  "format": "exact-block-sdp-model-v1",
+  "blocks": [
+    {
+      "name": "X",
+      "size": 6
+    }
+  ],
+  "constraints": [
+    {
+      "name": "unit_trace_face",
+      "sense": "eq",
+      "expression": {
+        "constant": "0",
+        "terms": [
+          {
+            "block": "X",
+            "row": 0,
+            "col": 0,
+            "coefficient": "7/10"
+          },
+          {
+            "block": "X",
+            "row": 0,
+            "col": 1,
+            "coefficient": "-3/5"
+          },
+          {
+            "block": "X",
+            "row": 0,
+            "col": 2,
+            "coefficient": "3/5"
+          },
+          {
+            "block": "X",
+            "row": 0,
+            "col": 3,
+            "coefficient": "-1/5"
+          },
+          {
+            "block": "X",
+            "row": 0,
+            "col": 4,
+            "coefficient": "-1/5"
+          },
+          {
+            "block": "X",
+            "row": 0,
+            "col": 5,
+            "coefficient": "1/5"
+          },
+          {
+            "block": "X",
+            "row": 1,
+            "col": 1,
+            "coefficient": "1/4"
+          },
+          {
+            "block": "X",
+            "row": 1,
+            "col": 2,
+            "coefficient": "-3/10"
+          },
+          {
+            "block": "X",
+            "row": 1,
+            "col": 3,
+            "coefficient": "1/10"
+          },
+          {
+            "block": "X",
+            "row": 1,
+            "col": 4,
+            "coefficient": "-1/2"
+          },
+          {
+            "block": "X",
+            "row": 1,
+            "col": 5,
+            "coefficient": "1/5"
+          },
+          {
+            "block": "X",
+            "row": 2,
+            "col": 2,
+            "coefficient": "1/4"
+          },
+          {
+            "block": "X",
+            "row": 2,
+            "col": 3,
+            "coefficient": "1/2"
+          },
+          {
+            "block": "X",
+            "row": 2,
+            "col": 4,
+            "coefficient": "-1/10"
+          },
+          {
+            "block": "X",
+            "row": 2,
+            "col": 5,
+            "coefficient": "-1/5"
+          },
+          {
+            "block": "X",
+            "row": 3,
+            "col": 3,
+            "coefficient": "3/4"
+          },
+          {
+            "block": "X",
+            "row": 3,
+            "col": 4,
+            "coefficient": "-3/10"
+          },
+          {
+            "block": "X",
+            "row": 3,
+            "col": 5,
+            "coefficient": "-3/5"
+          },
+          {
+            "block": "X",
+            "row": 4,
+            "col": 4,
+            "coefficient": "3/4"
+          },
+          {
+            "block": "X",
+            "row": 4,
+            "col": 5,
+            "coefficient": "-3/5"
+          },
+          {
+            "block": "X",
+            "row": 5,
+            "col": 5,
+            "coefficient": "3/10"
+          }
+        ]
+      }
+    },
+    {
+      "name": "trace_seven",
+      "sense": "eq",
+      "expression": {
+        "constant": "-7",
+        "terms": [
+          {
+            "block": "X",
+            "row": 0,
+            "col": 0,
+            "coefficient": "1"
+          },
+          {
+            "block": "X",
+            "row": 1,
+            "col": 1,
+            "coefficient": "1"
+          },
+          {
+            "block": "X",
+            "row": 2,
+            "col": 2,
+            "coefficient": "1"
+          },
+          {
+            "block": "X",
+            "row": 3,
+            "col": 3,
+            "coefficient": "1"
+          },
+          {
+            "block": "X",
+            "row": 4,
+            "col": 4,
+            "coefficient": "1"
+          },
+          {
+            "block": "X",
+            "row": 5,
+            "col": 5,
+            "coefficient": "1"
+          }
+        ]
+      }
+    }
+  ],
+  "objective": {
+    "sense": "minimize",
+    "expression": {
+      "constant": "0",
+      "terms": []
+    }
+  }
+}

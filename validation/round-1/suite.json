@@ -1,0 +1,63 @@
+{
+  "format": "exactification-suite-v1",
+  "suite_id": "round-1-promoted",
+  "expected_case_ids": [
+    "dlm-three-point-10",
+    "grzesik-pentagon",
+    "rotated-rational-kernel"
+  ],
+  "unit_tests": {
+    "id": "unit-tests",
+    "command": [
+      "{python}",
+      "-m",
+      "unittest",
+      "discover",
+      "-v"
+    ],
+    "cwd": ".",
+    "expected_exit_code": 0,
+    "timeout_seconds": 300
+  },
+  "preflights": [
+    {
+      "id": "dlm-public-input",
+      "command": [
+        "{python}",
+        "tools/dlm/check_three_point.py"
+      ],
+      "cwd": ".",
+      "expected_exit_code": 0,
+      "timeout_seconds": 300
+    }
+  ],
+  "attempts": [
+    {
+      "case_id": "dlm-three-point-10",
+      "case_root": "validation/round-1/blind-workspace/testcases/dlm-three-point-10",
+      "attempt_id": "retry-1",
+      "expected_target": "10",
+      "expected_status": "EXACT_SDP_CERTIFICATE",
+      "expected_blocks": 31,
+      "expected_constraints": 130
+    },
+    {
+      "case_id": "grzesik-pentagon",
+      "case_root": "validation/round-1/blind-workspace/testcases/grzesik-pentagon",
+      "attempt_id": "retry-1",
+      "expected_target": "24/625",
+      "expected_status": "EXACT_SDP_CERTIFICATE",
+      "expected_blocks": 4,
+      "expected_constraints": 14
+    },
+    {
+      "case_id": "rotated-rational-kernel",
+      "case_root": "validation/round-1/blind-workspace/testcases/rotated-rational-kernel",
+      "attempt_id": "retry-1",
+      "expected_target": "0",
+      "expected_status": "EXACT_SDP_CERTIFICATE",
+      "expected_blocks": 1,
+      "expected_constraints": 2
+    }
+  ]
+}

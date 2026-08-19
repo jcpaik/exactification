@@ -1,0 +1,140 @@
+{
+  "format": "exactification-testcase-v1",
+  "id": "grzesik-pentagon",
+  "title": "Pentagons in triangle-free graphs (Grzesik basis)",
+  "field": "Q",
+  "model": "model.json",
+  "approximate_solution": "approximate_solution.json",
+  "fixed_objective": "24/625",
+  "solution_side": "affine_psd_blocks",
+  "source": {
+    "paper": "https://arxiv.org/abs/1102.0962",
+    "solver": {
+      "name": "SDPA-GMP",
+      "repository": "https://github.com/nakatamaho/sdpa-gmp.git",
+      "commit": "ca110db5ea1cc46e811b70dfea9cbb25db74448d",
+      "binary_sha256": "c17c133367fff473f1683ea3fd4131d295a73038229231a0c6a1b725b27fd3f0"
+    }
+  },
+  "numerical_runs": {
+    "p": {
+      "solver_internal_precision_bits": 512,
+      "printed_digits": 80,
+      "parameters": "numerical/p/params.sdpa",
+      "result": "numerical/p/result.out",
+      "approximate_solution": "numerical/p/approximate_solution.json",
+      "phase": "pdOPT",
+      "iterations": 67,
+      "runtime_seconds_reported": "1.216",
+      "primal_feasibility_error_reported": "5.7056160196971368e-152",
+      "dual_feasibility_error_reported": "9.7711288157222207e-115"
+    },
+    "2p": {
+      "solver_internal_precision_bits": 1024,
+      "printed_digits": 160,
+      "parameters": "numerical/2p/params.sdpa",
+      "result": "numerical/2p/result.out",
+      "approximate_solution": "numerical/2p/approximate_solution.json",
+      "phase": "pdOPT",
+      "iterations": 117,
+      "runtime_seconds_reported": "3.998",
+      "primal_feasibility_error_reported": "6.5584727506184056e-306",
+      "dual_feasibility_error_reported": "7.9864015367356260e-218"
+    },
+    "stability_report": "numerical/numerical_stability.json"
+  },
+  "workflow": {
+    "additional_approximate_solutions": [
+      "numerical/2p/approximate_solution.json"
+    ],
+    "precision_evidence": [
+      {
+        "label": "p",
+        "path": "numerical/p/approximate_solution.json",
+        "claimed_precision_digits": 80,
+        "solver_internal_precision_bits": 512,
+        "producer_run_id": "sdpa-gmp-p",
+        "command": [
+          "sdpa_gmp",
+          "-ds",
+          "problems/pentagons-triangle-free/data/grzesik.dat-s",
+          "-o",
+          "problems/pentagons-triangle-free/results/grzesik-512.result",
+          "-p",
+          "problems/pentagons-triangle-free/data/grzesik-512.param"
+        ],
+        "parameters_sha256": "d1eb42d4a2ddc00c3f4d0985737aae9dd311d089c5b6b9a6ebb051ea9b94b1f0",
+        "result_sha256": "770371d603f88b298a59fadd3f3ab7dc8df826f7eedd00a12e561a357dc8632d",
+        "approximate_solution_sha256": "91a26b06422e89264ad8cec093bd93c486b1c5b05c583e90307512b1e0082ef6"
+      },
+      {
+        "label": "2p",
+        "path": "numerical/2p/approximate_solution.json",
+        "claimed_precision_digits": 160,
+        "solver_internal_precision_bits": 1024,
+        "producer_run_id": "sdpa-gmp-2p",
+        "command": [
+          "sdpa_gmp",
+          "-ds",
+          "discovery.dat-s",
+          "-o",
+          "numerical/2p/result.out",
+          "-p",
+          "numerical/2p/params.sdpa"
+        ],
+        "parameters_sha256": "6f537729ab66f410ca067fdbd210ebe65085175d8f8682a198da02b7a1999584",
+        "result_sha256": "02f1f5b1efb98dc923da4d662bfb22ec271eb4dd28192b952c6fe11f8e4c464a",
+        "approximate_solution_sha256": "d399c4062d7280f1bea921cdbe937762fa03e0d109534e6a7729b5c7d7dc91fa"
+      }
+    ],
+    "numerical_stability": {
+      "path": "numerical/numerical_stability.json",
+      "sha256": "cf3dc985bcb20ab197f2f66fabd2299dd8964d7081048572a90bc6afd3ed559e"
+    }
+  },
+  "blind_input_policy": {
+    "exact_certificate_included": false,
+    "published_certificate_included": false,
+    "oracle_paths_mounted": false,
+    "exact_kernel_oracle_included": false,
+    "note": "The numerical optimizer differs entrywise from Grzesik's published matrices; p/2p ranks are diagnostics only."
+  },
+  "files": {
+    "README.md": {
+      "sha256": "89dd30bc3674bfb693f69ece8186cb6ff1f94eddc5e4db4e4a3f2f3e9f5b5230"
+    },
+    "approximate_solution.json": {
+      "sha256": "91a26b06422e89264ad8cec093bd93c486b1c5b05c583e90307512b1e0082ef6"
+    },
+    "discovery.dat-s": {
+      "sha256": "c4ca3642d4227676c15f88ebb0c9889c7e5b1bf8850be8e5300664e6ec68824d"
+    },
+    "discovery.result": {
+      "sha256": "770371d603f88b298a59fadd3f3ab7dc8df826f7eedd00a12e561a357dc8632d"
+    },
+    "model.json": {
+      "sha256": "d8ec26f3cc9590612af0d121a868825896b4f646a79e292d4ed3998ee16321ae"
+    },
+    "numerical/2p/approximate_solution.json": {
+      "sha256": "d399c4062d7280f1bea921cdbe937762fa03e0d109534e6a7729b5c7d7dc91fa"
+    },
+    "numerical/2p/params.sdpa": {
+      "sha256": "6f537729ab66f410ca067fdbd210ebe65085175d8f8682a198da02b7a1999584"
+    },
+    "numerical/2p/result.out": {
+      "sha256": "02f1f5b1efb98dc923da4d662bfb22ec271eb4dd28192b952c6fe11f8e4c464a"
+    },
+    "numerical/numerical_stability.json": {
+      "sha256": "cf3dc985bcb20ab197f2f66fabd2299dd8964d7081048572a90bc6afd3ed559e"
+    },
+    "numerical/p/approximate_solution.json": {
+      "sha256": "91a26b06422e89264ad8cec093bd93c486b1c5b05c583e90307512b1e0082ef6"
+    },
+    "numerical/p/params.sdpa": {
+      "sha256": "d1eb42d4a2ddc00c3f4d0985737aae9dd311d089c5b6b9a6ebb051ea9b94b1f0"
+    },
+    "numerical/p/result.out": {
+      "sha256": "770371d603f88b298a59fadd3f3ab7dc8df826f7eedd00a12e561a357dc8632d"
+    }
+  }
+}

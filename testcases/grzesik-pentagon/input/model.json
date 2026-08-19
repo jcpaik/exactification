@@ -1,0 +1,883 @@
+{
+  "format": "exact-block-sdp-model-v1",
+  "blocks": [
+    {
+      "name": "U",
+      "size": 1
+    },
+    {
+      "name": "P",
+      "size": 8
+    },
+    {
+      "name": "Q",
+      "size": 6
+    },
+    {
+      "name": "R",
+      "size": 5
+    }
+  ],
+  "constraints": [
+    {
+      "name": "five_vertex_case_01",
+      "sense": "ge",
+      "expression": {
+        "constant": "0",
+        "terms": [
+          {
+            "block": "U",
+            "row": 0,
+            "col": 0,
+            "coefficient": "120"
+          },
+          {
+            "block": "P",
+            "row": 0,
+            "col": 0,
+            "coefficient": "-120"
+          }
+        ]
+      }
+    },
+    {
+      "name": "five_vertex_case_02",
+      "sense": "ge",
+      "expression": {
+        "constant": "0",
+        "terms": [
+          {
+            "block": "U",
+            "row": 0,
+            "col": 0,
+            "coefficient": "120"
+          },
+          {
+            "block": "P",
+            "row": 0,
+            "col": 0,
+            "coefficient": "-12"
+          },
+          {
+            "block": "P",
+            "row": 0,
+            "col": 1,
+            "coefficient": "-24"
+          },
+          {
+            "block": "P",
+            "row": 0,
+            "col": 2,
+            "coefficient": "-24"
+          },
+          {
+            "block": "P",
+            "row": 0,
+            "col": 4,
+            "coefficient": "-24"
+          },
+          {
+            "block": "Q",
+            "row": 0,
+            "col": 0,
+            "coefficient": "-12"
+          }
+        ]
+      }
+    },
+    {
+      "name": "five_vertex_case_03",
+      "sense": "ge",
+      "expression": {
+        "constant": "0",
+        "terms": [
+          {
+            "block": "U",
+            "row": 0,
+            "col": 0,
+            "coefficient": "120"
+          },
+          {
+            "block": "P",
+            "row": 0,
+            "col": 1,
+            "coefficient": "-8"
+          },
+          {
+            "block": "P",
+            "row": 0,
+            "col": 2,
+            "coefficient": "-8"
+          },
+          {
+            "block": "P",
+            "row": 0,
+            "col": 3,
+            "coefficient": "-8"
+          },
+          {
+            "block": "P",
+            "row": 0,
+            "col": 4,
+            "coefficient": "-8"
+          },
+          {
+            "block": "P",
+            "row": 0,
+            "col": 5,
+            "coefficient": "-8"
+          },
+          {
+            "block": "P",
+            "row": 0,
+            "col": 6,
+            "coefficient": "-8"
+          },
+          {
+            "block": "P",
+            "row": 1,
+            "col": 1,
+            "coefficient": "-4"
+          },
+          {
+            "block": "P",
+            "row": 2,
+            "col": 2,
+            "coefficient": "-4"
+          },
+          {
+            "block": "P",
+            "row": 4,
+            "col": 4,
+            "coefficient": "-4"
+          },
+          {
+            "block": "Q",
+            "row": 0,
+            "col": 1,
+            "coefficient": "-8"
+          },
+          {
+            "block": "Q",
+            "row": 0,
+            "col": 2,
+            "coefficient": "-8"
+          },
+          {
+            "block": "R",
+            "row": 0,
+            "col": 0,
+            "coefficient": "-4"
+          }
+        ]
+      }
+    },
+    {
+      "name": "five_vertex_case_04",
+      "sense": "ge",
+      "expression": {
+        "constant": "0",
+        "terms": [
+          {
+            "block": "U",
+            "row": 0,
+            "col": 0,
+            "coefficient": "120"
+          },
+          {
+            "block": "P",
+            "row": 0,
+            "col": 3,
+            "coefficient": "-12"
+          },
+          {
+            "block": "P",
+            "row": 0,
+            "col": 5,
+            "coefficient": "-12"
+          },
+          {
+            "block": "P",
+            "row": 0,
+            "col": 6,
+            "coefficient": "-12"
+          },
+          {
+            "block": "P",
+            "row": 0,
+            "col": 7,
+            "coefficient": "-12"
+          },
+          {
+            "block": "Q",
+            "row": 1,
+            "col": 1,
+            "coefficient": "-6"
+          },
+          {
+            "block": "Q",
+            "row": 2,
+            "col": 2,
+            "coefficient": "-6"
+          },
+          {
+            "block": "R",
+            "row": 0,
+            "col": 2,
+            "coefficient": "-12"
+          }
+        ]
+      }
+    },
+    {
+      "name": "five_vertex_case_05",
+      "sense": "ge",
+      "expression": {
+        "constant": "0",
+        "terms": [
+          {
+            "block": "U",
+            "row": 0,
+            "col": 0,
+            "coefficient": "120"
+          },
+          {
+            "block": "P",
+            "row": 0,
+            "col": 7,
+            "coefficient": "-48"
+          },
+          {
+            "block": "R",
+            "row": 2,
+            "col": 2,
+            "coefficient": "-24"
+          }
+        ]
+      }
+    },
+    {
+      "name": "five_vertex_case_06",
+      "sense": "ge",
+      "expression": {
+        "constant": "0",
+        "terms": [
+          {
+            "block": "U",
+            "row": 0,
+            "col": 0,
+            "coefficient": "120"
+          },
+          {
+            "block": "P",
+            "row": 1,
+            "col": 2,
+            "coefficient": "-16"
+          },
+          {
+            "block": "P",
+            "row": 1,
+            "col": 4,
+            "coefficient": "-16"
+          },
+          {
+            "block": "P",
+            "row": 2,
+            "col": 4,
+            "coefficient": "-16"
+          },
+          {
+            "block": "Q",
+            "row": 0,
+            "col": 0,
+            "coefficient": "-8"
+          },
+          {
+            "block": "Q",
+            "row": 0,
+            "col": 3,
+            "coefficient": "-16"
+          }
+        ]
+      }
+    },
+    {
+      "name": "five_vertex_case_07",
+      "sense": "ge",
+      "expression": {
+        "constant": "0",
+        "terms": [
+          {
+            "block": "U",
+            "row": 0,
+            "col": 0,
+            "coefficient": "120"
+          },
+          {
+            "block": "P",
+            "row": 1,
+            "col": 6,
+            "coefficient": "-8"
+          },
+          {
+            "block": "P",
+            "row": 2,
+            "col": 5,
+            "coefficient": "-8"
+          },
+          {
+            "block": "P",
+            "row": 3,
+            "col": 4,
+            "coefficient": "-8"
+          },
+          {
+            "block": "Q",
+            "row": 0,
+            "col": 3,
+            "coefficient": "-8"
+          },
+          {
+            "block": "Q",
+            "row": 1,
+            "col": 3,
+            "coefficient": "-8"
+          },
+          {
+            "block": "Q",
+            "row": 2,
+            "col": 3,
+            "coefficient": "-8"
+          },
+          {
+            "block": "Q",
+            "row": 3,
+            "col": 3,
+            "coefficient": "-4"
+          },
+          {
+            "block": "R",
+            "row": 0,
+            "col": 0,
+            "coefficient": "-4"
+          }
+        ]
+      }
+    },
+    {
+      "name": "five_vertex_case_08",
+      "sense": "ge",
+      "expression": {
+        "constant": "0",
+        "terms": [
+          {
+            "block": "U",
+            "row": 0,
+            "col": 0,
+            "coefficient": "120"
+          },
+          {
+            "block": "P",
+            "row": 1,
+            "col": 2,
+            "coefficient": "-4"
+          },
+          {
+            "block": "P",
+            "row": 1,
+            "col": 3,
+            "coefficient": "-4"
+          },
+          {
+            "block": "P",
+            "row": 1,
+            "col": 4,
+            "coefficient": "-4"
+          },
+          {
+            "block": "P",
+            "row": 1,
+            "col": 5,
+            "coefficient": "-4"
+          },
+          {
+            "block": "P",
+            "row": 2,
+            "col": 3,
+            "coefficient": "-4"
+          },
+          {
+            "block": "P",
+            "row": 2,
+            "col": 4,
+            "coefficient": "-4"
+          },
+          {
+            "block": "P",
+            "row": 2,
+            "col": 6,
+            "coefficient": "-4"
+          },
+          {
+            "block": "P",
+            "row": 4,
+            "col": 5,
+            "coefficient": "-4"
+          },
+          {
+            "block": "P",
+            "row": 4,
+            "col": 6,
+            "coefficient": "-4"
+          },
+          {
+            "block": "Q",
+            "row": 0,
+            "col": 1,
+            "coefficient": "-4"
+          },
+          {
+            "block": "Q",
+            "row": 0,
+            "col": 2,
+            "coefficient": "-4"
+          },
+          {
+            "block": "Q",
+            "row": 0,
+            "col": 4,
+            "coefficient": "-4"
+          },
+          {
+            "block": "Q",
+            "row": 0,
+            "col": 5,
+            "coefficient": "-4"
+          },
+          {
+            "block": "Q",
+            "row": 1,
+            "col": 2,
+            "coefficient": "-4"
+          },
+          {
+            "block": "R",
+            "row": 0,
+            "col": 1,
+            "coefficient": "-4"
+          },
+          {
+            "block": "R",
+            "row": 0,
+            "col": 3,
+            "coefficient": "-4"
+          }
+        ]
+      }
+    },
+    {
+      "name": "five_vertex_case_09",
+      "sense": "ge",
+      "expression": {
+        "constant": "0",
+        "terms": [
+          {
+            "block": "U",
+            "row": 0,
+            "col": 0,
+            "coefficient": "120"
+          },
+          {
+            "block": "P",
+            "row": 1,
+            "col": 6,
+            "coefficient": "-4"
+          },
+          {
+            "block": "P",
+            "row": 1,
+            "col": 7,
+            "coefficient": "-4"
+          },
+          {
+            "block": "P",
+            "row": 2,
+            "col": 5,
+            "coefficient": "-4"
+          },
+          {
+            "block": "P",
+            "row": 2,
+            "col": 7,
+            "coefficient": "-4"
+          },
+          {
+            "block": "P",
+            "row": 3,
+            "col": 4,
+            "coefficient": "-4"
+          },
+          {
+            "block": "P",
+            "row": 4,
+            "col": 7,
+            "coefficient": "-4"
+          },
+          {
+            "block": "Q",
+            "row": 0,
+            "col": 4,
+            "coefficient": "-4"
+          },
+          {
+            "block": "Q",
+            "row": 0,
+            "col": 5,
+            "coefficient": "-4"
+          },
+          {
+            "block": "Q",
+            "row": 1,
+            "col": 4,
+            "coefficient": "-4"
+          },
+          {
+            "block": "Q",
+            "row": 2,
+            "col": 5,
+            "coefficient": "-4"
+          },
+          {
+            "block": "R",
+            "row": 0,
+            "col": 2,
+            "coefficient": "-4"
+          },
+          {
+            "block": "R",
+            "row": 1,
+            "col": 1,
+            "coefficient": "-2"
+          },
+          {
+            "block": "R",
+            "row": 1,
+            "col": 2,
+            "coefficient": "-4"
+          },
+          {
+            "block": "R",
+            "row": 2,
+            "col": 3,
+            "coefficient": "-4"
+          },
+          {
+            "block": "R",
+            "row": 3,
+            "col": 3,
+            "coefficient": "-2"
+          }
+        ]
+      }
+    },
+    {
+      "name": "five_vertex_case_10",
+      "sense": "ge",
+      "expression": {
+        "constant": "0",
+        "terms": [
+          {
+            "block": "U",
+            "row": 0,
+            "col": 0,
+            "coefficient": "120"
+          },
+          {
+            "block": "P",
+            "row": 3,
+            "col": 3,
+            "coefficient": "-8"
+          },
+          {
+            "block": "P",
+            "row": 5,
+            "col": 5,
+            "coefficient": "-8"
+          },
+          {
+            "block": "P",
+            "row": 6,
+            "col": 6,
+            "coefficient": "-8"
+          },
+          {
+            "block": "Q",
+            "row": 1,
+            "col": 2,
+            "coefficient": "-16"
+          },
+          {
+            "block": "R",
+            "row": 0,
+            "col": 4,
+            "coefficient": "-16"
+          }
+        ]
+      }
+    },
+    {
+      "name": "five_vertex_case_11",
+      "sense": "ge",
+      "expression": {
+        "constant": "0",
+        "terms": [
+          {
+            "block": "U",
+            "row": 0,
+            "col": 0,
+            "coefficient": "120"
+          },
+          {
+            "block": "P",
+            "row": 3,
+            "col": 7,
+            "coefficient": "-4"
+          },
+          {
+            "block": "P",
+            "row": 5,
+            "col": 7,
+            "coefficient": "-4"
+          },
+          {
+            "block": "P",
+            "row": 6,
+            "col": 7,
+            "coefficient": "-4"
+          },
+          {
+            "block": "Q",
+            "row": 1,
+            "col": 5,
+            "coefficient": "-4"
+          },
+          {
+            "block": "Q",
+            "row": 2,
+            "col": 4,
+            "coefficient": "-4"
+          },
+          {
+            "block": "Q",
+            "row": 4,
+            "col": 4,
+            "coefficient": "-2"
+          },
+          {
+            "block": "Q",
+            "row": 5,
+            "col": 5,
+            "coefficient": "-2"
+          },
+          {
+            "block": "R",
+            "row": 0,
+            "col": 4,
+            "coefficient": "-4"
+          },
+          {
+            "block": "R",
+            "row": 1,
+            "col": 2,
+            "coefficient": "-4"
+          },
+          {
+            "block": "R",
+            "row": 1,
+            "col": 4,
+            "coefficient": "-4"
+          },
+          {
+            "block": "R",
+            "row": 2,
+            "col": 3,
+            "coefficient": "-4"
+          },
+          {
+            "block": "R",
+            "row": 2,
+            "col": 4,
+            "coefficient": "-4"
+          },
+          {
+            "block": "R",
+            "row": 3,
+            "col": 4,
+            "coefficient": "-4"
+          }
+        ]
+      }
+    },
+    {
+      "name": "five_vertex_case_12",
+      "sense": "ge",
+      "expression": {
+        "constant": "0",
+        "terms": [
+          {
+            "block": "U",
+            "row": 0,
+            "col": 0,
+            "coefficient": "120"
+          },
+          {
+            "block": "P",
+            "row": 7,
+            "col": 7,
+            "coefficient": "-12"
+          },
+          {
+            "block": "R",
+            "row": 2,
+            "col": 4,
+            "coefficient": "-24"
+          },
+          {
+            "block": "R",
+            "row": 4,
+            "col": 4,
+            "coefficient": "-12"
+          }
+        ]
+      }
+    },
+    {
+      "name": "five_vertex_case_13",
+      "sense": "ge",
+      "expression": {
+        "constant": "0",
+        "terms": [
+          {
+            "block": "U",
+            "row": 0,
+            "col": 0,
+            "coefficient": "120"
+          },
+          {
+            "block": "P",
+            "row": 3,
+            "col": 5,
+            "coefficient": "-4"
+          },
+          {
+            "block": "P",
+            "row": 3,
+            "col": 6,
+            "coefficient": "-4"
+          },
+          {
+            "block": "P",
+            "row": 5,
+            "col": 6,
+            "coefficient": "-4"
+          },
+          {
+            "block": "Q",
+            "row": 1,
+            "col": 3,
+            "coefficient": "-4"
+          },
+          {
+            "block": "Q",
+            "row": 1,
+            "col": 5,
+            "coefficient": "-4"
+          },
+          {
+            "block": "Q",
+            "row": 2,
+            "col": 3,
+            "coefficient": "-4"
+          },
+          {
+            "block": "Q",
+            "row": 2,
+            "col": 4,
+            "coefficient": "-4"
+          },
+          {
+            "block": "Q",
+            "row": 3,
+            "col": 4,
+            "coefficient": "-4"
+          },
+          {
+            "block": "Q",
+            "row": 3,
+            "col": 5,
+            "coefficient": "-4"
+          },
+          {
+            "block": "R",
+            "row": 0,
+            "col": 1,
+            "coefficient": "-4"
+          },
+          {
+            "block": "R",
+            "row": 0,
+            "col": 3,
+            "coefficient": "-4"
+          },
+          {
+            "block": "R",
+            "row": 1,
+            "col": 3,
+            "coefficient": "-4"
+          }
+        ]
+      }
+    },
+    {
+      "name": "five_vertex_case_14",
+      "sense": "ge",
+      "expression": {
+        "constant": "-120",
+        "terms": [
+          {
+            "block": "U",
+            "row": 0,
+            "col": 0,
+            "coefficient": "120"
+          },
+          {
+            "block": "Q",
+            "row": 4,
+            "col": 5,
+            "coefficient": "-20"
+          },
+          {
+            "block": "R",
+            "row": 1,
+            "col": 3,
+            "coefficient": "-20"
+          }
+        ]
+      }
+    }
+  ],
+  "objective": {
+    "sense": "minimize",
+    "expression": {
+      "constant": "0",
+      "terms": [
+        {
+          "block": "U",
+          "row": 0,
+          "col": 0,
+          "coefficient": "1"
+        }
+      ]
+    }
+  }
+}

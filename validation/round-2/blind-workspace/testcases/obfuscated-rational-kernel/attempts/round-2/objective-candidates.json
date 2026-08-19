@@ -1,0 +1,13 @@
+{
+  "format": "exactification-objective-candidates-v1",
+  "discovery_required": false,
+  "candidates": [
+    {
+      "value": "2224093617954365/48084958827",
+      "source": "manifest.fixed_objective",
+      "status": "accepted",
+      "numerical_value": "46253.4162908656326049847404604",
+      "reason": "The fixed-objective kernel-face affine system is exactly consistent and the resulting rational certificate passes every verifier gate."
+    }
+  ]
+}

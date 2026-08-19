@@ -1,0 +1,68 @@
+{
+  "format": "sdpa-gmp-run-record-v1",
+  "id": "p",
+  "solver": {
+    "name": "SDPA-GMP",
+    "repository": "https://github.com/nakatamaho/sdpa-gmp.git",
+    "commit": "ca110db5ea1cc46e811b70dfea9cbb25db74448d",
+    "binary_sha256": "c17c133367fff473f1683ea3fd4131d295a73038229231a0c6a1b725b27fd3f0"
+  },
+  "arguments": [
+    "/private/tmp/sdpa-gmp-exactification/sdpa_gmp",
+    "-ds",
+    "testcases/obfuscated-rational-kernel/input/numerical/p/problem.dat-s",
+    "-o",
+    "testcases/obfuscated-rational-kernel/input/numerical/p/result.txt",
+    "-p",
+    "testcases/obfuscated-rational-kernel/input/numerical/p/sdpa-gmp.params"
+  ],
+  "status": "pdFEAS",
+  "iterations": 46,
+  "runtime_seconds": "0.243005",
+  "primal_feasibility_error": "5.3626288642858954e-73",
+  "dual_feasibility_error": "1.7521372750012048e-39",
+  "solver_precision_bits": 256,
+  "printed_decimal_digits": 40,
+  "coefficient_decimal_digits": 90,
+  "epsilon": "1e-35",
+  "equivalent_row_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "equivalent_row_scales": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "artifacts": {
+    "sdpa_sparse": {
+      "path": "numerical/p/problem.dat-s",
+      "sha256": "2b0d6ab43fc1e703f54e7836ebe449a39eaef9cbd94e0567d46321bbb9096cf0"
+    },
+    "parameters": {
+      "path": "numerical/p/sdpa-gmp.params",
+      "sha256": "2dd08176e641f5d83e666b048a7fcebe36aa7b7550fb8692b1a4999f7ec7e63e"
+    },
+    "raw_result": {
+      "path": "numerical/p/result.txt",
+      "sha256": "2be51a6a0c61ee16ecbf0f82817b5a23e281018cf9db43e9c20ae1745bbd687d"
+    },
+    "approximate_solution": {
+      "path": "numerical/p/approximate_solution.json",
+      "sha256": "06630bf1bad06b88be9615143fbbfbe6789cd1bc15dc94b751ffaeccaeb9b6b1"
+    }
+  }
+}

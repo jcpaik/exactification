@@ -1,0 +1,33 @@
+{
+  "precision_ladder": [
+    {
+      "label": "p",
+      "solver_internal_precision_bits": 512,
+      "printed_decimal_digits": 80
+    },
+    {
+      "label": "2p",
+      "solver_internal_precision_bits": 1024,
+      "printed_decimal_digits": 160
+    }
+  ],
+  "relation_height_ladder": [10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000],
+  "denominator_ladder_bits": [96],
+  "objective_branches": [
+    {
+      "value": "24/625",
+      "source": "manifest.fixed_objective",
+      "result": "exact certificate"
+    }
+  ],
+  "nullity_branches": [
+    {
+      "nullities": {"U": 0, "P": 4, "Q": 1, "R": 2},
+      "evidence": "stable p/2p spectral gaps and identical recovered exact row spaces",
+      "result": "accepted"
+    }
+  ],
+  "seeds": [],
+  "public_matching_construction_used": false,
+  "notes": "Numerical graph-chart provenance only. Ten ge constraints were promoted to the active scalar face after their p/2p slacks improved from about 1e-49 to 1e-99. One nonzero emitter event is retained in operational-failures.json; no construction, oracle, target matrix, or prior attempt was used."
+}

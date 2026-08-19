@@ -1,0 +1,31 @@
+{
+  "format": "exactification-kernels-v1",
+  "blocks": {
+    "X": {
+      "candidate_nullity": 3,
+      "precision_runs_used": ["input/approximate_solution.json"],
+      "provenance": "mixed",
+      "relation_matrix": [
+        [2, -1, -5, 2, 0, 0],
+        [2, 5, 1, 0, 2, 0],
+        [-1, -1, 1, 0, 0, 1]
+      ],
+      "relation_exact_rank": 3,
+      "exact_kernel_basis_columns": [
+        [2, -1, 1, 0, 0, 0],
+        [2, -2, 0, -3, 3, 0],
+        [5, -2, 0, -6, 0, 3]
+      ],
+      "relation_height": 5,
+      "normalized_relation_residuals": [
+        "8.1303340033724275333e-103",
+        "9.0976292046894965238e-103",
+        "8.9200373871588934635e-103"
+      ],
+      "subspace_projection_residual_frobenius": "2.3623540163203806202e-102",
+      "face_equations_added": 18,
+      "face_equation_rank": 15,
+      "derivation": "The first affine form is trace(A X), where exact A is a rank-3 orthogonal projector. Its range agrees with the numerical nullspace; X=(7/3)(I-A) was selected on the complementary rational face."
+    }
+  }
+}

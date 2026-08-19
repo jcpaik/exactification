@@ -1,0 +1,387 @@
+{
+  "format": "numerical-face-stability-v1",
+  "method": {
+    "relative_eigenvalue_threshold": "1.0E-12",
+    "projector_distance_tolerance": "1.0E-08",
+    "approximate_psd_tolerance": "1.0E-10",
+    "eigensolver": "numpy.linalg.eigh (2.4.3)",
+    "warning": "This is numerical face evidence, not an exact rank or kernel oracle."
+  },
+  "runs": {
+    "p": {
+      "solver_internal_precision_bits": 300,
+      "printed_digits": 40,
+      "phase": "pdFEAS",
+      "iterations": 63,
+      "primal_feasibility_error_reported": "2.4231186392798145e-91",
+      "dual_feasibility_error_reported": "1.0303464561413602e-43",
+      "runtime_seconds_reported": "78.094",
+      "check_tolerance": "1E-20",
+      "max_equality_residual": "4.37368002E-35",
+      "max_inequality_violation": "0.00000000E+00",
+      "objective_error_to_fixed_target": "2.61499640E-39"
+    },
+    "2p": {
+      "solver_internal_precision_bits": 600,
+      "printed_digits": 80,
+      "phase": "pdFEAS",
+      "iterations": 115,
+      "primal_feasibility_error_reported": "6.0351254480226828e-169",
+      "dual_feasibility_error_reported": "1.0127390396572396e-94",
+      "runtime_seconds_reported": "123.426",
+      "check_tolerance": "1E-40",
+      "max_equality_residual": "1.26466381E-74",
+      "max_inequality_violation": "0.00000000E+00",
+      "objective_error_to_fixed_target": "6.49000000E-80"
+    }
+  },
+  "summary": {
+    "stable_nullities": true,
+    "stable_kernel_projectors": true,
+    "worst_projector_distance_operator_norm": "7.39674990E-11",
+    "worst_projector_block": "triple_sos.pi3.s_0"
+  },
+  "blocks": [
+    {
+      "block": "bound_scalar.B",
+      "size": 1,
+      "nullity_p": 1,
+      "nullity_2p": 1,
+      "projector_distance_operator_norm": "0.00000000E+00",
+      "p_max_relative_null_eigenvalue": "4.40944038E-46",
+      "p_min_relative_positive_eigenvalue": null,
+      "2p_max_relative_null_eigenvalue": "1.60887752E-97",
+      "2p_min_relative_positive_eigenvalue": null
+    },
+    {
+      "block": "gegenbauer_scalar.a_1",
+      "size": 1,
+      "nullity_p": 0,
+      "nullity_2p": 0,
+      "projector_distance_operator_norm": null,
+      "p_max_relative_null_eigenvalue": "0.00000000E+00",
+      "p_min_relative_positive_eigenvalue": "5.51561185E-01",
+      "2p_max_relative_null_eigenvalue": "0.00000000E+00",
+      "2p_min_relative_positive_eigenvalue": "5.51561185E-01"
+    },
+    {
+      "block": "gegenbauer_scalar.a_2",
+      "size": 1,
+      "nullity_p": 0,
+      "nullity_2p": 0,
+      "projector_distance_operator_norm": null,
+      "p_max_relative_null_eigenvalue": "0.00000000E+00",
+      "p_min_relative_positive_eigenvalue": "3.72772238E-01",
+      "2p_max_relative_null_eigenvalue": "0.00000000E+00",
+      "2p_min_relative_positive_eigenvalue": "3.72772238E-01"
+    },
+    {
+      "block": "gegenbauer_scalar.a_3",
+      "size": 1,
+      "nullity_p": 1,
+      "nullity_2p": 1,
+      "projector_distance_operator_norm": "0.00000000E+00",
+      "p_max_relative_null_eigenvalue": "1.58739854E-45",
+      "p_min_relative_positive_eigenvalue": null,
+      "2p_max_relative_null_eigenvalue": "5.79195909E-97",
+      "2p_min_relative_positive_eigenvalue": null
+    },
+    {
+      "block": "gegenbauer_scalar.a_4",
+      "size": 1,
+      "nullity_p": 1,
+      "nullity_2p": 1,
+      "projector_distance_operator_norm": "0.00000000E+00",
+      "p_max_relative_null_eigenvalue": "3.96849635E-46",
+      "p_min_relative_positive_eigenvalue": null,
+      "2p_max_relative_null_eigenvalue": "1.44798977E-97",
+      "2p_min_relative_positive_eigenvalue": null
+    },
+    {
+      "block": "gegenbauer_scalar.a_5",
+      "size": 1,
+      "nullity_p": 1,
+      "nullity_2p": 1,
+      "projector_distance_operator_norm": "0.00000000E+00",
+      "p_max_relative_null_eigenvalue": "1.77106448E-46",
+      "p_min_relative_positive_eigenvalue": null,
+      "2p_max_relative_null_eigenvalue": "6.46210311E-98",
+      "2p_min_relative_positive_eigenvalue": null
+    },
+    {
+      "block": "gegenbauer_scalar.a_6",
+      "size": 1,
+      "nullity_p": 1,
+      "nullity_2p": 1,
+      "projector_distance_operator_norm": "0.00000000E+00",
+      "p_max_relative_null_eigenvalue": "1.00006108E-45",
+      "p_min_relative_positive_eigenvalue": null,
+      "2p_max_relative_null_eigenvalue": "3.64893422E-97",
+      "2p_min_relative_positive_eigenvalue": null
+    },
+    {
+      "block": "three_point_kernel.F_0",
+      "size": 7,
+      "nullity_p": 1,
+      "nullity_2p": 1,
+      "projector_distance_operator_norm": "2.89359604E-13",
+      "p_max_relative_null_eigenvalue": "1.41058023E-16",
+      "p_min_relative_positive_eigenvalue": "1.19047695E-04",
+      "2p_max_relative_null_eigenvalue": "8.15585676E-17",
+      "2p_min_relative_positive_eigenvalue": "1.19047695E-04"
+    },
+    {
+      "block": "three_point_kernel.F_1",
+      "size": 6,
+      "nullity_p": 0,
+      "nullity_2p": 0,
+      "projector_distance_operator_norm": null,
+      "p_max_relative_null_eigenvalue": "0.00000000E+00",
+      "p_min_relative_positive_eigenvalue": "3.25420021E-05",
+      "2p_max_relative_null_eigenvalue": "0.00000000E+00",
+      "2p_min_relative_positive_eigenvalue": "3.25420021E-05"
+    },
+    {
+      "block": "three_point_kernel.F_2",
+      "size": 5,
+      "nullity_p": 1,
+      "nullity_2p": 1,
+      "projector_distance_operator_norm": "1.69341404E-13",
+      "p_max_relative_null_eigenvalue": "2.24489786E-17",
+      "p_min_relative_positive_eigenvalue": "3.53638191E-04",
+      "2p_max_relative_null_eigenvalue": "1.24334374E-16",
+      "2p_min_relative_positive_eigenvalue": "3.53638191E-04"
+    },
+    {
+      "block": "three_point_kernel.F_3",
+      "size": 4,
+      "nullity_p": 1,
+      "nullity_2p": 1,
+      "projector_distance_operator_norm": "1.71562785E-14",
+      "p_max_relative_null_eigenvalue": "2.14872960E-17",
+      "p_min_relative_positive_eigenvalue": "4.10271631E-03",
+      "2p_max_relative_null_eigenvalue": "8.46748148E-17",
+      "2p_min_relative_positive_eigenvalue": "4.10271631E-03"
+    },
+    {
+      "block": "three_point_kernel.F_4",
+      "size": 3,
+      "nullity_p": 1,
+      "nullity_2p": 1,
+      "projector_distance_operator_norm": "2.10260368E-14",
+      "p_max_relative_null_eigenvalue": "1.78686052E-17",
+      "p_min_relative_positive_eigenvalue": "5.53185455E-03",
+      "2p_max_relative_null_eigenvalue": "2.52867575E-17",
+      "2p_min_relative_positive_eigenvalue": "5.53185455E-03"
+    },
+    {
+      "block": "three_point_kernel.F_5",
+      "size": 2,
+      "nullity_p": 1,
+      "nullity_2p": 1,
+      "projector_distance_operator_norm": "0.00000000E+00",
+      "p_max_relative_null_eigenvalue": "6.85951560E-20",
+      "p_min_relative_positive_eigenvalue": "4.54307689E-02",
+      "2p_max_relative_null_eigenvalue": "2.14945698E-20",
+      "2p_min_relative_positive_eigenvalue": "4.54307689E-02"
+    },
+    {
+      "block": "three_point_kernel.F_6",
+      "size": 1,
+      "nullity_p": 1,
+      "nullity_2p": 1,
+      "projector_distance_operator_norm": "0.00000000E+00",
+      "p_max_relative_null_eigenvalue": "4.09498630E-46",
+      "p_min_relative_positive_eigenvalue": null,
+      "2p_max_relative_null_eigenvalue": "1.49414230E-97",
+      "2p_min_relative_positive_eigenvalue": null
+    },
+    {
+      "block": "single_interval_sos.q_0",
+      "size": 7,
+      "nullity_p": 2,
+      "nullity_2p": 2,
+      "projector_distance_operator_norm": "5.28610402E-11",
+      "p_max_relative_null_eigenvalue": "7.90549489E-17",
+      "p_min_relative_positive_eigenvalue": "7.18932923E-07",
+      "2p_max_relative_null_eigenvalue": "1.29707584E-17",
+      "2p_min_relative_positive_eigenvalue": "7.18932923E-07"
+    },
+    {
+      "block": "single_interval_sos.q_1",
+      "size": 6,
+      "nullity_p": 1,
+      "nullity_2p": 1,
+      "projector_distance_operator_norm": "3.47258313E-11",
+      "p_max_relative_null_eigenvalue": "1.09151407E-16",
+      "p_min_relative_positive_eigenvalue": "3.38700087E-06",
+      "2p_max_relative_null_eigenvalue": "8.17701368E-17",
+      "2p_min_relative_positive_eigenvalue": "3.38700087E-06"
+    },
+    {
+      "block": "triple_sos.pi1.s_0",
+      "size": 23,
+      "nullity_p": 3,
+      "nullity_2p": 3,
+      "projector_distance_operator_norm": "3.58915880E-11",
+      "p_max_relative_null_eigenvalue": "4.10841638E-17",
+      "p_min_relative_positive_eigenvalue": "1.91077334E-08",
+      "2p_max_relative_null_eigenvalue": "4.40993926E-17",
+      "2p_min_relative_positive_eigenvalue": "1.91077334E-08"
+    },
+    {
+      "block": "triple_sos.pi1.s_1",
+      "size": 16,
+      "nullity_p": 2,
+      "nullity_2p": 2,
+      "projector_distance_operator_norm": "1.91474587E-11",
+      "p_max_relative_null_eigenvalue": "9.38578674E-17",
+      "p_min_relative_positive_eigenvalue": "2.95088783E-07",
+      "2p_max_relative_null_eigenvalue": "1.15644155E-16",
+      "2p_min_relative_positive_eigenvalue": "2.95088783E-07"
+    },
+    {
+      "block": "triple_sos.pi1.gram_determinant",
+      "size": 16,
+      "nullity_p": 8,
+      "nullity_2p": 8,
+      "projector_distance_operator_norm": "2.26451266E-13",
+      "p_max_relative_null_eigenvalue": "6.09472557E-17",
+      "p_min_relative_positive_eigenvalue": "7.61710844E-05",
+      "2p_max_relative_null_eigenvalue": "2.63354852E-17",
+      "2p_min_relative_positive_eigenvalue": "7.61710844E-05"
+    },
+    {
+      "block": "triple_sos.pi1.s_2",
+      "size": 11,
+      "nullity_p": 1,
+      "nullity_2p": 1,
+      "projector_distance_operator_norm": "3.88292433E-12",
+      "p_max_relative_null_eigenvalue": "1.43326002E-17",
+      "p_min_relative_positive_eigenvalue": "1.60625593E-06",
+      "2p_max_relative_null_eigenvalue": "1.50359331E-17",
+      "2p_min_relative_positive_eigenvalue": "1.60625593E-06"
+    },
+    {
+      "block": "triple_sos.pi1.s_3",
+      "size": 7,
+      "nullity_p": 0,
+      "nullity_2p": 0,
+      "projector_distance_operator_norm": null,
+      "p_max_relative_null_eigenvalue": "0.00000000E+00",
+      "p_min_relative_positive_eigenvalue": "8.68332541E-06",
+      "2p_max_relative_null_eigenvalue": "0.00000000E+00",
+      "2p_min_relative_positive_eigenvalue": "8.68332541E-06"
+    },
+    {
+      "block": "triple_sos.pi2.s_0",
+      "size": 7,
+      "nullity_p": 0,
+      "nullity_2p": 0,
+      "projector_distance_operator_norm": null,
+      "p_max_relative_null_eigenvalue": "0.00000000E+00",
+      "p_min_relative_positive_eigenvalue": "4.40470732E-06",
+      "2p_max_relative_null_eigenvalue": "0.00000000E+00",
+      "2p_min_relative_positive_eigenvalue": "4.40470732E-06"
+    },
+    {
+      "block": "triple_sos.pi2.s_1",
+      "size": 4,
+      "nullity_p": 0,
+      "nullity_2p": 0,
+      "projector_distance_operator_norm": null,
+      "p_max_relative_null_eigenvalue": "0.00000000E+00",
+      "p_min_relative_positive_eigenvalue": "9.36941774E-05",
+      "2p_max_relative_null_eigenvalue": "0.00000000E+00",
+      "2p_min_relative_positive_eigenvalue": "9.36941774E-05"
+    },
+    {
+      "block": "triple_sos.pi2.gram_determinant",
+      "size": 4,
+      "nullity_p": 2,
+      "nullity_2p": 2,
+      "projector_distance_operator_norm": "2.77555756E-16",
+      "p_max_relative_null_eigenvalue": "1.16386414E-47",
+      "p_min_relative_positive_eigenvalue": "9.16136126E-03",
+      "2p_max_relative_null_eigenvalue": "1.18898285E-99",
+      "2p_min_relative_positive_eigenvalue": "9.16136126E-03"
+    },
+    {
+      "block": "triple_sos.pi2.s_2",
+      "size": 2,
+      "nullity_p": 0,
+      "nullity_2p": 0,
+      "projector_distance_operator_norm": null,
+      "p_max_relative_null_eigenvalue": "0.00000000E+00",
+      "p_min_relative_positive_eigenvalue": "4.54335070E-03",
+      "2p_max_relative_null_eigenvalue": "0.00000000E+00",
+      "2p_min_relative_positive_eigenvalue": "4.54335070E-03"
+    },
+    {
+      "block": "triple_sos.pi2.s_3",
+      "size": 1,
+      "nullity_p": 0,
+      "nullity_2p": 0,
+      "projector_distance_operator_norm": null,
+      "p_max_relative_null_eigenvalue": "0.00000000E+00",
+      "p_min_relative_positive_eigenvalue": "1.00000000E+00",
+      "2p_max_relative_null_eigenvalue": "0.00000000E+00",
+      "2p_min_relative_positive_eigenvalue": "1.00000000E+00"
+    },
+    {
+      "block": "triple_sos.pi3.s_0",
+      "size": 27,
+      "nullity_p": 2,
+      "nullity_2p": 2,
+      "projector_distance_operator_norm": "7.39674990E-11",
+      "p_max_relative_null_eigenvalue": "5.96699527E-18",
+      "p_min_relative_positive_eigenvalue": "9.11812843E-08",
+      "2p_max_relative_null_eigenvalue": "2.20824069E-18",
+      "2p_min_relative_positive_eigenvalue": "9.11812843E-08"
+    },
+    {
+      "block": "triple_sos.pi3.s_1",
+      "size": 18,
+      "nullity_p": 2,
+      "nullity_2p": 2,
+      "projector_distance_operator_norm": "1.19813502E-11",
+      "p_max_relative_null_eigenvalue": "1.95818518E-16",
+      "p_min_relative_positive_eigenvalue": "1.81821135E-06",
+      "2p_max_relative_null_eigenvalue": "7.82467834E-17",
+      "2p_min_relative_positive_eigenvalue": "1.81821135E-06"
+    },
+    {
+      "block": "triple_sos.pi3.gram_determinant",
+      "size": 18,
+      "nullity_p": 9,
+      "nullity_2p": 9,
+      "projector_distance_operator_norm": "1.15016164E-13",
+      "p_max_relative_null_eigenvalue": "5.67672006E-17",
+      "p_min_relative_positive_eigenvalue": "2.82707680E-04",
+      "2p_max_relative_null_eigenvalue": "5.38831723E-17",
+      "2p_min_relative_positive_eigenvalue": "2.82707680E-04"
+    },
+    {
+      "block": "triple_sos.pi3.s_2",
+      "size": 11,
+      "nullity_p": 1,
+      "nullity_2p": 1,
+      "projector_distance_operator_norm": "1.26240218E-12",
+      "p_max_relative_null_eigenvalue": "1.11797770E-18",
+      "p_min_relative_positive_eigenvalue": "3.25592941E-05",
+      "2p_max_relative_null_eigenvalue": "2.32587774E-18",
+      "2p_min_relative_positive_eigenvalue": "3.25592941E-05"
+    },
+    {
+      "block": "triple_sos.pi3.s_3",
+      "size": 6,
+      "nullity_p": 0,
+      "nullity_2p": 0,
+      "projector_distance_operator_norm": null,
+      "p_max_relative_null_eigenvalue": "0.00000000E+00",
+      "p_min_relative_positive_eigenvalue": "1.13304651E-04",
+      "2p_max_relative_null_eigenvalue": "0.00000000E+00",
+      "2p_min_relative_positive_eigenvalue": "1.13304651E-04"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "format": "exactification-row-relation-recovery-v1",
+  "block": "single_interval_sos.q_0",
+  "candidate_nullity": 2,
+  "status": "recovered",
+  "pivot_rows": [
+    0,
+    1
+  ],
+  "denominator_bound": "100000",
+  "relation_matrix": [
+    [
+      2,
+      -9,
+      -18,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      -13,
+      0,
+      36,
+      0,
+      0,
+      0
+    ],
+    [
+      26,
+      -153,
+      0,
+      0,
+      -648,
+      0,
+      0
+    ],
+    [
+      34,
+      -205,
+      0,
+      0,
+      0,
+      1296,
+      0
+    ],
+    [
+      410,
+      -2457,
+      0,
+      0,
+      0,
+      0,
+      -23328
+    ]
+  ],
+  "relation_exact_rank": 5,
+  "relation_height": 23328,
+  "maximum_normalized_relation_residual": "2.77088353659209035386150431508e-77",
+  "kernel_basis_columns": [
+    [
+      199017,
+      33210,
+      5508,
+      936,
+      144,
+      32,
+      0
+    ],
+    [
+      149445,
+      24786,
+      4212,
+      648,
+      144,
+      0,
+      16
+    ]
+  ],
+  "ladder": [
+    {
+      "denominator_bound": "10",
+      "maximum_normalized_relation_residual": "0.0417687436242875350607807060796",
+      "relation_height": 40
+    },
+    {
+      "denominator_bound": "100",
+      "maximum_normalized_relation_residual": "0.000250841796762929621607131629815",
+      "relation_height": 1800
+    },
+    {
+      "denominator_bound": "1000",
+      "maximum_normalized_relation_residual": "0.000000744511789469639086748284431107",
+      "relation_height": 598104
+    },
+    {
+      "denominator_bound": "10000",
+      "maximum_normalized_relation_residual": "0.00000000897040132830506883274719184109",
+      "relation_height": 8160480
+    },
+    {
+      "denominator_bound": "100000",
+      "maximum_normalized_relation_residual": "2.77088353659209035386150431508e-77",
+      "relation_height": 23328
+    }
+  ]
+}

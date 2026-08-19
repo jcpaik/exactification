@@ -1,0 +1,20 @@
+{
+  "format": "exactification-testcase-v1",
+  "id": "rotated-rational-kernel",
+  "title": "Transparent rational face with an irrational relative-interior point",
+  "field": "Q",
+  "model": "model.json",
+  "approximate_solution": "approximate_solution.json",
+  "fixed_objective": "0",
+  "solution_side": "affine_psd_blocks",
+  "blind_input_policy": {
+    "exact_certificate_included": false
+  },
+  "features": [
+    "rank_deficient",
+    "kernel_dimension_3",
+    "rational_kernel_subspace",
+    "irrational_numerical_entries",
+    "nonunique_relative_interior"
+  ]
+}

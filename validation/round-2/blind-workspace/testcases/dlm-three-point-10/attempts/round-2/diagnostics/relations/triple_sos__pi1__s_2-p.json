@@ -1,0 +1,182 @@
+{
+  "format": "exactification-row-relation-recovery-v1",
+  "block": "triple_sos.pi1.s_2",
+  "candidate_nullity": 1,
+  "status": "recovered",
+  "pivot_rows": [
+    10
+  ],
+  "denominator_bound": "10000",
+  "relation_matrix": [
+    [
+      2401,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -1296
+    ],
+    [
+      0,
+      2401,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -96
+    ],
+    [
+      0,
+      0,
+      2401,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -288
+    ],
+    [
+      0,
+      0,
+      0,
+      2401,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -64
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      343,
+      0,
+      0,
+      0,
+      0,
+      0,
+      216
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      343,
+      0,
+      0,
+      0,
+      0,
+      16
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      343,
+      0,
+      0,
+      0,
+      48
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      49,
+      0,
+      0,
+      -36
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      49,
+      0,
+      -8
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      7,
+      6
+    ]
+  ],
+  "relation_exact_rank": 10,
+  "relation_height": 2401,
+  "maximum_normalized_relation_residual": "1.81550365725028066348670180929e-37",
+  "kernel_basis_columns": [
+    [
+      1296,
+      96,
+      288,
+      64,
+      -1512,
+      -112,
+      -336,
+      1764,
+      392,
+      -2058,
+      2401
+    ]
+  ],
+  "ladder": [
+    {
+      "denominator_bound": "10",
+      "maximum_normalized_relation_residual": "0.0268091604994207487383850230619",
+      "relation_height": 9
+    },
+    {
+      "denominator_bound": "100",
+      "maximum_normalized_relation_residual": "0.0000778494445167501655370412781881",
+      "relation_height": 75
+    },
+    {
+      "denominator_bound": "1000",
+      "maximum_normalized_relation_residual": "0.00000956704959769554967160044181937",
+      "relation_height": 938
+    },
+    {
+      "denominator_bound": "10000",
+      "maximum_normalized_relation_residual": "1.81550365725028066348670180929e-37",
+      "relation_height": 2401
+    }
+  ]
+}

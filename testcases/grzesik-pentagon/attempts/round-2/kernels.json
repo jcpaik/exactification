@@ -1,0 +1,574 @@
+{
+  "format": "exactification-kernels-v1",
+  "method": "basis-invariant numerical graph-coordinate recovery",
+  "blocks": {
+    "U": {
+      "candidate_nullity": 0,
+      "precision_runs_used": [
+        "testcases/grzesik-pentagon/input/numerical/p/approximate_solution.json",
+        "testcases/grzesik-pentagon/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "full_rank_no_kernel_recovery_required",
+      "provenance": "numerical_graph_chart",
+      "exact_kernel_basis_columns": [],
+      "face_equations_added": 0,
+      "face_equation_rank": 0
+    },
+    "P": {
+      "candidate_nullity": 4,
+      "precision_runs_used": [
+        "testcases/grzesik-pentagon/input/numerical/p/approximate_solution.json",
+        "testcases/grzesik-pentagon/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "recovery_method": "numerical_graph_chart",
+      "provenance": "numerical_graph_chart",
+      "independent_recoveries_have_equal_exact_row_space": true,
+      "relation_matrix": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          -1,
+          0,
+          -1,
+          -1,
+          -3
+        ]
+      ],
+      "relation_exact_rank": 4,
+      "relation_height": 3,
+      "exact_kernel_basis_columns": [
+        [
+          1,
+          0,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ]
+      ],
+      "exact_kernel_rank": 4,
+      "exact_relation_times_kernel_zero": true,
+      "graph_chart": {
+        "kernel_coordinate_indices_Q": [
+          0,
+          3,
+          5,
+          6
+        ],
+        "positive_coordinate_indices_P": [
+          1,
+          2,
+          4,
+          7
+        ],
+        "exact_graph_basis_columns": [
+          [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "2/3"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1",
+            "1",
+            "0",
+            "0",
+            "-1/3"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "-1/3"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "-1/3"
+          ]
+        ],
+        "exact_Q_minor_is_identity": true
+      },
+      "validation": [
+        {
+          "label": "p",
+          "source": "testcases/grzesik-pentagon/input/numerical/p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "1.00528051246126267557012190886e-38",
+          "normalized_relation_residual_operator": "1.02476075262807484850506169143856748638145996e-38",
+          "normalized_block_kernel_residual_operator": "3.86459614929933776542659963447775706470305365e-39",
+          "largest_principal_angle_sine": "1.06898310147218631998463512093872288202433895e-38",
+          "maximum_graph_coordinate_absolute_error": "1.17652016531539378991024332484463154440469351e-38",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              1,
+              2,
+              4,
+              7
+            ],
+            "smallest_singular_value": "0.6354063966408405623323190125530577460407",
+            "condition_estimate_2": "1.379809372630305550218131695602421635594"
+          },
+          "block_positive_minor": {
+            "indices": [
+              1,
+              2,
+              4,
+              7
+            ],
+            "smallest_singular_value": "0.0151471854144853369603057172640227764942",
+            "condition_estimate_2": "56.17126405039417582201893140663341951602"
+          }
+        },
+        {
+          "label": "2p",
+          "source": "testcases/grzesik-pentagon/input/numerical/2p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "1.09838728892872348110418158101e-76",
+          "normalized_relation_residual_operator": "1.11989003023694875849476681210078906422150655e-76",
+          "normalized_block_kernel_residual_operator": "4.25115314503391180629963353963428098066839479e-77",
+          "largest_principal_angle_sine": "1.16898365933346267336429711998762690322256328e-76",
+          "maximum_graph_coordinate_absolute_error": "1.28551027906757943943812608959318818697236423e-76",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              1,
+              2,
+              4,
+              7
+            ],
+            "smallest_singular_value": "0.6354063966408405623323190125530577460334",
+            "condition_estimate_2": "1.379809372630305550218131695602421635611"
+          },
+          "block_positive_minor": {
+            "indices": [
+              1,
+              2,
+              4,
+              7
+            ],
+            "smallest_singular_value": "0.01515484053045206245638478631250315141086",
+            "condition_estimate_2": "56.13367339639651580494039860058767949179"
+          }
+        }
+      ],
+      "residual_improvement_factors_p_over_2p": {
+        "maximum_rowwise_relation": "9.15233199249538394822513260447e+37",
+        "relation_operator": "9.15054804453660283621861755643e+37",
+        "block_kernel": "9.09070084622535882979602403186e+37",
+        "principal_angle_sine": "9.1445512769759741220720056516e+37",
+        "graph_coordinate_error": "9.15216458765899898854326445366e+37"
+      },
+      "relation_height_ladder": [
+        {
+          "denominator_bound": "10",
+          "maximum_normalized_relation_residual": "1.09838728892872348110418158101e-76",
+          "relation_height": 3
+        }
+      ],
+      "face_equations_added": 32,
+      "face_equation_rank": 26
+    },
+    "Q": {
+      "candidate_nullity": 1,
+      "precision_runs_used": [
+        "testcases/grzesik-pentagon/input/numerical/p/approximate_solution.json",
+        "testcases/grzesik-pentagon/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "recovery_method": "numerical_graph_chart",
+      "provenance": "numerical_graph_chart",
+      "independent_recoveries_have_equal_exact_row_space": true,
+      "relation_matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1
+        ]
+      ],
+      "relation_exact_rank": 5,
+      "relation_height": 1,
+      "exact_kernel_basis_columns": [
+        [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ]
+      ],
+      "exact_kernel_rank": 1,
+      "exact_relation_times_kernel_zero": true,
+      "graph_chart": {
+        "kernel_coordinate_indices_Q": [
+          5
+        ],
+        "positive_coordinate_indices_P": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "exact_graph_basis_columns": [
+          [
+            "1",
+            "1",
+            "1",
+            "0",
+            "1",
+            "1"
+          ]
+        ],
+        "exact_Q_minor_is_identity": true
+      },
+      "validation": [
+        {
+          "label": "p",
+          "source": "testcases/grzesik-pentagon/input/numerical/p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "1.43669884956345280474725684262e-39",
+          "normalized_relation_residual_operator": "9.40199711968504800139043178933968146755866227e-40",
+          "normalized_block_kernel_residual_operator": "5.12143648964811545308202582894428611277690563e-40",
+          "largest_principal_angle_sine": "1.8178634506650692716475988761925780351803087e-39",
+          "maximum_graph_coordinate_absolute_error": "4.54324067636411794948966529113393844857510941e-39",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "smallest_singular_value": "0.4472135954999579392818347337462552470886",
+            "condition_estimate_2": "2.236067977499789696409173668731276235438"
+          },
+          "block_positive_minor": {
+            "indices": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "smallest_singular_value": "0.02554675107250278852744996018419257284795",
+            "condition_estimate_2": "139.7888268232464225018675430816604737773"
+          }
+        },
+        {
+          "label": "2p",
+          "source": "testcases/grzesik-pentagon/input/numerical/2p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "1.58172536923502715127462136162e-77",
+          "normalized_relation_residual_operator": "1.0352310401568696716112121638694485969509785e-77",
+          "normalized_block_kernel_residual_operator": "5.63104066029512887198439397556927299171947473e-78",
+          "largest_principal_angle_sine": "2.00053308557253511479317981558545051617638867e-77",
+          "maximum_graph_coordinate_absolute_error": "5.00185479965350751104667277069587375863481847e-77",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "smallest_singular_value": "0.4472135954999579392818347337462552470881",
+            "condition_estimate_2": "2.236067977499789696409173668731276235441"
+          },
+          "block_positive_minor": {
+            "indices": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "smallest_singular_value": "0.02555199841382343635672052954311244276131",
+            "condition_estimate_2": "139.7460915492806523792656104553515619758"
+          }
+        }
+      ],
+      "residual_improvement_factors_p_over_2p": {
+        "maximum_rowwise_relation": "9.08311188217387068860787764148e+37",
+        "relation_operator": "9.08202783241541258051491288238e+37",
+        "block_kernel": "9.09500889553103578811561179303e+37",
+        "principal_angle_sine": "9.08689520695836236372291104011e+37",
+        "graph_coordinate_error": "9.08311188217387068860787764149e+37"
+      },
+      "relation_height_ladder": [
+        {
+          "denominator_bound": "10",
+          "maximum_normalized_relation_residual": "1.58172536923502715127462136162e-77",
+          "relation_height": 1
+        }
+      ],
+      "face_equations_added": 6,
+      "face_equation_rank": 6
+    },
+    "R": {
+      "candidate_nullity": 2,
+      "precision_runs_used": [
+        "testcases/grzesik-pentagon/input/numerical/p/approximate_solution.json",
+        "testcases/grzesik-pentagon/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "recovery_method": "numerical_graph_chart",
+      "provenance": "numerical_graph_chart",
+      "independent_recoveries_have_equal_exact_row_space": true,
+      "relation_matrix": [
+        [
+          2,
+          0,
+          1,
+          0,
+          -2
+        ],
+        [
+          0,
+          1,
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          -1
+        ]
+      ],
+      "relation_exact_rank": 3,
+      "relation_height": 2,
+      "exact_kernel_basis_columns": [
+        [
+          1,
+          -2,
+          -2,
+          -2,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          0,
+          2
+        ]
+      ],
+      "exact_kernel_rank": 2,
+      "exact_relation_times_kernel_zero": true,
+      "graph_chart": {
+        "kernel_coordinate_indices_Q": [
+          2,
+          4
+        ],
+        "positive_coordinate_indices_P": [
+          0,
+          1,
+          3
+        ],
+        "exact_graph_basis_columns": [
+          [
+            "-1/2",
+            "1",
+            "1",
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "-1",
+            "0",
+            "-1",
+            "1"
+          ]
+        ],
+        "exact_Q_minor_is_identity": true
+      },
+      "validation": [
+        {
+          "label": "p",
+          "source": "testcases/grzesik-pentagon/input/numerical/p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "2.84157622831329385402140151294e-39",
+          "normalized_relation_residual_operator": "2.74701866438971322502449072555735370705088937e-39",
+          "normalized_block_kernel_residual_operator": "3.40697304317448538294773340308743153071207997e-40",
+          "largest_principal_angle_sine": "3.11743625007659643260688300306114452792537445e-39",
+          "maximum_graph_coordinate_absolute_error": "9.23546598896620689012792583826974850617399075e-39",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              0,
+              1,
+              3
+            ],
+            "smallest_singular_value": "0.4031416345139508397112888768912320985005",
+            "condition_estimate_2": "2.480517799174113071625011968558405721091"
+          },
+          "block_positive_minor": {
+            "indices": [
+              0,
+              1,
+              3
+            ],
+            "smallest_singular_value": "0.05445767417714807922593961894091512753764",
+            "condition_estimate_2": "112.1913278642288924796670151451669819141"
+          }
+        },
+        {
+          "label": "2p",
+          "source": "testcases/grzesik-pentagon/input/numerical/2p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "3.11943607220603753633119065469e-77",
+          "normalized_relation_residual_operator": "3.01573467695689909039292897393220060534726576e-77",
+          "normalized_block_kernel_residual_operator": "3.7386385721032180366650805518548054514141803e-78",
+          "largest_principal_angle_sine": "3.42228300421113419592578629961431974415767746e-77",
+          "maximum_graph_coordinate_absolute_error": "1.01384780617524631964294619282966408632763623e-76",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              0,
+              1,
+              3
+            ],
+            "smallest_singular_value": "0.4031416345139508397112888768912320984983",
+            "condition_estimate_2": "2.480517799174113071625011968558405721104"
+          },
+          "block_positive_minor": {
+            "indices": [
+              0,
+              1,
+              3
+            ],
+            "smallest_singular_value": "0.05445655953438505144524212392581960330948",
+            "condition_estimate_2": "112.2091059644798152258160914724150675112"
+          }
+        }
+      ],
+      "residual_improvement_factors_p_over_2p": {
+        "maximum_rowwise_relation": "9.10926257996291084770290858179e+37",
+        "relation_operator": "9.10895340156933057258503948876e+37",
+        "block_kernel": "9.11287084179910429512477907707e+37",
+        "principal_angle_sine": "9.10922985106894286699388894044e+37",
+        "graph_coordinate_error": "9.10932186538640273861374952077e+37"
+      },
+      "relation_height_ladder": [
+        {
+          "denominator_bound": "10",
+          "maximum_normalized_relation_residual": "3.11943607220603753633119065469e-77",
+          "relation_height": 2
+        }
+      ],
+      "face_equations_added": 10,
+      "face_equation_rank": 9
+    }
+  }
+}

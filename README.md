@@ -9,10 +9,17 @@ independently checkable exact proof. The project covers both classical benchmark
 problems and open problems where the extremal construction or sharp bound is not
 known in advance.
 
-> **Project status:** early research scaffold. The first benchmark now
-> [reproduces Grzesik's pentagon bound](problems/pentagons-triangle-free/README.md)
-> with a native 512-bit SDPA-GMP run and an exact post-solve checker; the general
-> pipeline and certificate format are still to be built.
+> **Project status:** active workflow validation. The isolated Round 1 retry
+> produced exact SDP certificates for the transparent rotated control,
+> Grzesik's pentagon SDP at `24/625`, and the DLM three-point SDP at `10`.
+> After a fixture audit reclassified the rotated control, the isolated Round 2
+> run recovered exact SDP certificates for the stronger held-out
+> `obfuscated-rational-kernel` p/2p fixture, Grzesik, and DLM. The strengthened
+> rational three-case validation requirement is complete. These are
+> `EXACT_SDP_CERTIFICATE` results, not independent theorem-level certificates.
+> See the [acceptance record](validation/ACCEPTANCE.md),
+> [Round 2 executor report](validation/round-2/executor-report-round-2.md), and
+> [combined-suite record](validation/round-2/SUITE.md).
 
 ## Research goals
 
@@ -121,7 +128,8 @@ This layout is provisional and will evolve with the implementation.
 - [ ] Build precision-aware diagnostics for rank, kernels, and near-zero terms.
 - [ ] Implement rational reconstruction and PSLQ-based relation discovery.
 - [ ] Reconstruct exact PSD decompositions and dual certificates.
-- [ ] Build a deterministic exact-arithmetic verifier.
+- [x] Build a deterministic exact-arithmetic verifier for rational v1
+  certificates.
 - [ ] Reproduce several classical flag algebra bounds end to end.
 - [ ] Package complete, independently verifiable certificates for new results.
 
@@ -136,6 +144,29 @@ Committed results should distinguish three classes of artifact:
 
 Large generated files may eventually live outside Git, but every result should
 include stable metadata and a documented way to regenerate or retrieve them.
+
+## Workflow validation
+
+The reusable cases live in [`testcases/`](testcases/README.md). They cover
+Grzesik's flag-algebra SDP, the rational three-point SDP used in Theorem 4.3 of
+Dostert--de Laat--Moustrou, the transparent rotated control used in Round 1,
+and the stronger obfuscated rational-kernel fixture completed in Round 2. The
+exact pass conditions and author/executor isolation protocol are in
+[`validation/ACCEPTANCE.md`](validation/ACCEPTANCE.md).
+
+The proof checker uses only Python's exact `Fraction` arithmetic. It verifies
+every original affine condition, the exact objective, and every full PSD block
+through a replayable exact Schur-complement trace. Numerical solutions and
+kernel relations are deliberately outside its trusted input.
+
+The validation layer also provides a deterministic certificate-free
+[blind-workspace builder](validation/README.md#build-a-blind-workspace), a
+manifest-aware [target-binding harness](validation/README.md#check-one-attempt),
+and a fresh-process [suite runner](validation/README.md#run-the-complete-suite).
+The combined suite verifies six immutable or promoted attempts: the Round 1
+DLM, Grzesik, and rotated-control certificates and the Round 2 DLM, Grzesik,
+and obfuscated-fixture certificates. It also checks the frozen Round 2 blind
+workspace inventory before accepting the Round 2 results.
 
 ## Contributing
 
@@ -163,3 +194,8 @@ a rigorous proof.
 These ingredients are complementary: flag algebras define the proof search
 space, high-precision SDP exposes a candidate solution, exactification recovers
 its symbolic structure, and exact verification closes the proof.
+
+See [Exactifying Singular Flag-Algebra SDPs](docs/exactification-strategies.md)
+for a survey of the rounding, kernel-recovery, facial-reduction, and algebraic
+methods used in existing work. The operational version is the
+[Agent Workflow for Exactifying Singular SDPs](manual/EXACTIFICATION_WORKFLOW.md).

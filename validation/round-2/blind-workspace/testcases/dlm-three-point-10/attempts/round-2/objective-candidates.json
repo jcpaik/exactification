@@ -1,0 +1,13 @@
+{
+  "candidates": [
+    {
+      "numerical_value": "10.0",
+      "reason": "The exact kernel-face affine system is consistent and the complete rational certificate passes every verifier gate.",
+      "source": "manifest.fixed_objective",
+      "status": "accepted",
+      "value": "10"
+    }
+  ],
+  "discovery_required": false,
+  "format": "exactification-objective-candidates-v1"
+}

@@ -1,0 +1,150 @@
+{
+  "format": "exactification-run-v1",
+  "case_id": "grzesik-pentagon",
+  "attempt_id": "retry-1",
+  "started_utc": "2026-08-19T11:07:35.854499Z",
+  "ended_utc": "2026-08-19T12:33:10.787201Z",
+  "repository": {
+    "commit": null,
+    "dirty_worktree": null,
+    "note": "Git history and worktree metadata were deliberately not inspected under the blind-workspace allowlist."
+  },
+  "platform": {
+    "system": "Darwin",
+    "release": "23.6.0",
+    "machine": "arm64",
+    "python": "3.14.3 (v3.14.3:323c59a5e34, Feb  3 2026, 11:41:37) [Clang 16.0.0 (clang-1600.0.26.6)]"
+  },
+  "tool_versions": {
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "numpy": "2.4.3",
+    "python_flint": "0.9.0"
+  },
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "exactify/affine_round.py",
+        "--model",
+        "testcases/grzesik-pentagon/input/model.json",
+        "--approx",
+        "testcases/grzesik-pentagon/input/approximate_solution.json",
+        "--config",
+        "testcases/grzesik-pentagon/attempts/retry-1/discovery-config.json",
+        "--output",
+        "testcases/grzesik-pentagon/attempts/retry-1/candidate.json",
+        "--system-output",
+        "testcases/grzesik-pentagon/attempts/retry-1/affine-system.json",
+        "--denominator-bits",
+        "80"
+      ],
+      "exit_code": 0,
+      "purpose": "exact kernel-face affine rounding"
+    },
+    {
+      "argv": [
+        "python3",
+        "-m",
+        "verify",
+        "emit-traces",
+        "testcases/grzesik-pentagon/input/model.json",
+        "testcases/grzesik-pentagon/attempts/retry-1/candidate.json",
+        "-o",
+        "testcases/grzesik-pentagon/attempts/retry-1/certificate.json"
+      ],
+      "exit_code": 0,
+      "purpose": "emit deterministic exact PSD traces"
+    },
+    {
+      "argv": [
+        "python3",
+        "-m",
+        "verify",
+        "check",
+        "testcases/grzesik-pentagon/input/model.json",
+        "testcases/grzesik-pentagon/attempts/retry-1/certificate.json",
+        "--json"
+      ],
+      "exit_code": 0,
+      "purpose": "fresh exact certificate check"
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/make_discovery_artifacts.py",
+        "--model",
+        "testcases/grzesik-pentagon/input/model.json",
+        "--approx",
+        "testcases/grzesik-pentagon/input/approximate_solution.json",
+        "--config",
+        "testcases/grzesik-pentagon/attempts/retry-1/discovery-config.json",
+        "--spectra-output",
+        "testcases/grzesik-pentagon/attempts/retry-1/spectra.json",
+        "--kernels-output",
+        "testcases/grzesik-pentagon/attempts/retry-1/kernels.json",
+        "--decimal-precision",
+        "120"
+      ],
+      "exit_code": 0,
+      "purpose": "persist numerical discovery diagnostics"
+    }
+  ],
+  "seeds": [],
+  "precision_ladder": {
+    "public_solver_bits": [
+      512
+    ],
+    "public_normalized_runs": 1
+  },
+  "relation_height_ladder": [
+    10,
+    100
+  ],
+  "denominator_ladder_bits": [
+    80
+  ],
+  "objective_branches": [
+    {
+      "value": "24/625",
+      "source": "fixed",
+      "status": "accepted"
+    }
+  ],
+  "nullity_branches": {
+    "P": [
+      4
+    ],
+    "Q": [
+      1
+    ],
+    "R": [
+      2
+    ],
+    "U": [
+      0
+    ]
+  },
+  "public_matching_construction_used": false,
+  "consumed_file_sha256": {
+    "testcases/grzesik-pentagon/input/README.md": "29c6eceb5bfb891f6d090cb1f346a6148606dcef745fd5e4cc71134fc4ce2cff",
+    "testcases/grzesik-pentagon/input/approximate_solution.json": "b1d15f5d7b38ce0625f2d467bf8b04398079d02ba3563b3b3f1e13992c3d6e98",
+    "testcases/grzesik-pentagon/input/discovery.dat-s": "c4ca3642d4227676c15f88ebb0c9889c7e5b1bf8850be8e5300664e6ec68824d",
+    "testcases/grzesik-pentagon/input/discovery.result": "770371d603f88b298a59fadd3f3ab7dc8df826f7eedd00a12e561a357dc8632d",
+    "testcases/grzesik-pentagon/input/manifest.json": "8caa61f9f5115a9b64eeff75cd4ec361e39ea3ace6ae98d6117134f97d120249",
+    "testcases/grzesik-pentagon/input/model.json": "d8ec26f3cc9590612af0d121a868825896b4f646a79e292d4ed3998ee16321ae"
+  },
+  "generated_file_sha256": {
+    "testcases/grzesik-pentagon/attempts/retry-1/affine-system.json": "0a247436324dcfea5a0299e15219ca594715f1308a59b81ee373ab506e41b5c8",
+    "testcases/grzesik-pentagon/attempts/retry-1/candidate.json": "7400dadb6c5eda59f740f8945abde16356ec96d0aa04ec92b98809c262553634",
+    "testcases/grzesik-pentagon/attempts/retry-1/certificate.json": "5a8b7c17b8d1689fa1b716e288a7abc7e1e13b686fc6b6699d5989b36575ab94",
+    "testcases/grzesik-pentagon/attempts/retry-1/discovery-config.json": "12f33f05fd8652a18dc3fea8abc1b71c3233bf7e4898e1d8ab1a24ca0dc28c10",
+    "testcases/grzesik-pentagon/attempts/retry-1/kernels.json": "9d6b736e55d25e1cf7abcaf8eb89ea5929fa18bc7e478c90b5ad07ee7447c0f4",
+    "testcases/grzesik-pentagon/attempts/retry-1/objective-candidates.json": "2b1ccc3c84d2a699e8a5e7e94a8cb711efaaf469ab08b81bf50a974f2d1df40c",
+    "testcases/grzesik-pentagon/attempts/retry-1/proof.md": "ada840cf7b0a76e6a78636aea5a88ba89f428ce54e77dc0c90d4ed288d22e100",
+    "testcases/grzesik-pentagon/attempts/retry-1/spectra.json": "3f8f72eecd7cc939f23c5aae4054063595aa2db6534391ed00afe7b57d27be65",
+    "testcases/grzesik-pentagon/attempts/retry-1/verification.json": "b0b80658496c48091d8bab35c3f0871559dda6b1d83042be55cb4b7cf7c8d728",
+    "testcases/grzesik-pentagon/attempts/retry-1/verifier-output.json": "9421e0cad90b6e7fd2872dc7a9737a2071faa73c0d499a22acc16f68218a80d1"
+  },
+  "hash_note": "run.json excludes its own hash to avoid a self-reference."
+}

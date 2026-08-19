@@ -1,0 +1,82 @@
+{
+  "commands": [
+    {
+      "argv": ["python3", "exactify/recover_relations.py", "--approx", "testcases/grzesik-pentagon/input/numerical/p/approximate_solution.json", "--block", "P", "--nullity", "4", "--output", "testcases/grzesik-pentagon/attempts/round-2/diagnostics/relations-P-p.json", "--decimal-precision", "100", "--maximum-denominator-power", "8", "--accept-residual", "1e-12"],
+      "exit_code": 0,
+      "purpose": "Recover the P kernel graph relation space from the p run."
+    },
+    {
+      "argv": ["python3", "exactify/recover_relations.py", "--approx", "testcases/grzesik-pentagon/input/numerical/2p/approximate_solution.json", "--block", "P", "--nullity", "4", "--output", "testcases/grzesik-pentagon/attempts/round-2/diagnostics/relations-P-2p.json", "--decimal-precision", "180", "--maximum-denominator-power", "8", "--accept-residual", "1e-12"],
+      "exit_code": 0,
+      "purpose": "Recover the P kernel graph relation space independently from the 2p run."
+    },
+    {
+      "argv": ["python3", "exactify/recover_relations.py", "--approx", "testcases/grzesik-pentagon/input/numerical/p/approximate_solution.json", "--block", "Q", "--nullity", "1", "--output", "testcases/grzesik-pentagon/attempts/round-2/diagnostics/relations-Q-p.json", "--decimal-precision", "100", "--maximum-denominator-power", "8", "--accept-residual", "1e-12"],
+      "exit_code": 0,
+      "purpose": "Recover the Q kernel graph relation space from the p run."
+    },
+    {
+      "argv": ["python3", "exactify/recover_relations.py", "--approx", "testcases/grzesik-pentagon/input/numerical/2p/approximate_solution.json", "--block", "Q", "--nullity", "1", "--output", "testcases/grzesik-pentagon/attempts/round-2/diagnostics/relations-Q-2p.json", "--decimal-precision", "180", "--maximum-denominator-power", "8", "--accept-residual", "1e-12"],
+      "exit_code": 0,
+      "purpose": "Recover the Q kernel graph relation space independently from the 2p run."
+    },
+    {
+      "argv": ["python3", "exactify/recover_relations.py", "--approx", "testcases/grzesik-pentagon/input/numerical/p/approximate_solution.json", "--block", "R", "--nullity", "2", "--output", "testcases/grzesik-pentagon/attempts/round-2/diagnostics/relations-R-p.json", "--decimal-precision", "100", "--maximum-denominator-power", "8", "--accept-residual", "1e-12"],
+      "exit_code": 0,
+      "purpose": "Recover the R kernel graph relation space from the p run."
+    },
+    {
+      "argv": ["python3", "exactify/recover_relations.py", "--approx", "testcases/grzesik-pentagon/input/numerical/2p/approximate_solution.json", "--block", "R", "--nullity", "2", "--output", "testcases/grzesik-pentagon/attempts/round-2/diagnostics/relations-R-2p.json", "--decimal-precision", "180", "--maximum-denominator-power", "8", "--accept-residual", "1e-12"],
+      "exit_code": 0,
+      "purpose": "Recover the R kernel graph relation space independently from the 2p run."
+    },
+    {
+      "argv": ["python3", "testcases/grzesik-pentagon/attempts/round-2/diagnostics/make_two_precision_artifacts.py", "--model", "testcases/grzesik-pentagon/input/model.json", "--p", "testcases/grzesik-pentagon/input/numerical/p/approximate_solution.json", "--two-p", "testcases/grzesik-pentagon/input/numerical/2p/approximate_solution.json", "--relations-dir", "testcases/grzesik-pentagon/attempts/round-2/diagnostics", "--spectra-output", "testcases/grzesik-pentagon/attempts/round-2/spectra.json", "--kernels-output", "testcases/grzesik-pentagon/attempts/round-2/kernels.json", "--decimal-precision", "180"],
+      "exit_code": 0,
+      "purpose": "Persist p/2p spectra, exact row-space agreement, principal angles, residuals, and graph-chart conditioning."
+    },
+    {
+      "argv": ["python3", "exactify/build_affine_config.py", "--fixed-objective", "24/625", "--projectors", "testcases/grzesik-pentagon/attempts/round-2/diagnostics/empty-projectors.json", "--relation-override", "testcases/grzesik-pentagon/attempts/round-2/diagnostics/relations-P-2p.json", "--relation-override", "testcases/grzesik-pentagon/attempts/round-2/diagnostics/relations-Q-2p.json", "--relation-override", "testcases/grzesik-pentagon/attempts/round-2/diagnostics/relations-R-2p.json", "--output", "testcases/grzesik-pentagon/attempts/round-2/diagnostics/affine-config.json"],
+      "exit_code": 0,
+      "purpose": "Build the exact fixed-objective kernel-face configuration."
+    },
+    {
+      "argv": ["python3", "exactify/affine_modular_solve.py", "--model", "testcases/grzesik-pentagon/input/model.json", "--approx", "testcases/grzesik-pentagon/input/numerical/2p/approximate_solution.json", "--config", "testcases/grzesik-pentagon/attempts/round-2/diagnostics/affine-config.json", "--output", "testcases/grzesik-pentagon/attempts/round-2/candidate.json", "--system-output", "testcases/grzesik-pentagon/attempts/round-2/affine-system.json", "--denominator-bits", "96"],
+      "exit_code": 0,
+      "purpose": "Solve the first exact kernel face before scalar active-set recovery.",
+      "note": "The affine solve passed its enlarged rows; the later emitter found an omitted original active inequality."
+    },
+    {
+      "argv": ["python3", "-m", "verify", "emit-traces", "testcases/grzesik-pentagon/input/model.json", "testcases/grzesik-pentagon/attempts/round-2/candidate.json", "-o", "testcases/grzesik-pentagon/attempts/round-2/certificate.json"],
+      "exit_code": 1,
+      "purpose": "Check the first exact candidate and emit PSD traces.",
+      "note": "Retained operational event: five_vertex_case_03 was slightly negative, revealing the p/2p-stable active scalar face."
+    },
+    {
+      "argv": ["python3", "exactify/affine_modular_solve.py", "--model", "testcases/grzesik-pentagon/input/model.json", "--approx", "testcases/grzesik-pentagon/input/numerical/2p/approximate_solution.json", "--config", "testcases/grzesik-pentagon/attempts/round-2/diagnostics/affine-config.json", "--output", "testcases/grzesik-pentagon/attempts/round-2/candidate.json", "--system-output", "testcases/grzesik-pentagon/attempts/round-2/affine-system.json", "--denominator-bits", "96"],
+      "exit_code": 0,
+      "purpose": "Reconstruct exactly after adding the ten independently stable active scalar inequalities."
+    },
+    {
+      "argv": ["python3", "-m", "verify", "emit-traces", "testcases/grzesik-pentagon/input/model.json", "testcases/grzesik-pentagon/attempts/round-2/candidate.json", "-o", "testcases/grzesik-pentagon/attempts/round-2/certificate.json"],
+      "exit_code": 0,
+      "purpose": "Emit complete exact symmetric-Schur PSD traces for the final candidate."
+    },
+    {
+      "argv": ["python3", "-m", "verify", "check", "testcases/grzesik-pentagon/input/model.json", "testcases/grzesik-pentagon/attempts/round-2/certificate.json", "--json"],
+      "exit_code": 0,
+      "purpose": "Run the generic exact verifier in a fresh process."
+    },
+    {
+      "argv": ["python3", "validation/testcase_harness.py", "testcases/grzesik-pentagon", "round-2"],
+      "exit_code": 1,
+      "purpose": "First manifest-aware harness invocation.",
+      "note": "The direct script path could not import the sibling verify package; the certificate was not read."
+    },
+    {
+      "argv": ["python3", "-B", "-m", "validation.testcase_harness", "testcases/grzesik-pentagon", "round-2"],
+      "exit_code": 0,
+      "purpose": "Run the manifest-aware target, provenance, artifact, and status gate from the workspace root."
+    }
+  ]
+}

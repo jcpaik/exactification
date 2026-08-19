@@ -1,0 +1,43 @@
+{
+  "format": "exactification-operational-failures-v1",
+  "events": [
+    {
+      "event_id": "two-precision-diagnostics-001",
+      "phase": "kernel_validation_diagnostics",
+      "backend": "Python 3.14 with mpmath",
+      "command": [
+        "python3",
+        "testcases/obfuscated-rational-kernel/attempts/round-2/diagnostics/analyze_two_precision.py",
+        "--model",
+        "testcases/obfuscated-rational-kernel/input/model.json",
+        "--p",
+        "testcases/obfuscated-rational-kernel/input/numerical/p/approximate_solution.json",
+        "--two-p",
+        "testcases/obfuscated-rational-kernel/input/numerical/2p/approximate_solution.json",
+        "--relations-p",
+        "testcases/obfuscated-rational-kernel/attempts/round-2/diagnostics/relations-p.json",
+        "--relations-two-p",
+        "testcases/obfuscated-rational-kernel/attempts/round-2/diagnostics/relations-2p.json",
+        "--spectra-output",
+        "testcases/obfuscated-rational-kernel/attempts/round-2/spectra.json",
+        "--kernels-output",
+        "testcases/obfuscated-rational-kernel/attempts/round-2/kernels.json",
+        "--decimal-precision",
+        "100"
+      ],
+      "started_utc": "2026-08-19T15:02:05Z",
+      "ended_utc": "2026-08-19T15:02:06Z",
+      "exit_code": 1,
+      "signal": null,
+      "elapsed_seconds": 0.650205,
+      "resource_limits": {
+        "wall_seconds": null,
+        "memory_mib": null
+      },
+      "last_durable_artifact": "diagnostics/relations-2p.json",
+      "diagnostic": "mpmath matrix slicing does not accept a list of row indices; the helper raised TypeError before writing spectra.json or kernels.json.",
+      "recovery": "Replace list-based slicing with explicit matrix extraction and rerun the same numerical branch.",
+      "mathematical_branch_changed": false
+    }
+  ]
+}

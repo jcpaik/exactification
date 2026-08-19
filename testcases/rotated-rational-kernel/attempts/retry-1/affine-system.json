@@ -1,0 +1,10 @@
+{
+  "format": "exactification-affine-system-v1",
+  "variable_count": 21,
+  "face_equation_count": 18,
+  "face_equation_rank": 15,
+  "original_constraint_count": 2,
+  "exact_enlarged_rank": 16,
+  "free_variable_count": 5,
+  "consistent": true
+}

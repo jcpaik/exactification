@@ -1,0 +1,44 @@
+{
+  "format": "exactification-row-relation-recovery-v1",
+  "block": "three_point_kernel.F_4",
+  "candidate_nullity": 1,
+  "status": "recovered",
+  "pivot_rows": [
+    0
+  ],
+  "denominator_bound": "100",
+  "relation_matrix": [
+    [
+      11,
+      -36,
+      0
+    ],
+    [
+      1,
+      0,
+      24
+    ]
+  ],
+  "relation_exact_rank": 2,
+  "relation_height": 36,
+  "maximum_normalized_relation_residual": "4.08029240191093344145597772025e-81",
+  "kernel_basis_columns": [
+    [
+      72,
+      22,
+      -3
+    ]
+  ],
+  "ladder": [
+    {
+      "denominator_bound": "10",
+      "maximum_normalized_relation_residual": "0.0398163832112797420324360818337",
+      "relation_height": 10
+    },
+    {
+      "denominator_bound": "100",
+      "maximum_normalized_relation_residual": "4.08029240191093344145597772025e-81",
+      "relation_height": 36
+    }
+  ]
+}

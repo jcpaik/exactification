@@ -1,0 +1,1084 @@
+{
+  "attempt_id": "round-2",
+  "case_id": "dlm-three-point-10",
+  "commands": [
+    {
+      "argv": [
+        "pgrep",
+        "-af",
+        "recover_relations.py"
+      ],
+      "exit_code": 3,
+      "note": "The sandboxed process-list service was unavailable: sysmon request failed and pgrep could not get the process list.",
+      "purpose": "Retained operational event process-list-diagnostic-001 during relation_recovery_monitoring."
+    },
+    {
+      "argv": [
+        "ls",
+        "-l",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi3__s_0-p.json",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi3__s_0-2p.json"
+      ],
+      "exit_code": 1,
+      "note": "A premature existence check returned nonzero because both pi3.s_0 recovery processes were still running and had not yet atomically written their outputs.",
+      "purpose": "Retained operational event premature-output-check-002 during relation_recovery_monitoring."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "--block",
+        "triple_sos.pi3.s_0",
+        "--nullity",
+        "2",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi3__s_0-p.json",
+        "--decimal-precision",
+        "70",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 130,
+      "note": "The numerical graph relations had been found, but SymPy fraction-free exact rank on the large-height integer matrix did not complete promptly and was manually interrupted.",
+      "purpose": "Retained operational event pi3-s0-sympy-rank-p-003 during kernel_relation_exact_rank."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+        "--block",
+        "triple_sos.pi3.s_0",
+        "--nullity",
+        "2",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi3__s_0-2p.json",
+        "--decimal-precision",
+        "110",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 130,
+      "note": "The independent 2p graph recovery reached the same slow SymPy exact-rank phase and was manually interrupted.",
+      "purpose": "Retained operational event pi3-s0-sympy-rank-2p-004 during kernel_relation_exact_rank."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "--block",
+        "single_interval_sos.q_0",
+        "--nullity",
+        "2",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/single_interval_sos__q_0-p.json",
+        "--decimal-precision",
+        "70",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the single_interval_sos.q_0 graph relation space from the p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+        "--block",
+        "single_interval_sos.q_0",
+        "--nullity",
+        "2",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/single_interval_sos__q_0-2p.json",
+        "--decimal-precision",
+        "110",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the single_interval_sos.q_0 graph relation space from the 2p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "--block",
+        "single_interval_sos.q_1",
+        "--nullity",
+        "1",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/single_interval_sos__q_1-p.json",
+        "--decimal-precision",
+        "70",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the single_interval_sos.q_1 graph relation space from the p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+        "--block",
+        "single_interval_sos.q_1",
+        "--nullity",
+        "1",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/single_interval_sos__q_1-2p.json",
+        "--decimal-precision",
+        "110",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the single_interval_sos.q_1 graph relation space from the 2p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "--block",
+        "three_point_kernel.F_0",
+        "--nullity",
+        "1",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/three_point_kernel__F_0-p.json",
+        "--decimal-precision",
+        "70",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the three_point_kernel.F_0 graph relation space from the p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+        "--block",
+        "three_point_kernel.F_0",
+        "--nullity",
+        "1",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/three_point_kernel__F_0-2p.json",
+        "--decimal-precision",
+        "110",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the three_point_kernel.F_0 graph relation space from the 2p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "--block",
+        "three_point_kernel.F_2",
+        "--nullity",
+        "1",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/three_point_kernel__F_2-p.json",
+        "--decimal-precision",
+        "70",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the three_point_kernel.F_2 graph relation space from the p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+        "--block",
+        "three_point_kernel.F_2",
+        "--nullity",
+        "1",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/three_point_kernel__F_2-2p.json",
+        "--decimal-precision",
+        "110",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the three_point_kernel.F_2 graph relation space from the 2p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "--block",
+        "three_point_kernel.F_3",
+        "--nullity",
+        "1",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/three_point_kernel__F_3-p.json",
+        "--decimal-precision",
+        "70",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the three_point_kernel.F_3 graph relation space from the p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+        "--block",
+        "three_point_kernel.F_3",
+        "--nullity",
+        "1",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/three_point_kernel__F_3-2p.json",
+        "--decimal-precision",
+        "110",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the three_point_kernel.F_3 graph relation space from the 2p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "--block",
+        "three_point_kernel.F_4",
+        "--nullity",
+        "1",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/three_point_kernel__F_4-p.json",
+        "--decimal-precision",
+        "70",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the three_point_kernel.F_4 graph relation space from the p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+        "--block",
+        "three_point_kernel.F_4",
+        "--nullity",
+        "1",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/three_point_kernel__F_4-2p.json",
+        "--decimal-precision",
+        "110",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the three_point_kernel.F_4 graph relation space from the 2p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "--block",
+        "three_point_kernel.F_5",
+        "--nullity",
+        "1",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/three_point_kernel__F_5-p.json",
+        "--decimal-precision",
+        "70",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the three_point_kernel.F_5 graph relation space from the p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+        "--block",
+        "three_point_kernel.F_5",
+        "--nullity",
+        "1",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/three_point_kernel__F_5-2p.json",
+        "--decimal-precision",
+        "110",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the three_point_kernel.F_5 graph relation space from the 2p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "--block",
+        "triple_sos.pi1.gram_determinant",
+        "--nullity",
+        "8",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi1__gram_determinant-p.json",
+        "--decimal-precision",
+        "70",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the triple_sos.pi1.gram_determinant graph relation space from the p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+        "--block",
+        "triple_sos.pi1.gram_determinant",
+        "--nullity",
+        "8",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi1__gram_determinant-2p.json",
+        "--decimal-precision",
+        "110",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the triple_sos.pi1.gram_determinant graph relation space from the 2p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "--block",
+        "triple_sos.pi1.s_0",
+        "--nullity",
+        "3",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi1__s_0-p.json",
+        "--decimal-precision",
+        "70",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the triple_sos.pi1.s_0 graph relation space from the p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+        "--block",
+        "triple_sos.pi1.s_0",
+        "--nullity",
+        "3",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi1__s_0-2p.json",
+        "--decimal-precision",
+        "110",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the triple_sos.pi1.s_0 graph relation space from the 2p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "--block",
+        "triple_sos.pi1.s_1",
+        "--nullity",
+        "2",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi1__s_1-p.json",
+        "--decimal-precision",
+        "70",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the triple_sos.pi1.s_1 graph relation space from the p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+        "--block",
+        "triple_sos.pi1.s_1",
+        "--nullity",
+        "2",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi1__s_1-2p.json",
+        "--decimal-precision",
+        "110",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the triple_sos.pi1.s_1 graph relation space from the 2p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "--block",
+        "triple_sos.pi1.s_2",
+        "--nullity",
+        "1",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi1__s_2-p.json",
+        "--decimal-precision",
+        "70",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the triple_sos.pi1.s_2 graph relation space from the p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+        "--block",
+        "triple_sos.pi1.s_2",
+        "--nullity",
+        "1",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi1__s_2-2p.json",
+        "--decimal-precision",
+        "110",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the triple_sos.pi1.s_2 graph relation space from the 2p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "--block",
+        "triple_sos.pi2.gram_determinant",
+        "--nullity",
+        "2",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi2__gram_determinant-p.json",
+        "--decimal-precision",
+        "70",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the triple_sos.pi2.gram_determinant graph relation space from the p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+        "--block",
+        "triple_sos.pi2.gram_determinant",
+        "--nullity",
+        "2",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi2__gram_determinant-2p.json",
+        "--decimal-precision",
+        "110",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the triple_sos.pi2.gram_determinant graph relation space from the 2p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "--block",
+        "triple_sos.pi3.gram_determinant",
+        "--nullity",
+        "9",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi3__gram_determinant-p.json",
+        "--decimal-precision",
+        "70",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the triple_sos.pi3.gram_determinant graph relation space from the p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+        "--block",
+        "triple_sos.pi3.gram_determinant",
+        "--nullity",
+        "9",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi3__gram_determinant-2p.json",
+        "--decimal-precision",
+        "110",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the triple_sos.pi3.gram_determinant graph relation space from the 2p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/recover_graph_without_sympy_rank.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "--block",
+        "triple_sos.pi3.s_0",
+        "--nullity",
+        "2",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi3__s_0-p.json",
+        "--decimal-precision",
+        "70",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Recover the triple_sos.pi3.s_0 p graph chart with explicit pivot-rank certification after the retained SymPy-rank stall."
+    },
+    {
+      "argv": [
+        "python3",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/recover_graph_without_sympy_rank.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+        "--block",
+        "triple_sos.pi3.s_0",
+        "--nullity",
+        "2",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi3__s_0-2p.json",
+        "--decimal-precision",
+        "110",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Recover the triple_sos.pi3.s_0 2p graph chart with explicit pivot-rank certification after the retained SymPy-rank stall."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "--block",
+        "triple_sos.pi3.s_1",
+        "--nullity",
+        "2",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi3__s_1-p.json",
+        "--decimal-precision",
+        "70",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the triple_sos.pi3.s_1 graph relation space from the p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+        "--block",
+        "triple_sos.pi3.s_1",
+        "--nullity",
+        "2",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi3__s_1-2p.json",
+        "--decimal-precision",
+        "110",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the triple_sos.pi3.s_1 graph relation space from the 2p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "--block",
+        "triple_sos.pi3.s_2",
+        "--nullity",
+        "1",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi3__s_2-p.json",
+        "--decimal-precision",
+        "70",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the triple_sos.pi3.s_2 graph relation space from the p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+        "--block",
+        "triple_sos.pi3.s_2",
+        "--nullity",
+        "1",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi3__s_2-2p.json",
+        "--decimal-precision",
+        "110",
+        "--maximum-denominator-power",
+        "8",
+        "--accept-residual",
+        "1e-18"
+      ],
+      "exit_code": 0,
+      "purpose": "Independently recover the triple_sos.pi3.s_2 graph relation space from the 2p run."
+    },
+    {
+      "argv": [
+        "python3",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/make_two_precision_artifacts.py",
+        "--model",
+        "testcases/dlm-three-point-10/input/model.json",
+        "--p",
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "--two-p",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+        "--config",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/affine-config.json",
+        "--relations-dir",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations",
+        "--spectra-output",
+        "testcases/dlm-three-point-10/attempts/round-2/spectra.json",
+        "--kernels-output",
+        "testcases/dlm-three-point-10/attempts/round-2/kernels.json",
+        "--decimal-precision",
+        "110"
+      ],
+      "exit_code": 0,
+      "purpose": "Persist all p/2p spectra, exact row-space agreement, residuals, principal angles, and graph conditioning."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/affine_modular_solve.py",
+        "--model",
+        "testcases/dlm-three-point-10/input/model.json",
+        "--approx",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+        "--config",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/affine-config.json",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/round-2/candidate.json",
+        "--system-output",
+        "testcases/dlm-three-point-10/attempts/round-2/affine-system.json",
+        "--denominator-bits",
+        "160"
+      ],
+      "exit_code": 0,
+      "purpose": "Select pivots modulo two primes, solve the reduced exact system with FLINT, and replay all enlarged rows."
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-m",
+        "verify",
+        "emit-traces",
+        "testcases/dlm-three-point-10/input/model.json",
+        "testcases/dlm-three-point-10/attempts/round-2/candidate.json",
+        "-o",
+        "testcases/dlm-three-point-10/attempts/round-2/certificate.json"
+      ],
+      "exit_code": 0,
+      "purpose": "Emit deterministic exact PSD traces for all 31 blocks."
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-m",
+        "verify",
+        "check",
+        "testcases/dlm-three-point-10/input/model.json",
+        "testcases/dlm-three-point-10/attempts/round-2/certificate.json",
+        "--json"
+      ],
+      "exit_code": 0,
+      "purpose": "Run the generic exact verifier in a fresh process."
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-m",
+        "validation.testcase_harness",
+        "testcases/dlm-three-point-10",
+        "round-2"
+      ],
+      "exit_code": 0,
+      "purpose": "Run the manifest-aware target, provenance, artifact, and status gate."
+    }
+  ],
+  "consumed_file_sha256": {
+    "testcases/dlm-three-point-10/input/README.md": "10e53b88280f4de5534dd61840940764344e223e43ccd4de939dc0b9088be273",
+    "testcases/dlm-three-point-10/input/approximate_solution.json": "aa79d7e2cd5c4ea5dcde7f11370c698c6f44015c3c67d2b27fcc5603662e7757",
+    "testcases/dlm-three-point-10/input/discovery.dat-s": "ab22b160086d57240c6fcd8e956358607018bef3e9c679f4d22aa00be819a0d2",
+    "testcases/dlm-three-point-10/input/discovery.result": "e20117bad2781098c2ae65faa375341d773562bf5c3c71dac87189eb800603eb",
+    "testcases/dlm-three-point-10/input/manifest.json": "906ef5de7beace16e9c13895453e7b968ce9b0ac5f342716a97b9a15053bd2a1",
+    "testcases/dlm-three-point-10/input/model.json": "f60c58fbb033c1d6da17040815641d99cb2bbc196eb2aa367aed1deb67de4c76",
+    "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json": "8afc7f5d68778b4e36958cb621940ad869ba32f848fe6a8e2fa3efef68f748ea",
+    "testcases/dlm-three-point-10/input/numerical/2p/params.sdpa": "95785ff82ec346d06faba177a850dfdac2f1539b07b6ba5de3f93f601999f161",
+    "testcases/dlm-three-point-10/input/numerical/2p/result.out": "2925ad3e65e51fbc444b1727d0bce034e9d8a596ffdcd31e8fba5d4ea3eba49e",
+    "testcases/dlm-three-point-10/input/numerical/numerical_stability.json": "0cde28aedd5640a2d40f90bcaf302059a365da2c4f6025924c26cd6085f3df74",
+    "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json": "aa79d7e2cd5c4ea5dcde7f11370c698c6f44015c3c67d2b27fcc5603662e7757",
+    "testcases/dlm-three-point-10/input/numerical/p/params.sdpa": "5708108e258ac92d360c6bb14f51762f8243817a4e5fadd068e6eb0c5be2b498",
+    "testcases/dlm-three-point-10/input/numerical/p/result.out": "e20117bad2781098c2ae65faa375341d773562bf5c3c71dac87189eb800603eb",
+    "testcases/dlm-three-point-10/input/sdpa-gmp.params": "5708108e258ac92d360c6bb14f51762f8243817a4e5fadd068e6eb0c5be2b498"
+  },
+  "denominator_ladder": [
+    160
+  ],
+  "ended_utc": "2026-08-19T16:24:40Z",
+  "format": "exactification-run-v1",
+  "generated_file_sha256": {
+    "testcases/dlm-three-point-10/attempts/round-2/affine-system.json": "fef77823af6c5554cfcbb098b2c824cbac69aaf66e6463ff31febe281c3395c5",
+    "testcases/dlm-three-point-10/attempts/round-2/candidate.json": "0da08cf0641a144ab10d7011ec892c38ab83c4133870cc4fd97d1941d961301e",
+    "testcases/dlm-three-point-10/attempts/round-2/certificate.json": "3bbf0fd32abc4f55012db3d0cb8f5997d9af95988b3d60a3dd0e0d30b7a6f40c",
+    "testcases/dlm-three-point-10/attempts/round-2/commands.json": "3f957673c8521d6689c140455f3de6f2b5d5a8e069ec733e6496f5c937fdcb0e",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/affine-config.json": "e31145d5bcd587aaa2127de81759d21649ede29a3561188f0651e2ab44bbb98a",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/make_attempt_metadata.py": "5c2d3a891b3a960ecc852b39f21c7f614bacec947737a3e5d7baf36aec9b0593",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/make_two_precision_artifacts.py": "00a5b8aa9ce31f06e057fd3e2966085077c965db4707f91e8c3036408a0dcac8",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/recover_graph_without_sympy_rank.py": "345ec8e0d9773f96fa9406aa83787ac290e33610b48574096db6383800fec75e",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/single_interval_sos__q_0-2p.json": "a8778fb0f881af62e5087a74e8d373507567611b979f38a1eae3069d658f8552",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/single_interval_sos__q_0-p.json": "d0daa2d19b007b82b6b1cf377c29f45118d54c5345e07319c951e52d7ced51b4",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/single_interval_sos__q_1-2p.json": "7d7de7e61a61428e59fdfa827d5d3bff6fddc608b2ebb518f744311bfc42d2a1",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/single_interval_sos__q_1-p.json": "073e7d9c8ec66f36d8bcd10a238aa61378970d47cea70e0a6d0a87ceea362711",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/three_point_kernel__F_0-2p.json": "74f8d64b318a7980443df699cddf504160fbfdee546be2ad75b6d3ecc72378cb",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/three_point_kernel__F_0-p.json": "243da0167b06b55ab846949a622766541cedac7e74c2f21cef9faf59935a0710",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/three_point_kernel__F_2-2p.json": "9bb4e2966c75844e44bc3c5588791b08ecf987e87144b51c1ed098264e064bfe",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/three_point_kernel__F_2-p.json": "9eb153867ab58ea6c193bb97f2e3633992d7f62c5d383b6f5af8e32c539564b0",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/three_point_kernel__F_3-2p.json": "565194189e42eac904b71ce2ec4bde46a41ceb21efade66050db8d35a742b052",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/three_point_kernel__F_3-p.json": "c9f8c2687fd739f296f118b9eaf743bfe2c52a6754b49a98d96ed3ab61b787ab",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/three_point_kernel__F_4-2p.json": "054c7f021180d8569bbd7296caeb7309bdf88ce5dd16ecf4a03cb991543dffe8",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/three_point_kernel__F_4-p.json": "6454a462c0ae0e27401619aa59a55caf8345e9beff021608002c6b0866d26324",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/three_point_kernel__F_5-2p.json": "646935dc55da32d664d6212d5b48e04716121e212b26576cc076b05b4ea0d28e",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/three_point_kernel__F_5-p.json": "0bb264413d08ccf79814ae9fbf88cd6a4b212efb76ebf3ba7977a85e81f942d3",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi1__gram_determinant-2p.json": "063a16d2cb2bda7fc58b1eb3b30e395f295783d16f6a1aff34471ef19dd90eb0",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi1__gram_determinant-p.json": "459b5bebeb6b8260f4de318f5cf2bd7b655bac85459cbf97e509fbbc5a0d2765",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi1__s_0-2p.json": "980b8f14b0613295ab7c91d6a62171549db73251491eb528d777f5602ca891bc",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi1__s_0-p.json": "4dc6a6ba60dc9edba3d04aad8cf9821c50e308a4de3ea2b268e2e85553d41354",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi1__s_1-2p.json": "e67ed67d28011532b2c2aeb254e3da515d3e591cf7965a20b3951627818c0841",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi1__s_1-p.json": "d31fbb90a2d98eb71775d3b0db4a9d54fbdaf1854c707bf4ae46afa8a0e9cb7b",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi1__s_2-2p.json": "6f5d5803b8717fd2d25d074cda1780ce70b4c86d7b3d0f7b85f5a213d90b5b2c",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi1__s_2-p.json": "040c1eb2e668096d0938e65fee4ab54e6baa525abfa36265bbba9460b18ef7dd",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi2__gram_determinant-2p.json": "46035d403d92f622688f2f510e4e78c0b49444dc86c25dc1b3bf363f11104b91",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi2__gram_determinant-p.json": "3943b7244aac176ce6edc4f74a9d4d77f10fc923415e47bee45b253329048c27",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi3__gram_determinant-2p.json": "dcf82e0a835cb9cfcadafe89e24c85c63a8da902ff234d587dbeb9de426885b1",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi3__gram_determinant-p.json": "519d67289cf0f3c8c5b5d452b7a7d404d55ea0c17cd6f325ffa3b14f00095ab6",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi3__s_0-2p.json": "1d0e99134b13a8c06d5ad8fd85331d2357e1a3b44a61443bfff781e575906757",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi3__s_0-p.json": "399d91adc8663746c68e48153d67e7ad3ffa1073c133602067a03f993ad5b9f2",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi3__s_1-2p.json": "63df94b0d73b6c6e72987b61dc14884443e2dd50293038604354a6feb370a2c1",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi3__s_1-p.json": "d119bd79ee5ef103b3cede3bb0d86091bff85efafe4554e76c7674459bf88da3",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi3__s_2-2p.json": "a087a436738a266dafdb8dd5d430624ed73fb26a653b1d52a154a8642cbc4c3b",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi3__s_2-p.json": "d9ece84c9e36f113db75ecc37295edfa7cc558927ecbb9c4994bfde41af3daf7",
+    "testcases/dlm-three-point-10/attempts/round-2/diagnostics/scalar-zero-kernels.json": "423960c8e806f86a31126b5418b0b9e5b7e8638cfcfd9466988258f9b70857c5",
+    "testcases/dlm-three-point-10/attempts/round-2/discovery.json": "7a6ff9034349efcb8538d215b53e22a99f08e8323063d840e03f42e32e680b7c",
+    "testcases/dlm-three-point-10/attempts/round-2/kernels.json": "bcce03a59e24f894ce5ec8bdf38292757d2b3d3c20de278dcfdcc7ee645db175",
+    "testcases/dlm-three-point-10/attempts/round-2/objective-candidates.json": "6aa34bec92af1c090b95da723008b36c2156e7b564e9645faf681cc7e027efd9",
+    "testcases/dlm-three-point-10/attempts/round-2/operational-failures.json": "9b14eb3fa20992ace0464f479b18183fda4aa93b7bc450181ac0129da38c4c4a",
+    "testcases/dlm-three-point-10/attempts/round-2/proof.md": "8294a4ea05b501ffe47915b6b6be9253710da9e5c6f4de08dc920e77c5979c98",
+    "testcases/dlm-three-point-10/attempts/round-2/spectra.json": "c25d9e02412e5e7dc93957102e965735fd933166d6e38792545520356d8fcc1f",
+    "testcases/dlm-three-point-10/attempts/round-2/verification.json": "3767efd81adf1f3d1313e2b3120da3549ffdbcb5188f600a5652ca338392f26c",
+    "testcases/dlm-three-point-10/attempts/round-2/verifier-output.json": "20507f0432fca0b71f1c3c44d144216d4ed065ffdd4bc8ec6e2c2d9fda66178e"
+  },
+  "hash_note": "run.json is excluded from generated_file_sha256 to avoid a self-reference.",
+  "metadata_input_sha256": {
+    "commands_json": "3f957673c8521d6689c140455f3de6f2b5d5a8e069ec733e6496f5c937fdcb0e",
+    "discovery_json": "7a6ff9034349efcb8538d215b53e22a99f08e8323063d840e03f42e32e680b7c"
+  },
+  "notes": "All 22 singular blocks were recovered from independent p/2p numerical graph charts. Four operational events, including two recoverable pi3.s_0 SymPy exact-rank interruptions, are preserved without a mathematical branch change.",
+  "nullity_branches": {
+    "bound_scalar.B": [
+      1
+    ],
+    "gegenbauer_scalar.a_1": [
+      0
+    ],
+    "gegenbauer_scalar.a_2": [
+      0
+    ],
+    "gegenbauer_scalar.a_3": [
+      1
+    ],
+    "gegenbauer_scalar.a_4": [
+      1
+    ],
+    "gegenbauer_scalar.a_5": [
+      1
+    ],
+    "gegenbauer_scalar.a_6": [
+      1
+    ],
+    "single_interval_sos.q_0": [
+      2
+    ],
+    "single_interval_sos.q_1": [
+      1
+    ],
+    "three_point_kernel.F_0": [
+      1
+    ],
+    "three_point_kernel.F_1": [
+      0
+    ],
+    "three_point_kernel.F_2": [
+      1
+    ],
+    "three_point_kernel.F_3": [
+      1
+    ],
+    "three_point_kernel.F_4": [
+      1
+    ],
+    "three_point_kernel.F_5": [
+      1
+    ],
+    "three_point_kernel.F_6": [
+      1
+    ],
+    "triple_sos.pi1.gram_determinant": [
+      8
+    ],
+    "triple_sos.pi1.s_0": [
+      3
+    ],
+    "triple_sos.pi1.s_1": [
+      2
+    ],
+    "triple_sos.pi1.s_2": [
+      1
+    ],
+    "triple_sos.pi1.s_3": [
+      0
+    ],
+    "triple_sos.pi2.gram_determinant": [
+      2
+    ],
+    "triple_sos.pi2.s_0": [
+      0
+    ],
+    "triple_sos.pi2.s_1": [
+      0
+    ],
+    "triple_sos.pi2.s_2": [
+      0
+    ],
+    "triple_sos.pi2.s_3": [
+      0
+    ],
+    "triple_sos.pi3.gram_determinant": [
+      9
+    ],
+    "triple_sos.pi3.s_0": [
+      2
+    ],
+    "triple_sos.pi3.s_1": [
+      2
+    ],
+    "triple_sos.pi3.s_2": [
+      1
+    ],
+    "triple_sos.pi3.s_3": [
+      0
+    ]
+  },
+  "objective_branches": [
+    {
+      "source": "manifest.fixed_objective",
+      "status": "accepted",
+      "value": "10"
+    }
+  ],
+  "platform": {
+    "machine": "arm64",
+    "python_implementation": "CPython",
+    "python_version": "3.14.3",
+    "release": "23.6.0",
+    "system": "Darwin"
+  },
+  "precision_ladder": {
+    "diagnostic_decimal_precision": 110,
+    "independent_normalized_runs": 2,
+    "public_printed_decimal_digits": [
+      40,
+      80
+    ],
+    "public_solver_bits": [
+      300,
+      600
+    ]
+  },
+  "public_matching_construction_used": false,
+  "relation_height_ladder": [
+    10,
+    100,
+    1000,
+    10000,
+    100000,
+    1000000,
+    10000000,
+    100000000
+  ],
+  "repository": {
+    "commit": "not_inspected_blind_policy",
+    "dirty_worktree": "not_inspected_blind_policy"
+  },
+  "seeds": [],
+  "started_utc": "2026-08-19T15:40:45Z",
+  "tool_versions": {
+    "mpmath": "1.3.0",
+    "numpy": "2.4.3",
+    "python_flint": "0.9.0",
+    "sympy": "1.14.0"
+  }
+}

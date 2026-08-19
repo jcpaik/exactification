@@ -1,0 +1,6750 @@
+{
+  "format": "exactification-kernels-v1",
+  "method": "basis-invariant numerical graph-coordinate recovery with explicit graph-pivot rank for the largest row set",
+  "blocks": {
+    "bound_scalar.B": {
+      "candidate_nullity": 1,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "recovery_method": "numerical_graph_chart_full_null_scalar",
+      "provenance": "numerical_graph_chart",
+      "independent_recoveries_have_equal_exact_kernel_subspace": true,
+      "relation_matrix": [],
+      "relation_exact_rank": 0,
+      "relation_height": 0,
+      "exact_kernel_basis_columns": [
+        [
+          "1"
+        ]
+      ],
+      "exact_kernel_rank": 1,
+      "exact_relation_times_kernel_zero": true,
+      "graph_chart": {
+        "kernel_coordinate_indices_Q": [
+          0
+        ],
+        "positive_coordinate_indices_P": [],
+        "exact_graph_basis_columns": [
+          [
+            "1"
+          ]
+        ],
+        "exact_Q_minor_is_identity": true
+      },
+      "validation": [
+        {
+          "label": "p",
+          "source": "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "0",
+          "normalized_relation_residual_operator": "0.0",
+          "normalized_block_kernel_residual_operator": "1.0",
+          "largest_principal_angle_sine": "0.0",
+          "maximum_graph_coordinate_absolute_error": "0.0",
+          "positive_space_coordinate_minor": null,
+          "block_positive_minor": null
+        },
+        {
+          "label": "2p",
+          "source": "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "0",
+          "normalized_relation_residual_operator": "0.0",
+          "normalized_block_kernel_residual_operator": "1.0",
+          "largest_principal_angle_sine": "0.0",
+          "maximum_graph_coordinate_absolute_error": "0.0",
+          "positive_space_coordinate_minor": null,
+          "block_positive_minor": null
+        }
+      ],
+      "residual_improvement_factors_p_over_2p": {
+        "maximum_rowwise_relation": "both_exact_zero",
+        "relation_operator": "both_exact_zero",
+        "block_kernel": "1.0",
+        "principal_angle_sine": "both_exact_zero",
+        "graph_coordinate_error": "both_exact_zero"
+      },
+      "relation_height_ladder": [],
+      "face_equations_added": 1,
+      "face_equation_rank": 1
+    },
+    "gegenbauer_scalar.a_1": {
+      "candidate_nullity": 0,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "full_rank_no_kernel_recovery_required",
+      "provenance": "numerical_graph_chart",
+      "exact_kernel_basis_columns": [],
+      "face_equations_added": 0,
+      "face_equation_rank": 0
+    },
+    "gegenbauer_scalar.a_2": {
+      "candidate_nullity": 0,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "full_rank_no_kernel_recovery_required",
+      "provenance": "numerical_graph_chart",
+      "exact_kernel_basis_columns": [],
+      "face_equations_added": 0,
+      "face_equation_rank": 0
+    },
+    "gegenbauer_scalar.a_3": {
+      "candidate_nullity": 1,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "recovery_method": "numerical_graph_chart_full_null_scalar",
+      "provenance": "numerical_graph_chart",
+      "independent_recoveries_have_equal_exact_kernel_subspace": true,
+      "relation_matrix": [],
+      "relation_exact_rank": 0,
+      "relation_height": 0,
+      "exact_kernel_basis_columns": [
+        [
+          "1"
+        ]
+      ],
+      "exact_kernel_rank": 1,
+      "exact_relation_times_kernel_zero": true,
+      "graph_chart": {
+        "kernel_coordinate_indices_Q": [
+          0
+        ],
+        "positive_coordinate_indices_P": [],
+        "exact_graph_basis_columns": [
+          [
+            "1"
+          ]
+        ],
+        "exact_Q_minor_is_identity": true
+      },
+      "validation": [
+        {
+          "label": "p",
+          "source": "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "0",
+          "normalized_relation_residual_operator": "0.0",
+          "normalized_block_kernel_residual_operator": "1.0",
+          "largest_principal_angle_sine": "0.0",
+          "maximum_graph_coordinate_absolute_error": "0.0",
+          "positive_space_coordinate_minor": null,
+          "block_positive_minor": null
+        },
+        {
+          "label": "2p",
+          "source": "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "0",
+          "normalized_relation_residual_operator": "0.0",
+          "normalized_block_kernel_residual_operator": "1.0",
+          "largest_principal_angle_sine": "0.0",
+          "maximum_graph_coordinate_absolute_error": "0.0",
+          "positive_space_coordinate_minor": null,
+          "block_positive_minor": null
+        }
+      ],
+      "residual_improvement_factors_p_over_2p": {
+        "maximum_rowwise_relation": "both_exact_zero",
+        "relation_operator": "both_exact_zero",
+        "block_kernel": "1.0",
+        "principal_angle_sine": "both_exact_zero",
+        "graph_coordinate_error": "both_exact_zero"
+      },
+      "relation_height_ladder": [],
+      "face_equations_added": 1,
+      "face_equation_rank": 1
+    },
+    "gegenbauer_scalar.a_4": {
+      "candidate_nullity": 1,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "recovery_method": "numerical_graph_chart_full_null_scalar",
+      "provenance": "numerical_graph_chart",
+      "independent_recoveries_have_equal_exact_kernel_subspace": true,
+      "relation_matrix": [],
+      "relation_exact_rank": 0,
+      "relation_height": 0,
+      "exact_kernel_basis_columns": [
+        [
+          "1"
+        ]
+      ],
+      "exact_kernel_rank": 1,
+      "exact_relation_times_kernel_zero": true,
+      "graph_chart": {
+        "kernel_coordinate_indices_Q": [
+          0
+        ],
+        "positive_coordinate_indices_P": [],
+        "exact_graph_basis_columns": [
+          [
+            "1"
+          ]
+        ],
+        "exact_Q_minor_is_identity": true
+      },
+      "validation": [
+        {
+          "label": "p",
+          "source": "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "0",
+          "normalized_relation_residual_operator": "0.0",
+          "normalized_block_kernel_residual_operator": "1.0",
+          "largest_principal_angle_sine": "0.0",
+          "maximum_graph_coordinate_absolute_error": "0.0",
+          "positive_space_coordinate_minor": null,
+          "block_positive_minor": null
+        },
+        {
+          "label": "2p",
+          "source": "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "0",
+          "normalized_relation_residual_operator": "0.0",
+          "normalized_block_kernel_residual_operator": "1.0",
+          "largest_principal_angle_sine": "0.0",
+          "maximum_graph_coordinate_absolute_error": "0.0",
+          "positive_space_coordinate_minor": null,
+          "block_positive_minor": null
+        }
+      ],
+      "residual_improvement_factors_p_over_2p": {
+        "maximum_rowwise_relation": "both_exact_zero",
+        "relation_operator": "both_exact_zero",
+        "block_kernel": "1.0",
+        "principal_angle_sine": "both_exact_zero",
+        "graph_coordinate_error": "both_exact_zero"
+      },
+      "relation_height_ladder": [],
+      "face_equations_added": 1,
+      "face_equation_rank": 1
+    },
+    "gegenbauer_scalar.a_5": {
+      "candidate_nullity": 1,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "recovery_method": "numerical_graph_chart_full_null_scalar",
+      "provenance": "numerical_graph_chart",
+      "independent_recoveries_have_equal_exact_kernel_subspace": true,
+      "relation_matrix": [],
+      "relation_exact_rank": 0,
+      "relation_height": 0,
+      "exact_kernel_basis_columns": [
+        [
+          "1"
+        ]
+      ],
+      "exact_kernel_rank": 1,
+      "exact_relation_times_kernel_zero": true,
+      "graph_chart": {
+        "kernel_coordinate_indices_Q": [
+          0
+        ],
+        "positive_coordinate_indices_P": [],
+        "exact_graph_basis_columns": [
+          [
+            "1"
+          ]
+        ],
+        "exact_Q_minor_is_identity": true
+      },
+      "validation": [
+        {
+          "label": "p",
+          "source": "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "0",
+          "normalized_relation_residual_operator": "0.0",
+          "normalized_block_kernel_residual_operator": "1.0",
+          "largest_principal_angle_sine": "0.0",
+          "maximum_graph_coordinate_absolute_error": "0.0",
+          "positive_space_coordinate_minor": null,
+          "block_positive_minor": null
+        },
+        {
+          "label": "2p",
+          "source": "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "0",
+          "normalized_relation_residual_operator": "0.0",
+          "normalized_block_kernel_residual_operator": "1.0",
+          "largest_principal_angle_sine": "0.0",
+          "maximum_graph_coordinate_absolute_error": "0.0",
+          "positive_space_coordinate_minor": null,
+          "block_positive_minor": null
+        }
+      ],
+      "residual_improvement_factors_p_over_2p": {
+        "maximum_rowwise_relation": "both_exact_zero",
+        "relation_operator": "both_exact_zero",
+        "block_kernel": "1.0",
+        "principal_angle_sine": "both_exact_zero",
+        "graph_coordinate_error": "both_exact_zero"
+      },
+      "relation_height_ladder": [],
+      "face_equations_added": 1,
+      "face_equation_rank": 1
+    },
+    "gegenbauer_scalar.a_6": {
+      "candidate_nullity": 1,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "recovery_method": "numerical_graph_chart_full_null_scalar",
+      "provenance": "numerical_graph_chart",
+      "independent_recoveries_have_equal_exact_kernel_subspace": true,
+      "relation_matrix": [],
+      "relation_exact_rank": 0,
+      "relation_height": 0,
+      "exact_kernel_basis_columns": [
+        [
+          "1"
+        ]
+      ],
+      "exact_kernel_rank": 1,
+      "exact_relation_times_kernel_zero": true,
+      "graph_chart": {
+        "kernel_coordinate_indices_Q": [
+          0
+        ],
+        "positive_coordinate_indices_P": [],
+        "exact_graph_basis_columns": [
+          [
+            "1"
+          ]
+        ],
+        "exact_Q_minor_is_identity": true
+      },
+      "validation": [
+        {
+          "label": "p",
+          "source": "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "0",
+          "normalized_relation_residual_operator": "0.0",
+          "normalized_block_kernel_residual_operator": "1.0",
+          "largest_principal_angle_sine": "0.0",
+          "maximum_graph_coordinate_absolute_error": "0.0",
+          "positive_space_coordinate_minor": null,
+          "block_positive_minor": null
+        },
+        {
+          "label": "2p",
+          "source": "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "0",
+          "normalized_relation_residual_operator": "0.0",
+          "normalized_block_kernel_residual_operator": "1.0",
+          "largest_principal_angle_sine": "0.0",
+          "maximum_graph_coordinate_absolute_error": "0.0",
+          "positive_space_coordinate_minor": null,
+          "block_positive_minor": null
+        }
+      ],
+      "residual_improvement_factors_p_over_2p": {
+        "maximum_rowwise_relation": "both_exact_zero",
+        "relation_operator": "both_exact_zero",
+        "block_kernel": "1.0",
+        "principal_angle_sine": "both_exact_zero",
+        "graph_coordinate_error": "both_exact_zero"
+      },
+      "relation_height_ladder": [],
+      "face_equations_added": 1,
+      "face_equation_rank": 1
+    },
+    "three_point_kernel.F_0": {
+      "candidate_nullity": 1,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "recovery_method": "numerical_graph_chart",
+      "provenance": "numerical_graph_chart",
+      "independent_recoveries_have_equal_exact_kernel_subspace": true,
+      "relation_matrix": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          -4,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          -72,
+          0,
+          0,
+          0
+        ],
+        [
+          23,
+          0,
+          0,
+          0,
+          -144,
+          0,
+          0
+        ],
+        [
+          157,
+          0,
+          0,
+          0,
+          0,
+          -2592,
+          0
+        ],
+        [
+          655,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -5184
+        ]
+      ],
+      "relation_exact_rank": 6,
+      "relation_height": 5184,
+      "exact_kernel_basis_columns": [
+        [
+          "5184",
+          "0",
+          "1296",
+          "72",
+          "828",
+          "314",
+          "655"
+        ]
+      ],
+      "exact_kernel_rank": 1,
+      "exact_relation_times_kernel_zero": true,
+      "graph_chart": {
+        "kernel_coordinate_indices_Q": [
+          0
+        ],
+        "positive_coordinate_indices_P": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "exact_graph_basis_columns": [
+          [
+            "1",
+            "0",
+            "1/4",
+            "1/72",
+            "23/144",
+            "157/2592",
+            "655/5184"
+          ]
+        ],
+        "exact_Q_minor_is_identity": true
+      },
+      "validation": [
+        {
+          "label": "p",
+          "source": "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "2.84148321533997470854248511332e-39",
+          "normalized_relation_residual_operator": "2.92465936305092857070947600430232953477081697e-39",
+          "normalized_block_kernel_residual_operator": "8.71421077474118151573293150316121137519659956e-43",
+          "largest_principal_angle_sine": "3.70046069071111029686225155513150104373742357e-39",
+          "maximum_graph_coordinate_absolute_error": "3.01454893909574065081638290560170621385684129e-39",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "smallest_singular_value": "0.950083993785110544071134633429316545675",
+            "condition_estimate_2": "1.05253851926925466102520585132046422824"
+          },
+          "block_positive_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "smallest_singular_value": "0.02468711695479339686116976090756054874179",
+            "condition_estimate_2": "8542.779726890546960335392017709264878569"
+          }
+        },
+        {
+          "label": "2p",
+          "source": "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "1.21821129411151311920256562577e-79",
+          "normalized_relation_residual_operator": "1.25786625925003879606519851941119105444241807e-79",
+          "normalized_block_kernel_residual_operator": "5.38288004290578344021701177326515413375002987e-83",
+          "largest_principal_angle_sine": "0.0",
+          "maximum_graph_coordinate_absolute_error": "1.2924086774233944928940858954766272522661324e-79",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "smallest_singular_value": "0.9500839937851105440711346334293165456755",
+            "condition_estimate_2": "1.052538519269254661025205851320464228239"
+          },
+          "block_positive_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "smallest_singular_value": "0.02468711695478081085216240507448661696046",
+            "condition_estimate_2": "8542.779726893149239289144164307728795168"
+          }
+        }
+      ],
+      "residual_improvement_factors_p_over_2p": {
+        "maximum_rowwise_relation": "2.33250440960028553656983130424e+40",
+        "relation_operator": "2.32509564633259190917215000529e+40",
+        "block_kernel": "1.61887515703156574387488918271e+40",
+        "principal_angle_sine": "infinite",
+        "graph_coordinate_error": "2.33250440960028553656983130424e+40"
+      },
+      "relation_height_ladder": [
+        {
+          "denominator_bound": "10",
+          "maximum_normalized_relation_residual": "0.0372749623305358195275593118053",
+          "relation_height": 10
+        },
+        {
+          "denominator_bound": "100",
+          "maximum_normalized_relation_residual": "0.000138624961931004164668691530213",
+          "relation_height": 95
+        },
+        {
+          "denominator_bound": "1000",
+          "maximum_normalized_relation_residual": "0.000000418141928745404307349127168749",
+          "relation_height": 926
+        },
+        {
+          "denominator_bound": "10000",
+          "maximum_normalized_relation_residual": "1.21821129411151311920256562577e-79",
+          "relation_height": 5184
+        }
+      ],
+      "face_equations_added": 7,
+      "face_equation_rank": 7
+    },
+    "three_point_kernel.F_1": {
+      "candidate_nullity": 0,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "full_rank_no_kernel_recovery_required",
+      "provenance": "numerical_graph_chart",
+      "exact_kernel_basis_columns": [],
+      "face_equations_added": 0,
+      "face_equation_rank": 0
+    },
+    "three_point_kernel.F_2": {
+      "candidate_nullity": 1,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "recovery_method": "numerical_graph_chart",
+      "provenance": "numerical_graph_chart",
+      "independent_recoveries_have_equal_exact_kernel_subspace": true,
+      "relation_matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          13,
+          0,
+          -36,
+          0
+        ],
+        [
+          0,
+          17,
+          0,
+          0,
+          72
+        ]
+      ],
+      "relation_exact_rank": 4,
+      "relation_height": 72,
+      "exact_kernel_basis_columns": [
+        [
+          "0",
+          "72",
+          "-36",
+          "26",
+          "-17"
+        ]
+      ],
+      "exact_kernel_rank": 1,
+      "exact_relation_times_kernel_zero": true,
+      "graph_chart": {
+        "kernel_coordinate_indices_Q": [
+          1
+        ],
+        "positive_coordinate_indices_P": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "exact_graph_basis_columns": [
+          [
+            "0",
+            "1",
+            "-1/2",
+            "13/36",
+            "-17/72"
+          ]
+        ],
+        "exact_Q_minor_is_identity": true
+      },
+      "validation": [
+        {
+          "label": "p",
+          "source": "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "1.55501174532515951972957988217e-39",
+          "normalized_relation_residual_operator": "8.97510003325262311986240168834754254307148731e-40",
+          "normalized_block_kernel_residual_operator": "3.44062650242845325048960868500572378685486365e-42",
+          "largest_principal_angle_sine": "2.08452726074825943752220748646330390276491355e-39",
+          "maximum_graph_coordinate_absolute_error": "1.86351772657637412193320469304089683658376215e-39",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              0,
+              2,
+              3,
+              4
+            ],
+            "smallest_singular_value": "0.8344496664284503435651388384964119874472",
+            "condition_estimate_2": "1.198394630895025618796770573419326243544"
+          },
+          "block_positive_minor": {
+            "indices": [
+              0,
+              2,
+              3,
+              4
+            ],
+            "smallest_singular_value": "0.02263395986879856468789740347555705133738",
+            "condition_estimate_2": "3277.514347354956887756341048008539450609"
+          }
+        },
+        {
+          "label": "2p",
+          "source": "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "1.04733977564080125155408057549e-80",
+          "normalized_relation_residual_operator": "3.70965731738681454715761497355622029283630175e-81",
+          "normalized_block_kernel_residual_operator": "6.8837373489903099307083102872675378669685148e-83",
+          "largest_principal_angle_sine": "0.0",
+          "maximum_graph_coordinate_absolute_error": "1.2551263638507369595430683160410519533797831e-80",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              0,
+              2,
+              3,
+              4
+            ],
+            "smallest_singular_value": "0.8344496664284503435651388384964119874464",
+            "condition_estimate_2": "1.198394630895025618796770573419326243545"
+          },
+          "block_positive_minor": {
+            "indices": [
+              0,
+              2,
+              3,
+              4
+            ],
+            "smallest_singular_value": "0.022633959868793032992665139640173834012",
+            "condition_estimate_2": "3277.514347356579017642144162580145208755"
+          }
+        }
+      ],
+      "residual_improvement_factors_p_over_2p": {
+        "maximum_rowwise_relation": "1.48472518803532097405799238664e+41",
+        "relation_operator": "2.41938790173075403887927575621e+41",
+        "block_kernel": "4.99819549758550286105651674466e+40",
+        "principal_angle_sine": "infinite",
+        "graph_coordinate_error": "1.48472518803532097405799238665e+41"
+      },
+      "relation_height_ladder": [
+        {
+          "denominator_bound": "10",
+          "maximum_normalized_relation_residual": "0.0113135967603092912797768313223",
+          "relation_height": 9
+        },
+        {
+          "denominator_bound": "100",
+          "maximum_normalized_relation_residual": "1.04733977564080125155408057549e-80",
+          "relation_height": 72
+        }
+      ],
+      "face_equations_added": 5,
+      "face_equation_rank": 5
+    },
+    "three_point_kernel.F_3": {
+      "candidate_nullity": 1,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "recovery_method": "numerical_graph_chart",
+      "provenance": "numerical_graph_chart",
+      "independent_recoveries_have_equal_exact_kernel_subspace": true,
+      "relation_matrix": [
+        [
+          1,
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          7,
+          18,
+          0
+        ],
+        [
+          0,
+          11,
+          0,
+          -36
+        ]
+      ],
+      "relation_exact_rank": 3,
+      "relation_height": 36,
+      "exact_kernel_basis_columns": [
+        [
+          "36",
+          "36",
+          "-14",
+          "11"
+        ]
+      ],
+      "exact_kernel_rank": 1,
+      "exact_relation_times_kernel_zero": true,
+      "graph_chart": {
+        "kernel_coordinate_indices_Q": [
+          1
+        ],
+        "positive_coordinate_indices_P": [
+          0,
+          2,
+          3
+        ],
+        "exact_graph_basis_columns": [
+          [
+            "1",
+            "1",
+            "-7/18",
+            "11/36"
+          ]
+        ],
+        "exact_Q_minor_is_identity": true
+      },
+      "validation": [
+        {
+          "label": "p",
+          "source": "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "1.76916331449074286707863315945e-41",
+          "normalized_relation_residual_operator": "8.35805451021640022196799017529693668748395145e-42",
+          "normalized_block_kernel_residual_operator": "1.24190997573673090006527970781192726899828083e-42",
+          "largest_principal_angle_sine": "1.82579021634832897519548463840667179672068306e-41",
+          "maximum_graph_coordinate_absolute_error": "3.74845483931516995808625252250253887844309522e-41",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              0,
+              2,
+              3
+            ],
+            "smallest_singular_value": "0.6674682931121688792664103486730288213213",
+            "condition_estimate_2": "1.498198506684644498291657179235988303413"
+          },
+          "block_positive_minor": {
+            "indices": [
+              0,
+              2,
+              3
+            ],
+            "smallest_singular_value": "0.01759788450279688235271653890308925638291",
+            "condition_estimate_2": "525.9593616226828502588055702193989933077"
+          }
+        },
+        {
+          "label": "2p",
+          "source": "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "3.60611227418120107850361669671e-81",
+          "normalized_relation_residual_operator": "1.14959435824823632429091517446986578835086107e-81",
+          "normalized_block_kernel_residual_operator": "1.13961649799657352870820292235461045657371674e-82",
+          "largest_principal_angle_sine": "9.98979147681226790169849711637847913754296631e-56",
+          "maximum_graph_coordinate_absolute_error": "7.64053204955776038426871325353743803836484037e-81",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              0,
+              2,
+              3
+            ],
+            "smallest_singular_value": "0.6674682931121688792664103486730288213213",
+            "condition_estimate_2": "1.498198506684644498291657179235988303413"
+          },
+          "block_positive_minor": {
+            "indices": [
+              0,
+              2,
+              3
+            ],
+            "smallest_singular_value": "0.01759788450279128860293255494866823254307",
+            "condition_estimate_2": "525.9593616229971980271505219583731696661"
+          }
+        }
+      ],
+      "residual_improvement_factors_p_over_2p": {
+        "maximum_rowwise_relation": "4.90601284701388469630183694678e+39",
+        "relation_operator": "7.27043800297740624099678910817e+39",
+        "block_kernel": "1.08976131700443751906170314803e+40",
+        "principal_angle_sine": "182765598319669.505196155940163",
+        "graph_coordinate_error": "4.90601284701388469630183694678e+39"
+      },
+      "relation_height_ladder": [
+        {
+          "denominator_bound": "10",
+          "maximum_normalized_relation_residual": "0.00688587502288465426862398954054",
+          "relation_height": 10
+        },
+        {
+          "denominator_bound": "100",
+          "maximum_normalized_relation_residual": "3.60611227418120107850361669671e-81",
+          "relation_height": 36
+        }
+      ],
+      "face_equations_added": 4,
+      "face_equation_rank": 4
+    },
+    "three_point_kernel.F_4": {
+      "candidate_nullity": 1,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "recovery_method": "numerical_graph_chart",
+      "provenance": "numerical_graph_chart",
+      "independent_recoveries_have_equal_exact_kernel_subspace": true,
+      "relation_matrix": [
+        [
+          11,
+          -36,
+          0
+        ],
+        [
+          1,
+          0,
+          24
+        ]
+      ],
+      "relation_exact_rank": 2,
+      "relation_height": 36,
+      "exact_kernel_basis_columns": [
+        [
+          "72",
+          "22",
+          "-3"
+        ]
+      ],
+      "exact_kernel_rank": 1,
+      "exact_relation_times_kernel_zero": true,
+      "graph_chart": {
+        "kernel_coordinate_indices_Q": [
+          0
+        ],
+        "positive_coordinate_indices_P": [
+          1,
+          2
+        ],
+        "exact_graph_basis_columns": [
+          [
+            "1",
+            "11/36",
+            "-1/24"
+          ]
+        ],
+        "exact_Q_minor_is_identity": true
+      },
+      "validation": [
+        {
+          "label": "p",
+          "source": "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "6.46197427104076961811764416385e-41",
+          "normalized_relation_residual_operator": "6.64686981887922461802108851696807800234821471e-41",
+          "normalized_block_kernel_residual_operator": "2.0390499353285082516602818146393410894168352e-42",
+          "largest_principal_angle_sine": "6.88066205448596431778901173611248059603740461e-41",
+          "maximum_graph_coordinate_absolute_error": "7.07089844103448826150983507362015959978432296e-41",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              1,
+              2
+            ],
+            "smallest_singular_value": "0.9555931970707138087784659640077409097678",
+            "condition_estimate_2": "1.046470405048310627398794613748446208478"
+          },
+          "block_positive_minor": {
+            "indices": [
+              1,
+              2
+            ],
+            "smallest_singular_value": "0.005067556406880757619096851386353572320642",
+            "condition_estimate_2": "138.8704578030672658732570353770024052213"
+          }
+        },
+        {
+          "label": "2p",
+          "source": "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "4.08029240191093344145597772025e-81",
+          "normalized_relation_residual_operator": "4.17371280433312032592995700894081723290219952e-81",
+          "normalized_block_kernel_residual_operator": "4.90538258779577486016293938902010359931108549e-83",
+          "largest_principal_angle_sine": "0.0",
+          "maximum_graph_coordinate_absolute_error": "4.46478614328962240112897344889881188203118288e-81",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              1,
+              2
+            ],
+            "smallest_singular_value": "0.9555931970707138087784659640077409097678",
+            "condition_estimate_2": "1.046470405048310627398794613748446208478"
+          },
+          "block_positive_minor": {
+            "indices": [
+              1,
+              2
+            ],
+            "smallest_singular_value": "0.005067556406881505939849431533328517242573",
+            "condition_estimate_2": "138.8704578031103142276283879540315143241"
+          }
+        }
+      ],
+      "residual_improvement_factors_p_over_2p": {
+        "maximum_rowwise_relation": "1.58370372378568193077957448143e+40",
+        "relation_operator": "1.59255562864279723640180114407e+40",
+        "block_kernel": "4.15676025026368390982311165131e+40",
+        "principal_angle_sine": "infinite",
+        "graph_coordinate_error": "1.58370372378568193077957448143e+40"
+      },
+      "relation_height_ladder": [
+        {
+          "denominator_bound": "10",
+          "maximum_normalized_relation_residual": "0.0398163832112797420324360818337",
+          "relation_height": 10
+        },
+        {
+          "denominator_bound": "100",
+          "maximum_normalized_relation_residual": "4.08029240191093344145597772025e-81",
+          "relation_height": 36
+        }
+      ],
+      "face_equations_added": 3,
+      "face_equation_rank": 3
+    },
+    "three_point_kernel.F_5": {
+      "candidate_nullity": 1,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "recovery_method": "numerical_graph_chart",
+      "provenance": "numerical_graph_chart",
+      "independent_recoveries_have_equal_exact_kernel_subspace": true,
+      "relation_matrix": [
+        [
+          1,
+          -11
+        ]
+      ],
+      "relation_exact_rank": 1,
+      "relation_height": 11,
+      "exact_kernel_basis_columns": [
+        [
+          "11",
+          "1"
+        ]
+      ],
+      "exact_kernel_rank": 1,
+      "exact_relation_times_kernel_zero": true,
+      "graph_chart": {
+        "kernel_coordinate_indices_Q": [
+          0
+        ],
+        "positive_coordinate_indices_P": [
+          1
+        ],
+        "exact_graph_basis_columns": [
+          [
+            "1",
+            "1/11"
+          ]
+        ],
+        "exact_Q_minor_is_identity": true
+      },
+      "validation": [
+        {
+          "label": "p",
+          "source": "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "1.19439526047354481004173569068e-42",
+          "normalized_relation_residual_operator": "1.19439526047354481004173569067738659084560329e-42",
+          "normalized_block_kernel_residual_operator": "1.19636138936348018551402862609850882285535655e-42",
+          "largest_principal_angle_sine": "1.19439526047354481004173568948192428201365567e-42",
+          "maximum_graph_coordinate_absolute_error": "1.20426629568406997376108887820364598415837674e-42",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              1
+            ],
+            "smallest_singular_value": "0.9958932064677038402977053465310449808965",
+            "condition_estimate_2": "1.0"
+          },
+          "block_positive_minor": {
+            "indices": [
+              1
+            ],
+            "smallest_singular_value": "0.04505838557172616416951730393265557107974",
+            "condition_estimate_2": "1.0"
+          }
+        },
+        {
+          "label": "2p",
+          "source": "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "1.58049886431200760762538820684e-82",
+          "normalized_relation_residual_operator": "1.58049886431200760762538820683897499489929193e-82",
+          "normalized_block_kernel_residual_operator": "1.59625464820631960875877080335561508769545146e-82",
+          "largest_principal_angle_sine": "4.07831529249907782919393381828534222231322766e-56",
+          "maximum_graph_coordinate_absolute_error": "1.59356083839723081099419306805340783874352251e-82",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              1
+            ],
+            "smallest_singular_value": "0.9958932064677038402977053465310449808965",
+            "condition_estimate_2": "1.0"
+          },
+          "block_positive_minor": {
+            "indices": [
+              1
+            ],
+            "smallest_singular_value": "0.04505838557173805944218608437991900832717",
+            "condition_estimate_2": "1.0"
+          }
+        }
+      ],
+      "residual_improvement_factors_p_over_2p": {
+        "maximum_rowwise_relation": "7.55707762557277130053226492149e+39",
+        "relation_operator": "7.55707762557277130053226492147e+39",
+        "block_kernel": "7.49480285434287240522299556428e+39",
+        "principal_angle_sine": "29286486571312.9481263866464576",
+        "graph_coordinate_error": "7.55707762557277130053226492147e+39"
+      },
+      "relation_height_ladder": [
+        {
+          "denominator_bound": "10",
+          "maximum_normalized_relation_residual": "0.00900864343557127826039189671009",
+          "relation_height": 10
+        },
+        {
+          "denominator_bound": "100",
+          "maximum_normalized_relation_residual": "1.58049886431200760762538820684e-82",
+          "relation_height": 11
+        }
+      ],
+      "face_equations_added": 2,
+      "face_equation_rank": 2
+    },
+    "three_point_kernel.F_6": {
+      "candidate_nullity": 1,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "recovery_method": "numerical_graph_chart_full_null_scalar",
+      "provenance": "numerical_graph_chart",
+      "independent_recoveries_have_equal_exact_kernel_subspace": true,
+      "relation_matrix": [],
+      "relation_exact_rank": 0,
+      "relation_height": 0,
+      "exact_kernel_basis_columns": [
+        [
+          "1"
+        ]
+      ],
+      "exact_kernel_rank": 1,
+      "exact_relation_times_kernel_zero": true,
+      "graph_chart": {
+        "kernel_coordinate_indices_Q": [
+          0
+        ],
+        "positive_coordinate_indices_P": [],
+        "exact_graph_basis_columns": [
+          [
+            "1"
+          ]
+        ],
+        "exact_Q_minor_is_identity": true
+      },
+      "validation": [
+        {
+          "label": "p",
+          "source": "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "0",
+          "normalized_relation_residual_operator": "0.0",
+          "normalized_block_kernel_residual_operator": "1.0",
+          "largest_principal_angle_sine": "0.0",
+          "maximum_graph_coordinate_absolute_error": "0.0",
+          "positive_space_coordinate_minor": null,
+          "block_positive_minor": null
+        },
+        {
+          "label": "2p",
+          "source": "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "0",
+          "normalized_relation_residual_operator": "0.0",
+          "normalized_block_kernel_residual_operator": "1.0",
+          "largest_principal_angle_sine": "0.0",
+          "maximum_graph_coordinate_absolute_error": "0.0",
+          "positive_space_coordinate_minor": null,
+          "block_positive_minor": null
+        }
+      ],
+      "residual_improvement_factors_p_over_2p": {
+        "maximum_rowwise_relation": "both_exact_zero",
+        "relation_operator": "both_exact_zero",
+        "block_kernel": "1.0",
+        "principal_angle_sine": "both_exact_zero",
+        "graph_coordinate_error": "both_exact_zero"
+      },
+      "relation_height_ladder": [],
+      "face_equations_added": 1,
+      "face_equation_rank": 1
+    },
+    "single_interval_sos.q_0": {
+      "candidate_nullity": 2,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "recovery_method": "numerical_graph_chart",
+      "provenance": "numerical_graph_chart",
+      "independent_recoveries_have_equal_exact_kernel_subspace": true,
+      "relation_matrix": [
+        [
+          2,
+          -9,
+          -18,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          -13,
+          0,
+          36,
+          0,
+          0,
+          0
+        ],
+        [
+          26,
+          -153,
+          0,
+          0,
+          -648,
+          0,
+          0
+        ],
+        [
+          34,
+          -205,
+          0,
+          0,
+          0,
+          1296,
+          0
+        ],
+        [
+          410,
+          -2457,
+          0,
+          0,
+          0,
+          0,
+          -23328
+        ]
+      ],
+      "relation_exact_rank": 5,
+      "relation_height": 23328,
+      "exact_kernel_basis_columns": [
+        [
+          "199017",
+          "33210",
+          "5508",
+          "936",
+          "144",
+          "32",
+          "0"
+        ],
+        [
+          "149445",
+          "24786",
+          "4212",
+          "648",
+          "144",
+          "0",
+          "16"
+        ]
+      ],
+      "exact_kernel_rank": 2,
+      "exact_relation_times_kernel_zero": true,
+      "graph_chart": {
+        "kernel_coordinate_indices_Q": [
+          0,
+          1
+        ],
+        "positive_coordinate_indices_P": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "exact_graph_basis_columns": [
+          [
+            "1",
+            "0",
+            "1/9",
+            "-1/18",
+            "13/324",
+            "-17/648",
+            "205/11664"
+          ],
+          [
+            "0",
+            "1",
+            "-1/2",
+            "13/36",
+            "-17/72",
+            "205/1296",
+            "-91/864"
+          ]
+        ],
+        "exact_Q_minor_is_identity": true
+      },
+      "validation": [
+        {
+          "label": "p",
+          "source": "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "8.99441080458172794231911803488e-37",
+          "normalized_relation_residual_operator": "8.94500771440171519739145043804191256323255931e-37",
+          "normalized_block_kernel_residual_operator": "1.40833146831936237453234589463581783492694837e-42",
+          "largest_principal_angle_sine": "1.64237520548059485628718023431890767795415895e-36",
+          "maximum_graph_coordinate_absolute_error": "1.09763818241214219315837547721032461269793128e-36",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "smallest_singular_value": "0.8192730572386800392121327422749905114594",
+            "condition_estimate_2": "1.220594270938740893501928926522341249929"
+          },
+          "block_positive_minor": {
+            "indices": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "smallest_singular_value": "0.008158408605487238216678701403167730413796",
+            "condition_estimate_2": "1801204.200830638389520262406079224375677"
+          }
+        },
+        {
+          "label": "2p",
+          "source": "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "2.77088353659209035386150431508e-77",
+          "normalized_relation_residual_operator": "2.77614093982343316513334695257860962733220724e-77",
+          "normalized_block_kernel_residual_operator": "1.28801622420558510417354102545858864390178624e-82",
+          "largest_principal_angle_sine": "8.15663058499815565838786763657068444462645532e-56",
+          "maximum_graph_coordinate_absolute_error": "3.35133435362418278038421218611422389234491956e-77",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "smallest_singular_value": "0.8192730572386800392121327422749905107437",
+            "condition_estimate_2": "1.220594270938740893501928926522341250995"
+          },
+          "block_positive_minor": {
+            "indices": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "smallest_singular_value": "0.008158408605488605313557061819628704635605",
+            "condition_estimate_2": "1801204.200830798276155917435873287638228"
+          }
+        }
+      ],
+      "residual_improvement_factors_p_over_2p": {
+        "maximum_rowwise_relation": "3.24604433416351873832567644393e+40",
+        "relation_operator": "3.22210143803816799370609078739e+40",
+        "block_kernel": "1.09341127996115466837241258337e+40",
+        "principal_angle_sine": "20135461430621676523.8135404951",
+        "graph_coordinate_error": "3.27522731721811029886585314152e+40"
+      },
+      "relation_height_ladder": [
+        {
+          "denominator_bound": "10",
+          "maximum_normalized_relation_residual": "0.0417687436242875350607807060796",
+          "relation_height": 40
+        },
+        {
+          "denominator_bound": "100",
+          "maximum_normalized_relation_residual": "0.000250841796762929621607131629815",
+          "relation_height": 1800
+        },
+        {
+          "denominator_bound": "1000",
+          "maximum_normalized_relation_residual": "0.000000744511789469639086748284431107",
+          "relation_height": 598104
+        },
+        {
+          "denominator_bound": "10000",
+          "maximum_normalized_relation_residual": "0.00000000897040132830506883274719184109",
+          "relation_height": 8160480
+        },
+        {
+          "denominator_bound": "100000",
+          "maximum_normalized_relation_residual": "2.77088353659209035386150431508e-77",
+          "relation_height": 23328
+        }
+      ],
+      "face_equations_added": 14,
+      "face_equation_rank": 13
+    },
+    "single_interval_sos.q_1": {
+      "candidate_nullity": 1,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "recovery_method": "numerical_graph_chart",
+      "provenance": "numerical_graph_chart",
+      "independent_recoveries_have_equal_exact_kernel_subspace": true,
+      "relation_matrix": [
+        [
+          2,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          -9,
+          0,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          0,
+          27,
+          0,
+          0
+        ],
+        [
+          16,
+          0,
+          0,
+          0,
+          -81,
+          0
+        ],
+        [
+          32,
+          0,
+          0,
+          0,
+          0,
+          243
+        ]
+      ],
+      "relation_exact_rank": 5,
+      "relation_height": 243,
+      "exact_kernel_basis_columns": [
+        [
+          "243",
+          "-162",
+          "108",
+          "-72",
+          "48",
+          "-32"
+        ]
+      ],
+      "exact_kernel_rank": 1,
+      "exact_relation_times_kernel_zero": true,
+      "graph_chart": {
+        "kernel_coordinate_indices_Q": [
+          0
+        ],
+        "positive_coordinate_indices_P": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "exact_graph_basis_columns": [
+          [
+            "1",
+            "-2/3",
+            "4/9",
+            "-8/27",
+            "16/81",
+            "-32/243"
+          ]
+        ],
+        "exact_Q_minor_is_identity": true
+      },
+      "validation": [
+        {
+          "label": "p",
+          "source": "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "1.0424368271541356387015933326e-38",
+          "normalized_relation_residual_operator": "7.75427131781793309277625307481895019548454831e-39",
+          "normalized_block_kernel_residual_operator": "1.9147820098311098125347306711288764765777371e-42",
+          "largest_principal_angle_sine": "1.53045642016889106127833196890428889807988815e-38",
+          "maximum_graph_coordinate_absolute_error": "1.6743887897644497766131959478041560617124137e-38",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "smallest_singular_value": "0.7482450620613180635595810489675494039788",
+            "condition_estimate_2": "1.336460540407884212189291159097672578491"
+          },
+          "block_positive_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "smallest_singular_value": "0.01741618950849289188361613962733771617342",
+            "condition_estimate_2": "501411.3709933896865580883404340111918339"
+          }
+        },
+        {
+          "label": "2p",
+          "source": "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "6.49633726619078448925624312948e-78",
+          "normalized_relation_residual_operator": "5.30943551559910987137248904481924680619016444e-78",
+          "normalized_block_kernel_residual_operator": "1.52879687063870115390645877343317945531122296e-82",
+          "largest_principal_angle_sine": "4.07831529249907782919393381828534222231322766e-56",
+          "maximum_graph_coordinate_absolute_error": "9.500972521691274308785425662357055445999295e-78",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "smallest_singular_value": "0.7482450620613180635595810489675494039744",
+            "condition_estimate_2": "1.336460540407884212189291159097672578499"
+          },
+          "block_positive_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "smallest_singular_value": "0.0174161895084941340119408265520536649254",
+            "condition_estimate_2": "501411.3709934837133643096877582682109477"
+          }
+        }
+      ],
+      "residual_improvement_factors_p_over_2p": {
+        "maximum_rowwise_relation": "1.60465318292407964538680370782e+39",
+        "relation_operator": "1.46047000571640827160665070724e+39",
+        "block_kernel": "1.25247640586231164044040595172e+40",
+        "principal_angle_sine": "375266822303743481.693144671602",
+        "graph_coordinate_error": "1.76233410415799280432748455567e+39"
+      },
+      "relation_height_ladder": [
+        {
+          "denominator_bound": "10",
+          "maximum_normalized_relation_residual": "0.00496505724216460140920907837158",
+          "relation_height": 10
+        },
+        {
+          "denominator_bound": "100",
+          "maximum_normalized_relation_residual": "0.0000803390492635034708841701022152",
+          "relation_height": 81
+        },
+        {
+          "denominator_bound": "1000",
+          "maximum_normalized_relation_residual": "6.49633726619078448925624312948e-78",
+          "relation_height": 243
+        }
+      ],
+      "face_equations_added": 6,
+      "face_equation_rank": 6
+    },
+    "triple_sos.pi1.s_0": {
+      "candidate_nullity": 3,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "recovery_method": "numerical_graph_chart",
+      "provenance": "numerical_graph_chart",
+      "independent_recoveries_have_equal_exact_kernel_subspace": true,
+      "relation_matrix": [
+        [
+          4895,
+          510840,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -13791,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -23328
+        ],
+        [
+          22165,
+          0,
+          -110341440,
+          0,
+          0,
+          0,
+          0,
+          -46161,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          209952
+        ],
+        [
+          2420,
+          0,
+          0,
+          28380,
+          0,
+          0,
+          0,
+          -9327,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -7776
+        ],
+        [
+          14025,
+          0,
+          0,
+          0,
+          -6130080,
+          0,
+          0,
+          -24049,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          23328
+        ],
+        [
+          8690,
+          0,
+          0,
+          0,
+          0,
+          -340560,
+          0,
+          -12569,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -2592
+        ],
+        [
+          17380,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4086720,
+          -38167,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -42336
+        ],
+        [
+          1001,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -813,
+          -204336,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -7776
+        ],
+        [
+          9625,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -4331,
+          0,
+          -170280,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -23328
+        ],
+        [
+          7315,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -21871,
+          0,
+          0,
+          12260160,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          80352
+        ],
+        [
+          37345,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -119447,
+          0,
+          0,
+          0,
+          6130080,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          69984
+        ],
+        [
+          385,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          372,
+          0,
+          0,
+          0,
+          0,
+          -2365,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1296
+        ],
+        [
+          595,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1751,
+          0,
+          0,
+          0,
+          0,
+          0,
+          557280,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -23328
+        ],
+        [
+          1925,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -16501,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          340560,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -49248
+        ],
+        [
+          37345,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -41273,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -12260160,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          292896
+        ],
+        [
+          2695,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          17353,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -85140,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -46656
+        ],
+        [
+          11935,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8221,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -12260160,
+          0,
+          0,
+          0,
+          0,
+          -572832
+        ],
+        [
+          58135,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          38413,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -6130080,
+          0,
+          0,
+          0,
+          -863136
+        ],
+        [
+          385,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          673,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -14190,
+          0,
+          0,
+          10584
+        ],
+        [
+          6545,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -77053,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12260160,
+          0,
+          -2039904
+        ],
+        [
+          889,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3163,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -55728,
+          -46656
+        ]
+      ],
+      "relation_exact_rank": 20,
+      "relation_height": 110341440,
+      "exact_kernel_basis_columns": [
+        [
+          "8116511040",
+          "-139360608",
+          "2584768",
+          "-1441829808",
+          "27519336",
+          "291300948",
+          "-55823067",
+          "-2281245120",
+          "48837600",
+          "516804624",
+          "-8912232",
+          "-93897468",
+          "962466624",
+          "-15833664",
+          "-156410352",
+          "32402916",
+          "-208039104",
+          "6371568",
+          "62678448",
+          "112021056",
+          "-18670176",
+          "0",
+          "0"
+        ],
+        [
+          "3594984768",
+          "-26204256",
+          "594400",
+          "-206192304",
+          "7026984",
+          "80462484",
+          "-12436875",
+          "305363520",
+          "16396128",
+          "195438096",
+          "-1600200",
+          "-15950844",
+          "633261888",
+          "-2878848",
+          "-5524848",
+          "9922500",
+          "176033088",
+          "3704400",
+          "36006768",
+          "112021056",
+          "0",
+          "74680704",
+          "0"
+        ],
+        [
+          "4205805120",
+          "-55639008",
+          "1180000",
+          "-555879024",
+          "12241224",
+          "130333860",
+          "-23395527",
+          "-631302336",
+          "21694176",
+          "248672592",
+          "-3880296",
+          "-38349612",
+          "605828160",
+          "-4910976",
+          "-48961584",
+          "15828372",
+          "-16003008",
+          "1926288",
+          "30672432",
+          "112021056",
+          "0",
+          "0",
+          "37340352"
+        ]
+      ],
+      "exact_kernel_rank": 3,
+      "exact_relation_times_kernel_zero": true,
+      "graph_chart": {
+        "kernel_coordinate_indices_Q": [
+          0,
+          7,
+          22
+        ],
+        "positive_coordinate_indices_P": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "exact_graph_basis_columns": [
+          [
+            "1",
+            "-89/9288",
+            "403/2006208",
+            "-11/129",
+            "85/37152",
+            "79/3096",
+            "-79/18576",
+            "0",
+            "91/18576",
+            "175/3096",
+            "-133/222912",
+            "-679/111456",
+            "7/43",
+            "-119/111456",
+            "-35/6192",
+            "679/222912",
+            "49/1548",
+            "217/222912",
+            "1057/111456",
+            "7/258",
+            "-119/222912",
+            "889/55728",
+            "0"
+          ],
+          [
+            "0",
+            "4597/170280",
+            "-5129/12260160",
+            "3109/9460",
+            "-24049/6130080",
+            "-12569/340560",
+            "38167/4086720",
+            "1",
+            "-271/68112",
+            "-4331/170280",
+            "21871/12260160",
+            "119447/6130080",
+            "372/2365",
+            "1751/557280",
+            "16501/340560",
+            "-41273/12260160",
+            "17353/85140",
+            "8221/12260160",
+            "38413/6130080",
+            "673/14190",
+            "77053/12260160",
+            "3163/55728",
+            "0"
+          ],
+          [
+            "0",
+            "108/2365",
+            "9/4730",
+            "648/2365",
+            "9/2365",
+            "-18/2365",
+            "49/4730",
+            "0",
+            "-18/473",
+            "-324/2365",
+            "-31/4730",
+            "-27/2365",
+            "1296/2365",
+            "9/215",
+            "342/2365",
+            "113/4730",
+            "-1296/2365",
+            "-221/4730",
+            "-333/2365",
+            "1764/2365",
+            "787/4730",
+            "-36/43",
+            "1"
+          ]
+        ],
+        "exact_Q_minor_is_identity": true
+      },
+      "validation": [
+        {
+          "label": "p",
+          "source": "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "7.36512047804769899696668992799e-37",
+          "normalized_relation_residual_operator": "5.02868261986933310729646301419696659339885325e-38",
+          "normalized_block_kernel_residual_operator": "6.71604286887866665470066994527954417007487838e-43",
+          "largest_principal_angle_sine": "1.04097080607254503897856009885599682107486213e-36",
+          "maximum_graph_coordinate_absolute_error": "1.11812262382414389279591330877161958003936864e-36",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21
+            ],
+            "smallest_singular_value": "0.5743177347027126149835756241448853148076",
+            "condition_estimate_2": "1.741196448543654566034650121309979733382"
+          },
+          "block_positive_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21
+            ],
+            "smallest_singular_value": "0.0002121047327080652030537410608543364760037",
+            "condition_estimate_2": "107028698.6045174797959689159276858272817"
+          }
+        },
+        {
+          "label": "2p",
+          "source": "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "2.95393528232144465125973172881e-76",
+          "normalized_relation_residual_operator": "1.98036472648792544679535113508317024097019185e-77",
+          "normalized_block_kernel_residual_operator": "5.51292382612532238656821728519123867067230236e-83",
+          "largest_principal_angle_sine": "5.76760879828579198162319760035690845255011931e-56",
+          "maximum_graph_coordinate_absolute_error": "5.91608729226589366360897896470497200700073699e-76",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21
+            ],
+            "smallest_singular_value": "0.5743177347027126149835756241448853150299",
+            "condition_estimate_2": "1.741196448543654566034650121309979732708"
+          },
+          "block_positive_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21
+            ],
+            "smallest_singular_value": "0.0002121047327079584071607079299828767172345",
+            "condition_estimate_2": "107028698.6045758164257508621258973313722"
+          }
+        }
+      ],
+      "residual_improvement_factors_p_over_2p": {
+        "maximum_rowwise_relation": "2.49332492899424092213031117432e+39",
+        "relation_operator": "2.53927094974441500661629321705e+39",
+        "block_kernel": "1.21823610858758025548835081679e+40",
+        "principal_angle_sine": "18048568175808578450.2318278759",
+        "graph_coordinate_error": "1.88996978676407737109605714632e+39"
+      },
+      "relation_height_ladder": [
+        {
+          "denominator_bound": "10",
+          "maximum_normalized_relation_residual": "0.0481104234321593438292175791799",
+          "relation_height": 210
+        },
+        {
+          "denominator_bound": "100",
+          "maximum_normalized_relation_residual": "0.00603990842821592883637285207924",
+          "relation_height": 374490
+        },
+        {
+          "denominator_bound": "1000",
+          "maximum_normalized_relation_residual": "0.0004510427307178460898384698003",
+          "relation_height": 788290756
+        },
+        {
+          "denominator_bound": "10000",
+          "maximum_normalized_relation_residual": "0.0000000364167538235749063461589763048",
+          "relation_height": 156831290330
+        },
+        {
+          "denominator_bound": "100000",
+          "maximum_normalized_relation_residual": "0.0000000047375806728650607785011022344",
+          "relation_height": 18383437985660
+        },
+        {
+          "denominator_bound": "1000000",
+          "maximum_normalized_relation_residual": "2.04280347828483430827556799184e-12",
+          "relation_height": 221741828781550
+        },
+        {
+          "denominator_bound": "10000000",
+          "maximum_normalized_relation_residual": "1.27564031822859073638968833028e-13",
+          "relation_height": 790476255771840
+        },
+        {
+          "denominator_bound": "100000000",
+          "maximum_normalized_relation_residual": "2.95393528232144465125973172881e-76",
+          "relation_height": 110341440
+        }
+      ],
+      "face_equations_added": 69,
+      "face_equation_rank": 66
+    },
+    "triple_sos.pi1.s_1": {
+      "candidate_nullity": 2,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "recovery_method": "numerical_graph_chart",
+      "provenance": "numerical_graph_chart",
+      "independent_recoveries_have_equal_exact_kernel_subspace": true,
+      "relation_matrix": [
+        [
+          1129,
+          60390,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2592
+        ],
+        [
+          23581,
+          0,
+          120780,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          23328
+        ],
+        [
+          1555,
+          0,
+          0,
+          -434808,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -2592
+        ],
+        [
+          164299,
+          0,
+          0,
+          0,
+          -4348080,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -23328
+        ],
+        [
+          1113,
+          0,
+          0,
+          0,
+          0,
+          3355,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1296
+        ],
+        [
+          3451,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -543510,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          23328
+        ],
+        [
+          7903,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -120780,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          18144
+        ],
+        [
+          10885,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          869616,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -18144
+        ],
+        [
+          3283,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -30195,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -17496
+        ],
+        [
+          245,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          108702,
+          0,
+          0,
+          0,
+          0,
+          5184
+        ],
+        [
+          24157,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1087020,
+          0,
+          0,
+          0,
+          163296
+        ],
+        [
+          343,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10065,
+          0,
+          0,
+          -7236
+        ],
+        [
+          1715,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -217404,
+          0,
+          36288
+        ],
+        [
+          2401,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -271755,
+          -231822
+        ]
+      ],
+      "relation_exact_rank": 14,
+      "relation_height": 4348080,
+      "exact_kernel_basis_columns": [
+        [
+          "4348080",
+          "-81288",
+          "-848916",
+          "15550",
+          "164299",
+          "-1442448",
+          "27608",
+          "284508",
+          "-54425",
+          "472752",
+          "-9800",
+          "-96628",
+          "-148176",
+          "34300",
+          "38416",
+          "0"
+        ],
+        [
+          "1854576",
+          "-35496",
+          "-365796",
+          "6518",
+          "69975",
+          "-607824",
+          "12600",
+          "124236",
+          "-22813",
+          "190512",
+          "-5096",
+          "-44100",
+          "-49392",
+          "17836",
+          "0",
+          "19208"
+        ]
+      ],
+      "exact_kernel_rank": 2,
+      "exact_relation_times_kernel_zero": true,
+      "graph_chart": {
+        "kernel_coordinate_indices_Q": [
+          0,
+          15
+        ],
+        "positive_coordinate_indices_P": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "exact_graph_basis_columns": [
+          [
+            "1",
+            "-1129/60390",
+            "-23581/120780",
+            "1555/434808",
+            "164299/4348080",
+            "-1113/3355",
+            "3451/543510",
+            "7903/120780",
+            "-10885/869616",
+            "3283/30195",
+            "-245/108702",
+            "-24157/1087020",
+            "-343/10065",
+            "1715/217404",
+            "2401/271755",
+            "0"
+          ],
+          [
+            "0",
+            "-144/3355",
+            "-648/3355",
+            "-4/671",
+            "-18/3355",
+            "1296/3355",
+            "144/3355",
+            "504/3355",
+            "14/671",
+            "-1944/3355",
+            "-32/671",
+            "-504/3355",
+            "2412/3355",
+            "112/671",
+            "-2862/3355",
+            "1"
+          ]
+        ],
+        "exact_Q_minor_is_identity": true
+      },
+      "validation": [
+        {
+          "label": "p",
+          "source": "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "5.0529506969026622046721878171e-37",
+          "normalized_relation_residual_operator": "1.6154701722822058868277161646826572965650431e-37",
+          "normalized_block_kernel_residual_operator": "1.51802276185628214683737132353526785191408883e-42",
+          "largest_principal_angle_sine": "8.57967769012386878213310910291537216469125523e-37",
+          "maximum_graph_coordinate_absolute_error": "9.86878867049296620224420080564012715739680019e-37",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14
+            ],
+            "smallest_singular_value": "0.5909626939947603129246431210432143714048",
+            "condition_estimate_2": "1.69215419206963740836354424912535206512"
+          },
+          "block_positive_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14
+            ],
+            "smallest_singular_value": "0.0008233989113818569398222324902554755944375",
+            "condition_estimate_2": "6359826.640445449518060570505534277692188"
+          }
+        },
+        {
+          "label": "2p",
+          "source": "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "6.0460912056356266776437831737e-77",
+          "normalized_relation_residual_operator": "1.79975680028498651418940482374659719861991477e-77",
+          "normalized_block_kernel_residual_operator": "1.60080659295724686809990244903620827967001322e-82",
+          "largest_principal_angle_sine": "0.0",
+          "maximum_graph_coordinate_absolute_error": "1.15555582212511109709524792171224398406254987e-76",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14
+            ],
+            "smallest_singular_value": "0.5909626939947603129246431210432143718153",
+            "condition_estimate_2": "1.692154192069637408363544249125352063944"
+          },
+          "block_positive_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14
+            ],
+            "smallest_singular_value": "0.0008233989113815726343133643775207566902343",
+            "condition_estimate_2": "6359826.640448016987115677155214406403987"
+          }
+        }
+      ],
+      "residual_improvement_factors_p_over_2p": {
+        "maximum_rowwise_relation": "8.35738417606527748519082745119e+39",
+        "relation_operator": "8.97604705272623862708596522274e+39",
+        "block_kernel": "9.48286175566010022536422682897e+39",
+        "principal_angle_sine": "infinite",
+        "graph_coordinate_error": "8.54029591780679930705184476436e+39"
+      },
+      "relation_height_ladder": [
+        {
+          "denominator_bound": "10",
+          "maximum_normalized_relation_residual": "0.0349627499749405400073973831118",
+          "relation_height": 70
+        },
+        {
+          "denominator_bound": "100",
+          "maximum_normalized_relation_residual": "0.00427996304930076350794426293338",
+          "relation_height": 7832
+        },
+        {
+          "denominator_bound": "1000",
+          "maximum_normalized_relation_residual": "0.00000347873128347603402314881308841",
+          "relation_height": 690612
+        },
+        {
+          "denominator_bound": "10000",
+          "maximum_normalized_relation_residual": "0.000000845241951571076490275940468257",
+          "relation_height": 32986360
+        },
+        {
+          "denominator_bound": "100000",
+          "maximum_normalized_relation_residual": "2.32247204832546786825357853806e-10",
+          "relation_height": 324129905
+        },
+        {
+          "denominator_bound": "1000000",
+          "maximum_normalized_relation_residual": "1.24967944131027767171869350381e-12",
+          "relation_height": 2269211285
+        },
+        {
+          "denominator_bound": "10000000",
+          "maximum_normalized_relation_residual": "6.0460912056356266776437831737e-77",
+          "relation_height": 4348080
+        }
+      ],
+      "face_equations_added": 32,
+      "face_equation_rank": 31
+    },
+    "triple_sos.pi1.gram_determinant": {
+      "candidate_nullity": 8,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "recovery_method": "numerical_graph_chart",
+      "provenance": "numerical_graph_chart",
+      "independent_recoveries_have_equal_exact_kernel_subspace": true,
+      "relation_matrix": [
+        [
+          119,
+          10584,
+          0,
+          0,
+          0,
+          -255,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -648,
+          0
+        ],
+        [
+          56,
+          0,
+          588,
+          0,
+          0,
+          -183,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -216,
+          0
+        ],
+        [
+          182,
+          0,
+          0,
+          0,
+          -7056,
+          -257,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -72,
+          0
+        ],
+        [
+          133,
+          0,
+          0,
+          0,
+          0,
+          -33,
+          -21168,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1080,
+          0
+        ],
+        [
+          217,
+          0,
+          0,
+          0,
+          0,
+          -59,
+          0,
+          -3528,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -648,
+          0
+        ],
+        [
+          7,
+          0,
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0,
+          -49,
+          0,
+          0,
+          0,
+          0,
+          36,
+          0
+        ],
+        [
+          77,
+          0,
+          0,
+          0,
+          0,
+          -277,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7056,
+          0,
+          0,
+          -1368,
+          0
+        ],
+        [
+          91,
+          0,
+          0,
+          0,
+          0,
+          421,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1764,
+          0,
+          -1296,
+          0
+        ]
+      ],
+      "relation_exact_rank": 8,
+      "relation_height": 21168,
+      "exact_kernel_basis_columns": [
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "181872",
+          "-2992",
+          "-29556",
+          "0",
+          "6123",
+          "-39312",
+          "1204",
+          "11844",
+          "0",
+          "21168",
+          "0",
+          "-3528",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "119664",
+          "-544",
+          "-1044",
+          "0",
+          "1875",
+          "33264",
+          "700",
+          "6804",
+          "0",
+          "21168",
+          "0",
+          "0",
+          "14112",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "114480",
+          "-928",
+          "-9252",
+          "0",
+          "2991",
+          "-3024",
+          "364",
+          "5796",
+          "0",
+          "21168",
+          "0",
+          "0",
+          "0",
+          "0",
+          "7056",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "exact_kernel_rank": 8,
+      "exact_relation_times_kernel_zero": true,
+      "graph_chart": {
+        "kernel_coordinate_indices_Q": [
+          0,
+          3,
+          5,
+          8,
+          10,
+          13,
+          14,
+          15
+        ],
+        "positive_coordinate_indices_P": [
+          1,
+          2,
+          4,
+          6,
+          7,
+          9,
+          11,
+          12
+        ],
+        "exact_graph_basis_columns": [
+          [
+            "1",
+            "-17/1512",
+            "-2/21",
+            "0",
+            "13/504",
+            "0",
+            "19/3024",
+            "31/504",
+            "0",
+            "1/7",
+            "0",
+            "-11/1008",
+            "13/252",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "85/3528",
+            "61/196",
+            "0",
+            "-257/7056",
+            "1",
+            "-11/7056",
+            "-59/3528",
+            "0",
+            "6/49",
+            "0",
+            "277/7056",
+            "421/1764",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "3/49",
+            "18/49",
+            "0",
+            "-1/98",
+            "0",
+            "-5/98",
+            "-9/49",
+            "0",
+            "36/49",
+            "0",
+            "19/98",
+            "-36/49",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "exact_Q_minor_is_identity": true
+      },
+      "validation": [
+        {
+          "label": "p",
+          "source": "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "4.59645345308427216415995553359e-40",
+          "normalized_relation_residual_operator": "1.25346857298387119758178855498065015863473948e-40",
+          "normalized_block_kernel_residual_operator": "3.9625682980453964930322489003436582092368804e-43",
+          "largest_principal_angle_sine": "7.92468867287896371605901672223635106414963886e-40",
+          "maximum_graph_coordinate_absolute_error": "6.64790858651149941869561292353576360966721045e-40",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              1,
+              2,
+              4,
+              6,
+              7,
+              9,
+              11,
+              12
+            ],
+            "smallest_singular_value": "0.6602347899876230171329707234814319377247",
+            "condition_estimate_2": "1.514612703185099251551871225012363033562"
+          },
+          "block_positive_minor": {
+            "indices": [
+              1,
+              2,
+              4,
+              6,
+              7,
+              9,
+              11,
+              12
+            ],
+            "smallest_singular_value": "0.008427654795760146029220691560839316184047",
+            "condition_estimate_2": "17133.66270143453547066211071367591872822"
+          }
+        },
+        {
+          "label": "2p",
+          "source": "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "3.45223975992921154054439659305e-79",
+          "normalized_relation_residual_operator": "5.84115835145177872533592575197104817464188612e-80",
+          "normalized_block_kernel_residual_operator": "9.69185512390325260866517139002933891078276243e-83",
+          "largest_principal_angle_sine": "1.07902080320642044258751696834446811136732198e-55",
+          "maximum_graph_coordinate_absolute_error": "6.51706827686219518680250102595328291621649359e-79",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              1,
+              2,
+              4,
+              6,
+              7,
+              9,
+              11,
+              12
+            ],
+            "smallest_singular_value": "0.6602347899876230171329707234814319377246",
+            "condition_estimate_2": "1.514612703185099251551871225012363033562"
+          },
+          "block_positive_minor": {
+            "indices": [
+              1,
+              2,
+              4,
+              6,
+              7,
+              9,
+              11,
+              12
+            ],
+            "smallest_singular_value": "0.008427654795758680150244377508612548381051",
+            "condition_estimate_2": "17133.66270143830809694876017102579417179"
+          }
+        }
+      ],
+      "residual_improvement_factors_p_over_2p": {
+        "maximum_rowwise_relation": "1.3314409695514667322094044901e+39",
+        "relation_operator": "2.14592465666048998878867669835e+39",
+        "block_kernel": "4.08855502624303590069227746073e+39",
+        "principal_angle_sine": "7344333537713028.81608478967414",
+        "graph_coordinate_error": "1.02007655959564391079615476955e+39"
+      },
+      "relation_height_ladder": [
+        {
+          "denominator_bound": "10",
+          "maximum_normalized_relation_residual": "0.0425126714720240288710980601133",
+          "relation_height": 56
+        },
+        {
+          "denominator_bound": "100",
+          "maximum_normalized_relation_residual": "0.00392243548518961952146389579177",
+          "relation_height": 418264
+        },
+        {
+          "denominator_bound": "1000",
+          "maximum_normalized_relation_residual": "0.00000506497383380506795692570766714",
+          "relation_height": 59991190
+        },
+        {
+          "denominator_bound": "10000",
+          "maximum_normalized_relation_residual": "3.45223975992921154054439659305e-79",
+          "relation_height": 21168
+        }
+      ],
+      "face_equations_added": 128,
+      "face_equation_rank": 100
+    },
+    "triple_sos.pi1.s_2": {
+      "candidate_nullity": 1,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "recovery_method": "numerical_graph_chart",
+      "provenance": "numerical_graph_chart",
+      "independent_recoveries_have_equal_exact_kernel_subspace": true,
+      "relation_matrix": [
+        [
+          2401,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1296
+        ],
+        [
+          0,
+          2401,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -96
+        ],
+        [
+          0,
+          0,
+          2401,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -288
+        ],
+        [
+          0,
+          0,
+          0,
+          2401,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -64
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          343,
+          0,
+          0,
+          0,
+          0,
+          0,
+          216
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          343,
+          0,
+          0,
+          0,
+          0,
+          16
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          343,
+          0,
+          0,
+          0,
+          48
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          49,
+          0,
+          0,
+          -36
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          49,
+          0,
+          -8
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          6
+        ]
+      ],
+      "relation_exact_rank": 10,
+      "relation_height": 2401,
+      "exact_kernel_basis_columns": [
+        [
+          "1296",
+          "96",
+          "288",
+          "64",
+          "-1512",
+          "-112",
+          "-336",
+          "1764",
+          "392",
+          "-2058",
+          "2401"
+        ]
+      ],
+      "exact_kernel_rank": 1,
+      "exact_relation_times_kernel_zero": true,
+      "graph_chart": {
+        "kernel_coordinate_indices_Q": [
+          10
+        ],
+        "positive_coordinate_indices_P": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "exact_graph_basis_columns": [
+          [
+            "1296/2401",
+            "96/2401",
+            "288/2401",
+            "64/2401",
+            "-216/343",
+            "-16/343",
+            "-48/343",
+            "36/49",
+            "8/49",
+            "-6/7",
+            "1"
+          ]
+        ],
+        "exact_Q_minor_is_identity": true
+      },
+      "validation": [
+        {
+          "label": "p",
+          "source": "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "1.81550365725028066348670180929e-37",
+          "normalized_relation_residual_operator": "1.81474860210938676297965557607431339437227889e-37",
+          "normalized_block_kernel_residual_operator": "1.1937905632203660775814940952004326217194479e-42",
+          "largest_principal_angle_sine": "2.09214231430879263702551299612388739489086539e-37",
+          "maximum_graph_coordinate_absolute_error": "3.58973973297445159074264417406990722613925338e-37",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "smallest_singular_value": "0.5747213782063323010791289318894242838952",
+            "condition_estimate_2": "1.739973555744410211284017738828524371271"
+          },
+          "block_positive_minor": {
+            "indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "smallest_singular_value": "0.003505474067108379721517032162554761313818",
+            "condition_estimate_2": "1049234.325002910183326478323016286610559"
+          }
+        },
+        {
+          "label": "2p",
+          "source": "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "2.08679061907596070865836769507e-77",
+          "normalized_relation_residual_operator": "2.08713902363180119372828458174390072894669557e-77",
+          "normalized_block_kernel_residual_operator": "1.47489833605811765062404968022515073672471857e-82",
+          "largest_principal_angle_sine": "5.76760879828579198162319760035690845255011931e-56",
+          "maximum_graph_coordinate_absolute_error": "4.12614712715097267337540926502321788358898552e-77",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "smallest_singular_value": "0.5747213782063323010791289318894242837883",
+            "condition_estimate_2": "1.739973555744410211284017738828524371595"
+          },
+          "block_positive_minor": {
+            "indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "smallest_singular_value": "0.00350547406710858049638553618629893939389",
+            "condition_estimate_2": "1049234.325002960474270860709217403230099"
+          }
+        }
+      ],
+      "residual_improvement_factors_p_over_2p": {
+        "maximum_rowwise_relation": "8.69997996279182525478841614185e+39",
+        "relation_operator": "8.69491002545469300841789274494e+39",
+        "block_kernel": "8.09405322410862996485456249609e+39",
+        "principal_angle_sine": "3627399824569593595.7707349466",
+        "graph_coordinate_error": "8.69997996279182525478841614168e+39"
+      },
+      "relation_height_ladder": [
+        {
+          "denominator_bound": "10",
+          "maximum_normalized_relation_residual": "0.0268091604994207487383850230619",
+          "relation_height": 9
+        },
+        {
+          "denominator_bound": "100",
+          "maximum_normalized_relation_residual": "0.0000778494445167501655370412781881",
+          "relation_height": 75
+        },
+        {
+          "denominator_bound": "1000",
+          "maximum_normalized_relation_residual": "0.00000956704959769554967160044181937",
+          "relation_height": 938
+        },
+        {
+          "denominator_bound": "10000",
+          "maximum_normalized_relation_residual": "2.08679061907596070865836769507e-77",
+          "relation_height": 2401
+        }
+      ],
+      "face_equations_added": 11,
+      "face_equation_rank": 11
+    },
+    "triple_sos.pi1.s_3": {
+      "candidate_nullity": 0,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "full_rank_no_kernel_recovery_required",
+      "provenance": "numerical_graph_chart",
+      "exact_kernel_basis_columns": [],
+      "face_equations_added": 0,
+      "face_equation_rank": 0
+    },
+    "triple_sos.pi2.s_0": {
+      "candidate_nullity": 0,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "full_rank_no_kernel_recovery_required",
+      "provenance": "numerical_graph_chart",
+      "exact_kernel_basis_columns": [],
+      "face_equations_added": 0,
+      "face_equation_rank": 0
+    },
+    "triple_sos.pi2.s_1": {
+      "candidate_nullity": 0,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "full_rank_no_kernel_recovery_required",
+      "provenance": "numerical_graph_chart",
+      "exact_kernel_basis_columns": [],
+      "face_equations_added": 0,
+      "face_equation_rank": 0
+    },
+    "triple_sos.pi2.gram_determinant": {
+      "candidate_nullity": 2,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "recovery_method": "numerical_graph_chart",
+      "provenance": "numerical_graph_chart",
+      "independent_recoveries_have_equal_exact_kernel_subspace": true,
+      "relation_matrix": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "relation_exact_rank": 2,
+      "relation_height": 1,
+      "exact_kernel_basis_columns": [
+        [
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "exact_kernel_rank": 2,
+      "exact_relation_times_kernel_zero": true,
+      "graph_chart": {
+        "kernel_coordinate_indices_Q": [
+          1,
+          3
+        ],
+        "positive_coordinate_indices_P": [
+          0,
+          2
+        ],
+        "exact_graph_basis_columns": [
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "exact_Q_minor_is_identity": true
+      },
+      "validation": [
+        {
+          "label": "p",
+          "source": "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "6.89809141334133607424085892647e-46",
+          "normalized_relation_residual_operator": "9.44884223593259909595876177774943663211879036e-46",
+          "normalized_block_kernel_residual_operator": "2.61195522188926543161032413746920223085908608e-47",
+          "largest_principal_angle_sine": "9.44884223593259909593752431057281329890362275e-46",
+          "maximum_graph_coordinate_absolute_error": "6.26126795722668485842142026720227072102251721e-46",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              0,
+              2
+            ],
+            "smallest_singular_value": "1.0",
+            "condition_estimate_2": "1.0"
+          },
+          "block_positive_minor": {
+            "indices": [
+              0,
+              2
+            ],
+            "smallest_singular_value": "0.02137351214401467269144208146881929633081",
+            "condition_estimate_2": "109.1540843738709112867973063793298401007"
+          }
+        },
+        {
+          "label": "2p",
+          "source": "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "4.05571125172414596822719883887e-97",
+          "normalized_relation_residual_operator": "5.56851299094295042000019983098299413349254594e-97",
+          "normalized_block_kernel_residual_operator": "1.41061492134969295376226558012558215525974141e-98",
+          "largest_principal_angle_sine": "0.0",
+          "maximum_graph_coordinate_absolute_error": "3.47415098705415698551301748173569640257872079e-97",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              0,
+              2
+            ],
+            "smallest_singular_value": "1.0",
+            "condition_estimate_2": "1.0"
+          },
+          "block_positive_minor": {
+            "indices": [
+              0,
+              2
+            ],
+            "smallest_singular_value": "0.02137351214401361668713877571711751675957",
+            "condition_estimate_2": "109.1540843738854670380287870026970974816"
+          }
+        }
+      ],
+      "residual_improvement_factors_p_over_2p": {
+        "maximum_rowwise_relation": "1.70083395616708414981255496315e+51",
+        "relation_operator": "1.69683401139602419285049686106e+51",
+        "block_kernel": "1.85164298374932539601985949416e+51",
+        "principal_angle_sine": "infinite",
+        "graph_coordinate_error": "1.80224405345601082055892845548e+51"
+      },
+      "relation_height_ladder": [
+        {
+          "denominator_bound": "10",
+          "maximum_normalized_relation_residual": "4.05571125172414596822719883887e-97",
+          "relation_height": 1
+        }
+      ],
+      "face_equations_added": 8,
+      "face_equation_rank": 7
+    },
+    "triple_sos.pi2.s_2": {
+      "candidate_nullity": 0,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "full_rank_no_kernel_recovery_required",
+      "provenance": "numerical_graph_chart",
+      "exact_kernel_basis_columns": [],
+      "face_equations_added": 0,
+      "face_equation_rank": 0
+    },
+    "triple_sos.pi2.s_3": {
+      "candidate_nullity": 0,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "full_rank_no_kernel_recovery_required",
+      "provenance": "numerical_graph_chart",
+      "exact_kernel_basis_columns": [],
+      "face_equations_added": 0,
+      "face_equation_rank": 0
+    },
+    "triple_sos.pi3.s_0": {
+      "candidate_nullity": 2,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "recovery_method": "numerical_graph_chart_explicit_pivot_rank",
+      "provenance": "numerical_graph_chart",
+      "independent_recoveries_have_equal_exact_kernel_subspace": true,
+      "relation_matrix": [
+        [
+          1129,
+          6710,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2592
+        ],
+        [
+          1129,
+          0,
+          60390,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2592
+        ],
+        [
+          3259,
+          0,
+          0,
+          -1087020,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -23328
+        ],
+        [
+          23581,
+          0,
+          0,
+          0,
+          120780,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          23328
+        ],
+        [
+          1555,
+          0,
+          0,
+          0,
+          0,
+          -48312,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -2592
+        ],
+        [
+          1555,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -434808,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -2592
+        ],
+        [
+          164299,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -4348080,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -23328
+        ],
+        [
+          101,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          15840,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          288
+        ],
+        [
+          1113,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3355,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1296
+        ],
+        [
+          3451,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -60390,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          23328
+        ],
+        [
+          3451,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -543510,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          23328
+        ],
+        [
+          91,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          98820,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -2592
+        ],
+        [
+          7903,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -120780,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          18144
+        ],
+        [
+          22813,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2174040,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -163296
+        ],
+        [
+          10885,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          869616,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -18144
+        ],
+        [
+          3283,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -30195,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -17496
+        ],
+        [
+          245,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12078,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5184
+        ],
+        [
+          245,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          108702,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5184
+        ],
+        [
+          24157,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1087020,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          163296
+        ],
+        [
+          637,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -197640,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -18144
+        ],
+        [
+          343,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10065,
+          0,
+          0,
+          0,
+          0,
+          -7236
+        ],
+        [
+          4459,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -543510,
+          0,
+          0,
+          0,
+          268272
+        ],
+        [
+          1715,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -217404,
+          0,
+          0,
+          36288
+        ],
+        [
+          2401,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -271755,
+          0,
+          -231822
+        ],
+        [
+          2401,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          543510,
+          311688
+        ]
+      ],
+      "relation_exact_rank": 25,
+      "relation_height": 4348080,
+      "exact_kernel_basis_columns": [
+        [
+          "1",
+          "-1129/6710",
+          "-1129/60390",
+          "3259/1087020",
+          "-23581/120780",
+          "1555/48312",
+          "1555/434808",
+          "164299/4348080",
+          "-101/15840",
+          "-1113/3355",
+          "3451/60390",
+          "3451/543510",
+          "-91/98820",
+          "7903/120780",
+          "-22813/2174040",
+          "-10885/869616",
+          "3283/30195",
+          "-245/12078",
+          "-245/108702",
+          "-24157/1087020",
+          "637/197640",
+          "-343/10065",
+          "4459/543510",
+          "1715/217404",
+          "2401/271755",
+          "-2401/543510",
+          "0"
+        ],
+        [
+          "0",
+          "-1296/3355",
+          "-144/3355",
+          "-72/3355",
+          "-648/3355",
+          "-36/671",
+          "-4/671",
+          "-18/3355",
+          "-1/55",
+          "1296/3355",
+          "1296/3355",
+          "144/3355",
+          "8/305",
+          "504/3355",
+          "252/3355",
+          "14/671",
+          "-1944/3355",
+          "-288/671",
+          "-32/671",
+          "-504/3355",
+          "-28/305",
+          "2412/3355",
+          "1656/3355",
+          "112/671",
+          "-2862/3355",
+          "-1924/3355",
+          "1"
+        ]
+      ],
+      "exact_kernel_rank": 2,
+      "exact_relation_times_kernel_zero": true,
+      "graph_chart": {
+        "kernel_coordinate_indices_Q": [
+          0,
+          26
+        ],
+        "positive_coordinate_indices_P": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "exact_graph_basis_columns": [
+          [
+            "1",
+            "-1129/6710",
+            "-1129/60390",
+            "3259/1087020",
+            "-23581/120780",
+            "1555/48312",
+            "1555/434808",
+            "164299/4348080",
+            "-101/15840",
+            "-1113/3355",
+            "3451/60390",
+            "3451/543510",
+            "-91/98820",
+            "7903/120780",
+            "-22813/2174040",
+            "-10885/869616",
+            "3283/30195",
+            "-245/12078",
+            "-245/108702",
+            "-24157/1087020",
+            "637/197640",
+            "-343/10065",
+            "4459/543510",
+            "1715/217404",
+            "2401/271755",
+            "-2401/543510",
+            "0"
+          ],
+          [
+            "0",
+            "-1296/3355",
+            "-144/3355",
+            "-72/3355",
+            "-648/3355",
+            "-36/671",
+            "-4/671",
+            "-18/3355",
+            "-1/55",
+            "1296/3355",
+            "1296/3355",
+            "144/3355",
+            "8/305",
+            "504/3355",
+            "252/3355",
+            "14/671",
+            "-1944/3355",
+            "-288/671",
+            "-32/671",
+            "-504/3355",
+            "-28/305",
+            "2412/3355",
+            "1656/3355",
+            "112/671",
+            "-2862/3355",
+            "-1924/3355",
+            "1"
+          ]
+        ],
+        "exact_Q_minor_is_identity": true
+      },
+      "validation": [
+        {
+          "label": "p",
+          "source": "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "1.2760243720669973971572255236083797e-36",
+          "normalized_relation_residual_operator": "1.84965238636532500216088015076376183749041911e-37",
+          "normalized_block_kernel_residual_operator": "2.03813627310321599730269181014336487411526741e-42",
+          "largest_principal_angle_sine": "2.51640536914759524995170725932323130574845706e-36",
+          "maximum_graph_coordinate_absolute_error": "2.89138447868700398771651205737982631550785425e-36",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25
+            ],
+            "smallest_singular_value": "0.5049662300779148422852391421446576151143",
+            "condition_estimate_2": "1.980330446742355158223971185850107886397"
+          },
+          "block_positive_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25
+            ],
+            "smallest_singular_value": "0.0001794074428931946676364117984034577174061",
+            "condition_estimate_2": "18504667.28655561366194114909944934214395"
+          }
+        },
+        {
+          "label": "2p",
+          "source": "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "2.5056553254302028147012754051296719e-76",
+          "normalized_relation_residual_operator": "5.33051659829329722628130058795531708785655033e-77",
+          "normalized_block_kernel_residual_operator": "1.70140676893536897304700289818134573178611036e-82",
+          "largest_principal_angle_sine": "4.07831529249907782919393381828534222231322766e-56",
+          "maximum_graph_coordinate_absolute_error": "5.54839310922413726240336136296941747188531746e-76",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25
+            ],
+            "smallest_singular_value": "0.5049662300779148422852391421446576144784",
+            "condition_estimate_2": "1.98033044674235515822397118585010788889"
+          },
+          "block_positive_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25
+            ],
+            "smallest_singular_value": "0.0001794074428930037173330288661807993239093",
+            "condition_estimate_2": "18504667.28657716355822342194373015888881"
+          }
+        }
+      ],
+      "residual_improvement_factors_p_over_2p": {
+        "maximum_rowwise_relation": "5.0925774152433087872732208334e+39",
+        "relation_operator": "3.46993082613707470438962051601e+39",
+        "block_kernel": "1.19791240420334680482635829704e+40",
+        "principal_angle_sine": "61702080115674731112.5472425258",
+        "graph_coordinate_error": "5.21121056451481751118065812997e+39"
+      },
+      "relation_height_ladder": [
+        {
+          "denominator_bound": "10",
+          "maximum_normalized_relation_residual": "0.037977746821379902437008566731609065",
+          "relation_height": 70
+        },
+        {
+          "denominator_bound": "100",
+          "maximum_normalized_relation_residual": "0.0039058948080114936688827315015008408",
+          "relation_height": 7900
+        },
+        {
+          "denominator_bound": "1000",
+          "maximum_normalized_relation_residual": "0.000072212004173664841738041419901794326",
+          "relation_height": 850076
+        },
+        {
+          "denominator_bound": "10000",
+          "maximum_normalized_relation_residual": "0.00000083024977834946174782435273508709765",
+          "relation_height": 33523160
+        },
+        {
+          "denominator_bound": "100000",
+          "maximum_normalized_relation_residual": "0.00000000022812780408745422690437218724529512",
+          "relation_height": 324129905
+        },
+        {
+          "denominator_bound": "1000000",
+          "maximum_normalized_relation_residual": "1.2275137044809705732680106603514432e-12",
+          "relation_height": 3075122545
+        },
+        {
+          "denominator_bound": "10000000",
+          "maximum_normalized_relation_residual": "2.5056553254302028147012754051296719e-76",
+          "relation_height": 4348080
+        }
+      ],
+      "face_equations_added": 54,
+      "face_equation_rank": 53
+    },
+    "triple_sos.pi3.s_1": {
+      "candidate_nullity": 2,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "recovery_method": "numerical_graph_chart",
+      "provenance": "numerical_graph_chart",
+      "independent_recoveries_have_equal_exact_kernel_subspace": true,
+      "relation_matrix": [
+        [
+          493,
+          2862,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1296
+        ],
+        [
+          493,
+          0,
+          25758,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1296
+        ],
+        [
+          143,
+          0,
+          0,
+          -51516,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1296
+        ],
+        [
+          1129,
+          0,
+          0,
+          0,
+          5724,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1296
+        ],
+        [
+          3259,
+          0,
+          0,
+          0,
+          0,
+          -103032,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6480
+        ],
+        [
+          7775,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -206064,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1296
+        ],
+        [
+          469,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1431,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          648
+        ],
+        [
+          175,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -2862,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1296
+        ],
+        [
+          175,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -25758,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1296
+        ],
+        [
+          3451,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -51516,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -9072
+        ],
+        [
+          1001,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          103032,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9072
+        ],
+        [
+          49,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -477,
+          0,
+          0,
+          0,
+          0,
+          324
+        ],
+        [
+          637,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          25758,
+          0,
+          0,
+          0,
+          -12960
+        ],
+        [
+          1225,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          51516,
+          0,
+          0,
+          -9072
+        ],
+        [
+          343,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12879,
+          0,
+          10854
+        ],
+        [
+          343,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -25758,
+          -14904
+        ]
+      ],
+      "relation_exact_rank": 16,
+      "relation_height": 206064,
+      "exact_kernel_basis_columns": [
+        [
+          "206064",
+          "-35496",
+          "-3944",
+          "572",
+          "-40644",
+          "6518",
+          "7775",
+          "-67536",
+          "12600",
+          "1400",
+          "13804",
+          "-2002",
+          "21168",
+          "-5096",
+          "-4900",
+          "-5488",
+          "2744",
+          "0"
+        ],
+        [
+          "29808",
+          "-4824",
+          "-536",
+          "100",
+          "-5724",
+          "986",
+          "1129",
+          "-10080",
+          "1512",
+          "168",
+          "1876",
+          "-350",
+          "3528",
+          "-392",
+          "-588",
+          "-1372",
+          "0",
+          "686"
+        ]
+      ],
+      "exact_kernel_rank": 2,
+      "exact_relation_times_kernel_zero": true,
+      "graph_chart": {
+        "kernel_coordinate_indices_Q": [
+          0,
+          17
+        ],
+        "positive_coordinate_indices_P": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "exact_graph_basis_columns": [
+          [
+            "1",
+            "-493/2862",
+            "-493/25758",
+            "143/51516",
+            "-1129/5724",
+            "3259/103032",
+            "7775/206064",
+            "-469/1431",
+            "175/2862",
+            "175/25758",
+            "3451/51516",
+            "-1001/103032",
+            "49/477",
+            "-637/25758",
+            "-1225/51516",
+            "-343/12879",
+            "343/25758",
+            "0"
+          ],
+          [
+            "0",
+            "24/53",
+            "8/159",
+            "4/159",
+            "12/53",
+            "10/159",
+            "1/159",
+            "-24/53",
+            "-24/53",
+            "-8/159",
+            "-28/159",
+            "-14/159",
+            "36/53",
+            "80/159",
+            "28/159",
+            "-134/159",
+            "-92/159",
+            "1"
+          ]
+        ],
+        "exact_Q_minor_is_identity": true
+      },
+      "validation": [
+        {
+          "label": "p",
+          "source": "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "2.18313489251402498956072367727e-37",
+          "normalized_relation_residual_operator": "5.35382296823575291937213712179580236356760397e-38",
+          "normalized_block_kernel_residual_operator": "1.96656078700492230827035816993406044480340741e-42",
+          "largest_principal_angle_sine": "4.03714135891663651411579221403524578770574552e-37",
+          "maximum_graph_coordinate_absolute_error": "4.72268422304610506705505461784141568034887222e-37",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "smallest_singular_value": "0.5340011258333510431414878742861014209976",
+            "condition_estimate_2": "1.872655227906909020799191486990934207774"
+          },
+          "block_positive_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "smallest_singular_value": "0.0006832838398204497208788036754452800537654",
+            "condition_estimate_2": "812154.2684181200494573459821327180660153"
+          }
+        },
+        {
+          "label": "2p",
+          "source": "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "6.72534069004165911245964703229e-78",
+          "normalized_relation_residual_operator": "1.78465472157743661784216595288796334162782395e-78",
+          "normalized_block_kernel_residual_operator": "1.60791499428238050539483215840045792089241088e-82",
+          "largest_principal_angle_sine": "8.15663058499815565838786763657068444462645532e-56",
+          "maximum_graph_coordinate_absolute_error": "8.5042041389222893634172417464816392766010629e-78",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "smallest_singular_value": "0.5340011258333510431414878742861014210197",
+            "condition_estimate_2": "1.872655227906909020799191486990934207697"
+          },
+          "block_positive_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "smallest_singular_value": "0.0006832838398198914358620371924881088866866",
+            "condition_estimate_2": "812154.2684188279291834258249009773273077"
+          }
+        }
+      ],
+      "residual_improvement_factors_p_over_2p": {
+        "maximum_rowwise_relation": "3.24613278810787188310136053009e+40",
+        "relation_operator": "2.99992088301739838385718007906e+40",
+        "block_kernel": "1.22305021969311691679526393662e+40",
+        "principal_angle_sine": "4949520904308000329.58975257931",
+        "graph_coordinate_error": "5.55335237242387711438496272676e+40"
+      },
+      "relation_height_ladder": [
+        {
+          "denominator_bound": "10",
+          "maximum_normalized_relation_residual": "0.0353050022634899331046295888402",
+          "relation_height": 90
+        },
+        {
+          "denominator_bound": "100",
+          "maximum_normalized_relation_residual": "0.0029286966333861386514358549248",
+          "relation_height": 9900
+        },
+        {
+          "denominator_bound": "1000",
+          "maximum_normalized_relation_residual": "0.00000442886853483349936527765281897",
+          "relation_height": 147234
+        },
+        {
+          "denominator_bound": "10000",
+          "maximum_normalized_relation_residual": "0.0000000292672948347775746176922517687",
+          "relation_height": 1426866
+        },
+        {
+          "denominator_bound": "100000",
+          "maximum_normalized_relation_residual": "1.49089212445672478171355147687e-10",
+          "relation_height": 14074521
+        },
+        {
+          "denominator_bound": "1000000",
+          "maximum_normalized_relation_residual": "6.72534069004165911245964703229e-78",
+          "relation_height": 206064
+        }
+      ],
+      "face_equations_added": 36,
+      "face_equation_rank": 35
+    },
+    "triple_sos.pi3.gram_determinant": {
+      "candidate_nullity": 9,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "recovery_method": "numerical_graph_chart",
+      "provenance": "numerical_graph_chart",
+      "independent_recoveries_have_equal_exact_kernel_subspace": true,
+      "relation_matrix": [
+        [
+          25,
+          134,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          72,
+          0,
+          0
+        ],
+        [
+          25,
+          0,
+          1206,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          72,
+          0,
+          0
+        ],
+        [
+          493,
+          0,
+          0,
+          0,
+          2412,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          648,
+          0,
+          0
+        ],
+        [
+          143,
+          0,
+          0,
+          0,
+          0,
+          -4824,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -360,
+          0,
+          0
+        ],
+        [
+          21,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          67,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -36,
+          0,
+          0
+        ],
+        [
+          91,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1206,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          648,
+          0,
+          0
+        ],
+        [
+          175,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -2412,
+          0,
+          0,
+          0,
+          0,
+          504,
+          0,
+          0
+        ],
+        [
+          49,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -603,
+          0,
+          0,
+          -486,
+          0,
+          0
+        ],
+        [
+          49,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1206,
+          0,
+          720,
+          0,
+          0
+        ]
+      ],
+      "relation_exact_rank": 9,
+      "relation_height": 4824,
+      "exact_kernel_basis_columns": [
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "4824",
+          "-900",
+          "-100",
+          "0",
+          "-986",
+          "143",
+          "0",
+          "-1512",
+          "364",
+          "0",
+          "350",
+          "0",
+          "392",
+          "-196",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "720",
+          "-108",
+          "-12",
+          "0",
+          "-134",
+          "25",
+          "0",
+          "-252",
+          "28",
+          "0",
+          "42",
+          "0",
+          "98",
+          "0",
+          "0",
+          "-49",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "exact_kernel_rank": 9,
+      "exact_relation_times_kernel_zero": true,
+      "graph_chart": {
+        "kernel_coordinate_indices_Q": [
+          0,
+          3,
+          6,
+          9,
+          11,
+          14,
+          15,
+          16,
+          17
+        ],
+        "positive_coordinate_indices_P": [
+          1,
+          2,
+          4,
+          5,
+          7,
+          8,
+          10,
+          12,
+          13
+        ],
+        "exact_graph_basis_columns": [
+          [
+            "1",
+            "-25/134",
+            "-25/1206",
+            "0",
+            "-493/2412",
+            "143/4824",
+            "0",
+            "-21/67",
+            "91/1206",
+            "0",
+            "175/2412",
+            "0",
+            "49/603",
+            "-49/1206",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-36/67",
+            "-4/67",
+            "0",
+            "-18/67",
+            "-5/67",
+            "0",
+            "36/67",
+            "36/67",
+            "0",
+            "14/67",
+            "0",
+            "-54/67",
+            "-40/67",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "exact_Q_minor_is_identity": true
+      },
+      "validation": [
+        {
+          "label": "p",
+          "source": "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "2.21361260949512482989963164808e-39",
+          "normalized_relation_residual_operator": "7.25757370788005899544394563737292264984753807e-40",
+          "normalized_block_kernel_residual_operator": "4.5549829215565311761690221882751422883965816e-42",
+          "largest_principal_angle_sine": "2.80847347740571198912350028754889227516042805e-39",
+          "maximum_graph_coordinate_absolute_error": "4.14614989477773369179140222490354848131880637e-39",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              1,
+              2,
+              4,
+              5,
+              7,
+              8,
+              10,
+              12,
+              13
+            ],
+            "smallest_singular_value": "0.5776291327106549193630597555950893247834",
+            "condition_estimate_2": "1.73121462088879515375987514226455634297"
+          },
+          "block_positive_minor": {
+            "indices": [
+              1,
+              2,
+              4,
+              5,
+              7,
+              8,
+              10,
+              12,
+              13
+            ],
+            "smallest_singular_value": "0.003289725680466934341619411014414419836289",
+            "condition_estimate_2": "3970.368854023711819193645437992449220803"
+          }
+        },
+        {
+          "label": "2p",
+          "source": "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "1.92439961080684999780885054596e-79",
+          "normalized_relation_residual_operator": "8.79008109723384096657655280890007637635881345e-80",
+          "normalized_block_kernel_residual_operator": "3.49170291866073975336908293721706620533022487e-82",
+          "largest_principal_angle_sine": "1.15352175965715839632463952007138169051002386e-55",
+          "maximum_graph_coordinate_absolute_error": "3.71843473811387652515316697637987140103351188e-79",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              1,
+              2,
+              4,
+              5,
+              7,
+              8,
+              10,
+              12,
+              13
+            ],
+            "smallest_singular_value": "0.577629132710654919363059755595089324782",
+            "condition_estimate_2": "1.731214620888795153759875142264556342974"
+          },
+          "block_positive_minor": {
+            "indices": [
+              1,
+              2,
+              4,
+              5,
+              7,
+              8,
+              10,
+              12,
+              13
+            ],
+            "smallest_singular_value": "0.003289725680467139307145686429698433623046",
+            "condition_estimate_2": "3970.368854023233870945202174755739715567"
+          }
+        }
+      ],
+      "residual_improvement_factors_p_over_2p": {
+        "maximum_rowwise_relation": "1.15028739200743002134514479887e+40",
+        "relation_operator": "8.25654920312845783841270866671e+39",
+        "block_kernel": "1.30451617095294516780181376343e+40",
+        "principal_angle_sine": "24346948411622739.3311392872408",
+        "graph_coordinate_error": "1.11502559189214374533144532545e+40"
+      },
+      "relation_height_ladder": [
+        {
+          "denominator_bound": "10",
+          "maximum_normalized_relation_residual": "0.031900847433792986932448087599",
+          "relation_height": 90
+        },
+        {
+          "denominator_bound": "100",
+          "maximum_normalized_relation_residual": "0.000188993900765585570253767683244",
+          "relation_height": 6231
+        },
+        {
+          "denominator_bound": "1000",
+          "maximum_normalized_relation_residual": "0.00000268253650378561045406157196129",
+          "relation_height": 66598
+        },
+        {
+          "denominator_bound": "10000",
+          "maximum_normalized_relation_residual": "1.92439961080684999780885054596e-79",
+          "relation_height": 4824
+        }
+      ],
+      "face_equations_added": 162,
+      "face_equation_rank": 126
+    },
+    "triple_sos.pi3.s_2": {
+      "candidate_nullity": 1,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "recovery_method": "numerical_graph_chart",
+      "provenance": "numerical_graph_chart",
+      "independent_recoveries_have_equal_exact_kernel_subspace": true,
+      "relation_matrix": [
+        [
+          343,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          216
+        ],
+        [
+          0,
+          343,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          144
+        ],
+        [
+          0,
+          0,
+          343,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16
+        ],
+        [
+          0,
+          0,
+          0,
+          343,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          48
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          343,
+          0,
+          0,
+          0,
+          0,
+          0,
+          32
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          49,
+          0,
+          0,
+          0,
+          0,
+          -36
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          49,
+          0,
+          0,
+          0,
+          -24
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          49,
+          0,
+          0,
+          -8
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          0,
+          6
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          4
+        ]
+      ],
+      "relation_exact_rank": 10,
+      "relation_height": 343,
+      "exact_kernel_basis_columns": [
+        [
+          "216",
+          "144",
+          "16",
+          "48",
+          "32",
+          "-252",
+          "-168",
+          "-56",
+          "294",
+          "196",
+          "-343"
+        ]
+      ],
+      "exact_kernel_rank": 1,
+      "exact_relation_times_kernel_zero": true,
+      "graph_chart": {
+        "kernel_coordinate_indices_Q": [
+          10
+        ],
+        "positive_coordinate_indices_P": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "exact_graph_basis_columns": [
+          [
+            "-216/343",
+            "-144/343",
+            "-16/343",
+            "-48/343",
+            "-32/343",
+            "36/49",
+            "24/49",
+            "8/49",
+            "-6/7",
+            "-4/7",
+            "1"
+          ]
+        ],
+        "exact_Q_minor_is_identity": true
+      },
+      "validation": [
+        {
+          "label": "p",
+          "source": "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "5.68824495768710639792677511285e-39",
+          "normalized_relation_residual_operator": "6.10068407335756313729222692470963310944116753e-39",
+          "normalized_block_kernel_residual_operator": "2.69526395856601185437864846626029959555791048e-42",
+          "largest_principal_angle_sine": "9.11567724559295484783581274073054330786002063e-39",
+          "maximum_graph_coordinate_absolute_error": "1.22054642438982036083373011018137537832238422e-38",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "smallest_singular_value": "0.5367630673784906496757241282661765293903",
+            "condition_estimate_2": "1.863019385599539735817855368599297828213"
+          },
+          "block_positive_minor": {
+            "indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "smallest_singular_value": "0.008221431243546020030136668015416188469467",
+            "condition_estimate_2": "30164.48144932697993609018000730717808662"
+          }
+        },
+        {
+          "label": "2p",
+          "source": "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "3.37973583430062307407594398342e-79",
+          "normalized_relation_residual_operator": "3.04030647375681000991488168444828030203372191e-79",
+          "normalized_block_kernel_residual_operator": "1.59507549564905631833587720262019784180054984e-82",
+          "largest_principal_angle_sine": "0.0",
+          "maximum_graph_coordinate_absolute_error": "6.82889632499450119382227553271114877070274725e-79",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "smallest_singular_value": "0.5367630673784906496757241282661765293948",
+            "condition_estimate_2": "1.863019385599539735817855368599297828197"
+          },
+          "block_positive_minor": {
+            "indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "smallest_singular_value": "0.008221431243544483755209261400170446276302",
+            "condition_estimate_2": "30164.48144933575100256510647253381794412"
+          }
+        }
+      ],
+      "residual_improvement_factors_p_over_2p": {
+        "maximum_rowwise_relation": "1.68304424859411792185311194365e+40",
+        "relation_operator": "2.00660167848774201557301379988e+40",
+        "block_kernel": "1.68974068369677699002959755874e+40",
+        "principal_angle_sine": "infinite",
+        "graph_coordinate_error": "1.78732604260294312900144577754e+40"
+      },
+      "relation_height_ladder": [
+        {
+          "denominator_bound": "10",
+          "maximum_normalized_relation_residual": "0.0250385104316497096058646823681",
+          "relation_height": 10
+        },
+        {
+          "denominator_bound": "100",
+          "maximum_normalized_relation_residual": "0.0000727077645222385971490102548011",
+          "relation_height": 81
+        },
+        {
+          "denominator_bound": "1000",
+          "maximum_normalized_relation_residual": "3.37973583430062307407594398342e-79",
+          "relation_height": 343
+        }
+      ],
+      "face_equations_added": 11,
+      "face_equation_rank": 11
+    },
+    "triple_sos.pi3.s_3": {
+      "candidate_nullity": 0,
+      "precision_runs_used": [
+        "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+        "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "full_rank_no_kernel_recovery_required",
+      "provenance": "numerical_graph_chart",
+      "exact_kernel_basis_columns": [],
+      "face_equations_added": 0,
+      "face_equation_rank": 0
+    }
+  }
+}

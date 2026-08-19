@@ -1,0 +1,38 @@
+{
+  "format": "exactification-verification-v1",
+  "case_id": "grzesik-pentagon",
+  "attempt_id": "retry-1",
+  "model_sha256": "d8ec26f3cc9590612af0d121a868825896b4f646a79e292d4ed3998ee16321ae",
+  "candidate_sha256": "7400dadb6c5eda59f740f8945abde16356ec96d0aa04ec92b98809c262553634",
+  "certificate_sha256": "5a8b7c17b8d1689fa1b716e288a7abc7e1e13b686fc6b6699d5989b36575ab94",
+  "verifier_command": [
+    "python3", "-m", "verify", "check",
+    "testcases/grzesik-pentagon/input/model.json",
+    "testcases/grzesik-pentagon/attempts/retry-1/certificate.json",
+    "--json"
+  ],
+  "exit_code": 0,
+  "bundled_report": {
+    "blocks_checked": 4,
+    "constraints_checked": 14,
+    "objective": "24/625",
+    "ranks": {"P": 4, "Q": 5, "R": 3, "U": 1},
+    "status": "verified"
+  },
+  "coverage": {
+    "model_blocks": 4,
+    "checked_blocks": 4,
+    "model_constraints": 14,
+    "checked_constraints": 14,
+    "complete": true
+  },
+  "gates": {
+    "A_integrity_and_coverage": "pass",
+    "B_affine_constraints": "pass",
+    "C_objective": "pass",
+    "D_exact_psd": "pass",
+    "E_theorem_semantics": "not_declared_by_claim_metadata",
+    "F_sharpness": "not_declared_by_claim_metadata"
+  },
+  "final_status": "EXACT_SDP_CERTIFICATE"
+}

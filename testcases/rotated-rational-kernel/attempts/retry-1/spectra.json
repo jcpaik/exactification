@@ -1,0 +1,37 @@
+{
+  "format": "exactification-spectra-v1",
+  "precision_runs": [
+    {
+      "source": "input/approximate_solution.json",
+      "claimed_precision_digits": 100,
+      "blocks": {
+        "X": {
+          "eigenvalues": [
+            "-1.6838703822075739908772474165613757692e-102",
+            "-1.7296741092243172530544291826795269165e-103",
+            "1.8068377931300057161826903347575219217e-102",
+            "1.1287757852922146298158247013801688124",
+            "1.8673783465391282330143761734515334176",
+            "4.0038458681686571371697991251682977700"
+          ],
+          "normalization_scale": "4.0038458681686571371697991251682977700",
+          "normalized_absolute_eigenvalues": [
+            "4.2056323785954564602e-103",
+            "4.3200317049553737593e-104",
+            "4.5127556170298982945e-103",
+            "0.28192288675900306231",
+            "0.46639616209633452142",
+            "1"
+          ],
+          "candidate_nullity": 3
+        }
+      },
+      "affine_residuals": {
+        "unit_trace_face": "-4.9999999999999999999999999998546821e-104",
+        "trace_seven": "2.0000000000000000000000000000545801e-102",
+        "objective": "0"
+      }
+    }
+  ],
+  "limitation": "Only the single public 100-digit run was available in the blind input; exact verification is the proof gate."
+}

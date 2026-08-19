@@ -1,0 +1,42 @@
+{
+  "format": "exactification-operational-failures-v1",
+  "events": [
+    {
+      "phase": "exact_affine_reduction",
+      "backend": "dense_global_face-rank precomputation",
+      "command": [
+        "python3", "exactify/affine_round.py",
+        "--model", "testcases/dlm-three-point-10/input/model.json",
+        "--approx", "testcases/dlm-three-point-10/input/approximate_solution.json",
+        "--config", "testcases/dlm-three-point-10/attempts/retry-1/discovery-config.json",
+        "--output", "testcases/dlm-three-point-10/attempts/retry-1/candidate.json",
+        "--system-output", "testcases/dlm-three-point-10/attempts/retry-1/affine-system.json",
+        "--denominator-bits", "100"
+      ],
+      "exit_code": 130,
+      "elapsed_seconds_approximate": 480,
+      "diagnostic": "No global RREF pivots were attempted. The process was recomputing a per-block X*V=0 rank on a dense 1,641-column matrix.",
+      "recovery": "Terminated with SIGINT before any candidate was written; replaced the redundant ranks by the exact codimension nk-k(k-1)/2 and cleared denominators rowwise before integer DomainMatrix/FLINT RREF.",
+      "mathematical_branch_changed": false
+    },
+    {
+      "phase": "exact_affine_reduction",
+      "backend": "row-cleared integer SymPy DomainMatrix sparse fraction-free RREF",
+      "command": [
+        "python3", "exactify/affine_round.py",
+        "--model", "testcases/dlm-three-point-10/input/model.json",
+        "--approx", "testcases/dlm-three-point-10/input/approximate_solution.json",
+        "--config", "testcases/dlm-three-point-10/attempts/retry-1/discovery-config.json",
+        "--output", "testcases/dlm-three-point-10/attempts/retry-1/candidate.json",
+        "--system-output", "testcases/dlm-three-point-10/attempts/retry-1/affine-system.json",
+        "--denominator-bits", "100"
+      ],
+      "exit_code": 130,
+      "elapsed_seconds_approximate": 360,
+      "progress": "Constructed and announced a 689-by-1641 row-cleared integer system; no completed pivots or output artifacts followed.",
+      "diagnostic": "Traceback on recoverable SIGINT located the computation in SymPy's Python sparse fraction-free sdm_rref_den exact-division loop.",
+      "recovery": "No candidate or affine-system output had been written. Switch to sparse modular pivot selection followed by an exact reduced square solve in python-flint.",
+      "mathematical_branch_changed": false
+    }
+  ]
+}

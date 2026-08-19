@@ -1,0 +1,132 @@
+{
+  "denominator_ladder": [
+    160
+  ],
+  "notes": "All 22 singular blocks were recovered from independent p/2p numerical graph charts. Four operational events, including two recoverable pi3.s_0 SymPy exact-rank interruptions, are preserved without a mathematical branch change.",
+  "nullity_branches": {
+    "bound_scalar.B": [
+      1
+    ],
+    "gegenbauer_scalar.a_1": [
+      0
+    ],
+    "gegenbauer_scalar.a_2": [
+      0
+    ],
+    "gegenbauer_scalar.a_3": [
+      1
+    ],
+    "gegenbauer_scalar.a_4": [
+      1
+    ],
+    "gegenbauer_scalar.a_5": [
+      1
+    ],
+    "gegenbauer_scalar.a_6": [
+      1
+    ],
+    "single_interval_sos.q_0": [
+      2
+    ],
+    "single_interval_sos.q_1": [
+      1
+    ],
+    "three_point_kernel.F_0": [
+      1
+    ],
+    "three_point_kernel.F_1": [
+      0
+    ],
+    "three_point_kernel.F_2": [
+      1
+    ],
+    "three_point_kernel.F_3": [
+      1
+    ],
+    "three_point_kernel.F_4": [
+      1
+    ],
+    "three_point_kernel.F_5": [
+      1
+    ],
+    "three_point_kernel.F_6": [
+      1
+    ],
+    "triple_sos.pi1.gram_determinant": [
+      8
+    ],
+    "triple_sos.pi1.s_0": [
+      3
+    ],
+    "triple_sos.pi1.s_1": [
+      2
+    ],
+    "triple_sos.pi1.s_2": [
+      1
+    ],
+    "triple_sos.pi1.s_3": [
+      0
+    ],
+    "triple_sos.pi2.gram_determinant": [
+      2
+    ],
+    "triple_sos.pi2.s_0": [
+      0
+    ],
+    "triple_sos.pi2.s_1": [
+      0
+    ],
+    "triple_sos.pi2.s_2": [
+      0
+    ],
+    "triple_sos.pi2.s_3": [
+      0
+    ],
+    "triple_sos.pi3.gram_determinant": [
+      9
+    ],
+    "triple_sos.pi3.s_0": [
+      2
+    ],
+    "triple_sos.pi3.s_1": [
+      2
+    ],
+    "triple_sos.pi3.s_2": [
+      1
+    ],
+    "triple_sos.pi3.s_3": [
+      0
+    ]
+  },
+  "objective_branches": [
+    {
+      "source": "manifest.fixed_objective",
+      "status": "accepted",
+      "value": "10"
+    }
+  ],
+  "precision_ladder": {
+    "diagnostic_decimal_precision": 110,
+    "independent_normalized_runs": 2,
+    "public_printed_decimal_digits": [
+      40,
+      80
+    ],
+    "public_solver_bits": [
+      300,
+      600
+    ]
+  },
+  "public_matching_construction_used": false,
+  "relation_height_ladder": [
+    10,
+    100,
+    1000,
+    10000,
+    100000,
+    1000000,
+    10000000,
+    100000000
+  ],
+  "seeds": []
+}

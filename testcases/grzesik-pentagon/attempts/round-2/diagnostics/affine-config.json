@@ -1,0 +1,85 @@
+{
+  "fixed_objective": "24/625",
+  "active_constraints": [
+    "five_vertex_case_01",
+    "five_vertex_case_02",
+    "five_vertex_case_03",
+    "five_vertex_case_04",
+    "five_vertex_case_05",
+    "five_vertex_case_09",
+    "five_vertex_case_10",
+    "five_vertex_case_11",
+    "five_vertex_case_12",
+    "five_vertex_case_14"
+  ],
+  "kernels": {
+    "P": [
+      [
+        1,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    ],
+    "Q": [
+      [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ]
+    ],
+    "R": [
+      [
+        1,
+        -2,
+        -2,
+        -2,
+        0
+      ],
+      [
+        1,
+        0,
+        2,
+        0,
+        2
+      ]
+    ]
+  }
+}
