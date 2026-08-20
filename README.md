@@ -21,6 +21,90 @@ known in advance.
 > [Round 2 executor report](validation/round-2/executor-report-round-2.md), and
 > [combined-suite record](validation/round-2/SUITE.md).
 
+## User-facing surface: input and output
+
+The currently implemented surface begins with an **exact rational block SDP**
+and one or more high-precision numerical solutions. It does not yet accept only
+an informal extremal-graph statement such as “maximize the pentagon density”
+and automatically generate all types, flags, and density identities. That
+problem-to-SDP layer remains problem-specific.
+
+This is presently an artifact-oriented research interface rather than a single
+`exactify` command. A user prepares a testcase input, runs the reconstruction
+tools or workflow, and then checks the resulting attempt with the independent
+verifier and manifest-aware harness.
+
+### Input
+
+The public input is a directory of the following form:
+
+```text
+testcases/<case-id>/input/
+├── manifest.json                 # routing, target, field, and blind-input policy
+├── model.json                    # exact rational affine block-SDP model
+├── approximate_solution.json     # normalized high-precision decimal matrices
+└── numerical/                    # recommended discovery provenance
+    ├── p/                        # solver parameters, raw result, normalized result
+    └── 2p/                       # independent higher-precision run
+```
+
+The required logical inputs are:
+
+| Input | Meaning |
+| --- | --- |
+| Exact model | Named PSD blocks, exact rational affine constraints, objective direction, and objective expression in `exact-block-sdp-model-v1` format. |
+| Numerical solution | Full decimal block matrices from SDPA-GMP or another high-precision solver. Independent `p` and `2p` runs are expected for singular-face recovery. These numbers are discovery evidence, not proof data. |
+| Manifest | Paths, field, solution side, blind-input policy, and the fixed exact objective for a target-bound run. In rational v1, a successful attempt requires a non-null canonical rational target; `null` is exploration only. |
+| Provenance | Solver input, parameters, raw output, precision, commands, and hashes sufficient to reproduce or audit the numerical run. |
+
+The current trusted proof path is over \(\mathbb Q\). The workflow documents
+quadratic-field discovery, but rational v1 cannot issue a proof-level
+certificate over a number field. Public input must not contain a golden exact
+matrix, recovered kernel, PSD trace, or oracle certificate.
+
+### Output
+
+Reconstruction writes only a new attempt directory and does not modify the
+public input:
+
+```text
+testcases/<case-id>/attempts/<attempt-id>/
+├── objective-candidates.json     # objective reconstruction evidence
+├── spectra.json                  # p/2p eigenvalue and nullity diagnostics
+├── kernels.json                  # recovered exact face/subspace evidence
+├── affine-system.json            # exact enlarged affine reconstruction, when used
+├── candidate.json                # exact rational matrices before PSD traces
+├── certificate.json              # exact matrices plus replayable PSD proof traces
+├── verifier-output.json          # raw exact-verifier report
+├── verification.json             # manifest-bound status
+├── run.json                      # hashes and complete run provenance
+└── proof.md                      # human-readable reconstruction account
+```
+
+The principal user-visible result is `certificate.json`: an exact objective,
+exact rational PSD matrices, and exact Schur-complement traces. A successful
+harness report also returns every exact constraint value, every block rank, the
+model and certificate hashes, and status `EXACT_SDP_CERTIFICATE`.
+
+Check an output from the repository root with:
+
+```sh
+python3 -m verify check \
+  testcases/<case-id>/input/model.json \
+  testcases/<case-id>/attempts/<attempt-id>/certificate.json \
+  --json
+
+python3 -m validation.testcase_harness \
+  testcases/<case-id> <attempt-id>
+```
+
+The first command proves exact feasibility, the submitted objective, and PSD.
+The second additionally binds those facts to the manifest target and checks the
+artifact and provenance contract. `EXACT_SDP_CERTIFICATE` proves the serialized
+SDP result; turning it into a claimed extremal-graph theorem additionally
+requires an independently checked flag-algebra/model adapter and, for
+sharpness, a matching construction or witness.
+
 ## Research goals
 
 - Express known and open extremal graph theory problems as flag algebra SDPs.
