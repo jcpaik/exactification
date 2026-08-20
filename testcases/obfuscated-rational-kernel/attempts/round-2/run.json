@@ -1,0 +1,245 @@
+{
+  "attempt_id": "round-2",
+  "case_id": "obfuscated-rational-kernel",
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/obfuscated-rational-kernel/input/numerical/p/approximate_solution.json",
+        "--block",
+        "moment_matrix",
+        "--nullity",
+        "3",
+        "--output",
+        "testcases/obfuscated-rational-kernel/attempts/round-2/diagnostics/relations-p.json",
+        "--decimal-precision",
+        "100",
+        "--maximum-denominator-power",
+        "6",
+        "--accept-residual",
+        "1e-35"
+      ],
+      "exit_code": 0,
+      "purpose": "independent p graph-coordinate relation recovery"
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/obfuscated-rational-kernel/input/numerical/2p/approximate_solution.json",
+        "--block",
+        "moment_matrix",
+        "--nullity",
+        "3",
+        "--output",
+        "testcases/obfuscated-rational-kernel/attempts/round-2/diagnostics/relations-2p.json",
+        "--decimal-precision",
+        "100",
+        "--maximum-denominator-power",
+        "6",
+        "--accept-residual",
+        "1e-35"
+      ],
+      "exit_code": 0,
+      "purpose": "independent 2p graph-coordinate relation recovery"
+    },
+    {
+      "argv": [
+        "python3",
+        "testcases/obfuscated-rational-kernel/attempts/round-2/diagnostics/analyze_two_precision.py",
+        "--model",
+        "testcases/obfuscated-rational-kernel/input/model.json",
+        "--p",
+        "testcases/obfuscated-rational-kernel/input/numerical/p/approximate_solution.json",
+        "--two-p",
+        "testcases/obfuscated-rational-kernel/input/numerical/2p/approximate_solution.json",
+        "--relations-p",
+        "testcases/obfuscated-rational-kernel/attempts/round-2/diagnostics/relations-p.json",
+        "--relations-two-p",
+        "testcases/obfuscated-rational-kernel/attempts/round-2/diagnostics/relations-2p.json",
+        "--spectra-output",
+        "testcases/obfuscated-rational-kernel/attempts/round-2/spectra.json",
+        "--kernels-output",
+        "testcases/obfuscated-rational-kernel/attempts/round-2/kernels.json",
+        "--decimal-precision",
+        "100"
+      ],
+      "exit_code": 1,
+      "note": "Recovered operational error is preserved in operational-failures.json.",
+      "purpose": "first p/2p validation diagnostic attempt"
+    },
+    {
+      "argv": [
+        "python3",
+        "testcases/obfuscated-rational-kernel/attempts/round-2/diagnostics/analyze_two_precision.py",
+        "--model",
+        "testcases/obfuscated-rational-kernel/input/model.json",
+        "--p",
+        "testcases/obfuscated-rational-kernel/input/numerical/p/approximate_solution.json",
+        "--two-p",
+        "testcases/obfuscated-rational-kernel/input/numerical/2p/approximate_solution.json",
+        "--relations-p",
+        "testcases/obfuscated-rational-kernel/attempts/round-2/diagnostics/relations-p.json",
+        "--relations-two-p",
+        "testcases/obfuscated-rational-kernel/attempts/round-2/diagnostics/relations-2p.json",
+        "--spectra-output",
+        "testcases/obfuscated-rational-kernel/attempts/round-2/spectra.json",
+        "--kernels-output",
+        "testcases/obfuscated-rational-kernel/attempts/round-2/kernels.json",
+        "--decimal-precision",
+        "100"
+      ],
+      "exit_code": 0,
+      "purpose": "persist corrected p/2p spectra and kernel validation"
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/affine_modular_solve.py",
+        "--model",
+        "testcases/obfuscated-rational-kernel/input/model.json",
+        "--approx",
+        "testcases/obfuscated-rational-kernel/input/numerical/2p/approximate_solution.json",
+        "--config",
+        "testcases/obfuscated-rational-kernel/attempts/round-2/diagnostics/affine-config.json",
+        "--output",
+        "testcases/obfuscated-rational-kernel/attempts/round-2/candidate.json",
+        "--system-output",
+        "testcases/obfuscated-rational-kernel/attempts/round-2/affine-system.json",
+        "--denominator-bits",
+        "64"
+      ],
+      "exit_code": 0,
+      "purpose": "exact kernel-face affine reconstruction"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-m",
+        "verify",
+        "emit-traces",
+        "testcases/obfuscated-rational-kernel/input/model.json",
+        "testcases/obfuscated-rational-kernel/attempts/round-2/candidate.json",
+        "-o",
+        "testcases/obfuscated-rational-kernel/attempts/round-2/certificate.json"
+      ],
+      "exit_code": 0,
+      "purpose": "emit deterministic exact PSD trace"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-m",
+        "verify",
+        "check",
+        "testcases/obfuscated-rational-kernel/input/model.json",
+        "testcases/obfuscated-rational-kernel/attempts/round-2/certificate.json",
+        "--json"
+      ],
+      "exit_code": 0,
+      "purpose": "fresh exact certificate check"
+    }
+  ],
+  "consumed_file_sha256": {
+    "testcases/obfuscated-rational-kernel/input/README.md": "7524f53af8e0de7a96885d0e36c4519f2173cea56f7b240bb1fc55d1fc9921f4",
+    "testcases/obfuscated-rational-kernel/input/manifest.json": "169924cff32c03c4d246f96ca689349384c2084b8491c2c3cb10a521cb9c5e90",
+    "testcases/obfuscated-rational-kernel/input/model.json": "982232f11d994b787d9f2fba0c3e94599d9f931fa7ce7b3e8c49eaafe21a0171",
+    "testcases/obfuscated-rational-kernel/input/numerical/2p/approximate_solution.json": "002a634bed38d1ebea6e1380d87fba6a35725a8bd7a003b69863cc8a953f0f0c",
+    "testcases/obfuscated-rational-kernel/input/numerical/2p/problem.dat-s": "701d24487890ae7edfe859a54cee2c2058551028020c03fa6b8afdd49910e445",
+    "testcases/obfuscated-rational-kernel/input/numerical/2p/result.txt": "d96740e5bcd2f2645513406922875f13d4b01fc9f023d0965c580cd820ceb6b8",
+    "testcases/obfuscated-rational-kernel/input/numerical/2p/run.json": "6d9f14152b30cfee91de5c09851b71205704a945fa0bf6659be57f7d7ea982eb",
+    "testcases/obfuscated-rational-kernel/input/numerical/2p/sdpa-gmp.params": "7675b0f850037e59243b8a9ca5b2c1d58f5d4bda19ba423a34844593383cec11",
+    "testcases/obfuscated-rational-kernel/input/numerical/p/approximate_solution.json": "06630bf1bad06b88be9615143fbbfbe6789cd1bc15dc94b751ffaeccaeb9b6b1",
+    "testcases/obfuscated-rational-kernel/input/numerical/p/problem.dat-s": "2b0d6ab43fc1e703f54e7836ebe449a39eaef9cbd94e0567d46321bbb9096cf0",
+    "testcases/obfuscated-rational-kernel/input/numerical/p/result.txt": "2be51a6a0c61ee16ecbf0f82817b5a23e281018cf9db43e9c20ae1745bbd687d",
+    "testcases/obfuscated-rational-kernel/input/numerical/p/run.json": "061a898ec73206709f8fed40e18959da3a4ddc14fe50fa5f34db9818a28388a5",
+    "testcases/obfuscated-rational-kernel/input/numerical/p/sdpa-gmp.params": "2dd08176e641f5d83e666b048a7fcebe36aa7b7550fb8692b1a4999f7ec7e63e"
+  },
+  "denominator_ladder": [
+    64
+  ],
+  "ended_utc": "2026-08-19T15:35:43Z",
+  "format": "exactification-run-v1",
+  "generated_file_sha256": {
+    "testcases/obfuscated-rational-kernel/attempts/round-2/affine-system.json": "a352692240c0b475bbdb9ef9da5aa9134e2d601250652681fddbf94228725841",
+    "testcases/obfuscated-rational-kernel/attempts/round-2/candidate.json": "32e5dc373186c2689a2222a95e442a383f5b769a061a6a5c4f96981762bcd811",
+    "testcases/obfuscated-rational-kernel/attempts/round-2/certificate.json": "945f086744c3428413a607efa07943f52c152a54126952a0d0561d5399dc75b9",
+    "testcases/obfuscated-rational-kernel/attempts/round-2/commands.json": "0cb4ba5f758b6932bcf6b2e1817878c227f0ba3c8aa8cdef0a39abfcc436f0e1",
+    "testcases/obfuscated-rational-kernel/attempts/round-2/diagnostics/affine-config.json": "f4bb499c4f18a46816c876cf4686d39db7e1cfa49dc1335048a3ba47f900be40",
+    "testcases/obfuscated-rational-kernel/attempts/round-2/diagnostics/analyze_two_precision.py": "b41cedf10b3537bd9f3f0059029cdd7a60c0c776ab73aa4dd4e898550acbf2a2",
+    "testcases/obfuscated-rational-kernel/attempts/round-2/diagnostics/empty-projectors.json": "cff8503faad18c567ff38cee9a0b245ae744d3e89e257faafcaf5a921ade0543",
+    "testcases/obfuscated-rational-kernel/attempts/round-2/diagnostics/relations-2p.json": "bf89ca9da4a8144a24c2575f3f4fb7b9016d85f62c41228ae207b9c7f8c68ab6",
+    "testcases/obfuscated-rational-kernel/attempts/round-2/diagnostics/relations-p.json": "c1a24c4bc612e8b2e1ea92fb77d5bf8570565709aff25c17b4c7e9fd942bd85d",
+    "testcases/obfuscated-rational-kernel/attempts/round-2/discovery.json": "bb79642d4a2d781e8b9601de688f25bf248713071cad6ac8dab9b056ce2e25ee",
+    "testcases/obfuscated-rational-kernel/attempts/round-2/kernels.json": "bc0baf93bfbfcca19882128d0a96c8235d756dac13e9c4a2c8dd05713acfa340",
+    "testcases/obfuscated-rational-kernel/attempts/round-2/objective-candidates.json": "f47e201fa28239b70bfa235ff79353460c2edc6671a67d978b22d5cd0d06da48",
+    "testcases/obfuscated-rational-kernel/attempts/round-2/operational-failures.json": "ca4197caa6882c92d37749e247e81e30e1e1d76ba221ebc8d8499f3965179582",
+    "testcases/obfuscated-rational-kernel/attempts/round-2/proof.md": "3de8159cb865309d4dd7ef33f4901d0e3e968761e9cf653315cd6a510313624b",
+    "testcases/obfuscated-rational-kernel/attempts/round-2/spectra.json": "7ac5e7a365c35dd37d4dae29763ffe8c4740d18b9f17ff3645525028efdaa45e",
+    "testcases/obfuscated-rational-kernel/attempts/round-2/verification.json": "7422355553e887162aa40bf677c9594030e1e154fe5ca20c335b8baf460f55df",
+    "testcases/obfuscated-rational-kernel/attempts/round-2/verifier-output.json": "e09f2d05f0df1605117e78a634d31f2287e5d79cb88355bd67b4087ac4b57a7d"
+  },
+  "hash_note": "run.json is excluded from generated_file_sha256 to avoid a self-reference.",
+  "metadata_input_sha256": {
+    "commands_json": "0cb4ba5f758b6932bcf6b2e1817878c227f0ba3c8aa8cdef0a39abfcc436f0e1",
+    "discovery_json": "bb79642d4a2d781e8b9601de688f25bf248713071cad6ac8dab9b056ce2e25ee"
+  },
+  "notes": "The face was recovered independently from the p and 2p numerical kernels by graph-coordinate integer relations; no exact public face constraint, construction, oracle, or prior attempt was used. One recovered diagnostics API error is preserved in operational-failures.json.",
+  "nullity_branches": {
+    "moment_matrix": [
+      3
+    ]
+  },
+  "objective_branches": [
+    {
+      "source": "manifest.fixed_objective",
+      "status": "accepted",
+      "value": "2224093617954365/48084958827"
+    }
+  ],
+  "platform": {
+    "machine": "arm64",
+    "python_implementation": "CPython",
+    "python_version": "3.14.3",
+    "release": "23.6.0",
+    "system": "Darwin"
+  },
+  "precision_ladder": {
+    "diagnostic_decimal_precision": 100,
+    "independent_normalized_runs": 2,
+    "public_printed_decimal_digits": [
+      40,
+      40
+    ],
+    "public_solver_bits": [
+      256,
+      512
+    ]
+  },
+  "public_matching_construction_used": false,
+  "relation_height_ladder": [
+    10,
+    100,
+    1000,
+    10000,
+    100000,
+    1000000
+  ],
+  "repository": {
+    "commit": "not_inspected_blind_policy",
+    "dirty_worktree": "not_inspected_blind_policy"
+  },
+  "seeds": [],
+  "started_utc": "2026-08-19T14:49:23Z",
+  "tool_versions": {
+    "mpmath": "1.3.0",
+    "numpy": "2.4.3",
+    "python_flint": "0.9.0",
+    "sympy": "1.14.0"
+  }
+}

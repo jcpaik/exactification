@@ -1,0 +1,80 @@
+{
+  "format": "exactification-operational-failures-v1",
+  "events": [
+    {
+      "event_id": "process-list-diagnostic-001",
+      "phase": "relation_recovery_monitoring",
+      "backend": "macOS pgrep process-list diagnostic",
+      "command": ["pgrep", "-af", "recover_relations.py"],
+      "started_utc": "2026-08-19T15:47:39Z",
+      "ended_utc": "2026-08-19T15:47:40Z",
+      "exit_code": 3,
+      "signal": null,
+      "elapsed_seconds": 0.1,
+      "resource_limits": {
+        "wall_seconds": null,
+        "memory_mib": null
+      },
+      "last_durable_artifact": "diagnostics/relations/triple_sos__pi3__gram_determinant-2p.json",
+      "diagnostic": "The sandboxed process-list service was unavailable: sysmon request failed and pgrep could not get the process list.",
+      "recovery": "Continue polling the already-running unified execution sessions directly; do not restart or change any mathematical branch.",
+      "mathematical_branch_changed": false
+    },
+    {
+      "event_id": "premature-output-check-002",
+      "phase": "relation_recovery_monitoring",
+      "backend": "ls 100 (macOS)",
+      "command": [
+        "ls",
+        "-l",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi3__s_0-p.json",
+        "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi3__s_0-2p.json"
+      ],
+      "started_utc": "2026-08-19T15:50:18Z",
+      "ended_utc": "2026-08-19T15:50:19Z",
+      "exit_code": 1,
+      "signal": null,
+      "elapsed_seconds": 0.1,
+      "resource_limits": {
+        "wall_seconds": null,
+        "memory_mib": null
+      },
+      "last_durable_artifact": "diagnostics/relations/triple_sos__pi3__gram_determinant-2p.json",
+      "diagnostic": "A premature existence check returned nonzero because both pi3.s_0 recovery processes were still running and had not yet atomically written their outputs.",
+      "recovery": "Continue polling the original sessions until normal completion; no restart and no mathematical branch change.",
+      "mathematical_branch_changed": false
+    },
+    {
+      "event_id": "pi3-s0-sympy-rank-p-003",
+      "phase": "kernel_relation_exact_rank",
+      "backend": "SymPy exact integer row reduction after generic graph recovery",
+      "command": ["python3", "exactify/recover_relations.py", "--approx", "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json", "--block", "triple_sos.pi3.s_0", "--nullity", "2", "--output", "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi3__s_0-p.json", "--decimal-precision", "70", "--maximum-denominator-power", "8", "--accept-residual", "1e-18"],
+      "started_utc": "2026-08-19T15:39:40Z",
+      "ended_utc": "2026-08-19T15:52:34Z",
+      "exit_code": 130,
+      "signal": "SIGINT",
+      "elapsed_seconds": 774.0,
+      "resource_limits": {"wall_seconds": null, "memory_mib": null},
+      "last_durable_artifact": "diagnostics/relations/triple_sos__pi3__gram_determinant-2p.json",
+      "diagnostic": "The numerical graph relations had been found, but SymPy fraction-free exact rank on the large-height integer matrix did not complete promptly and was manually interrupted.",
+      "recovery": "Use the same graph chart with bounded rational coordinates and FLINT-backed exact rank/nullspace, then validate against both public runs.",
+      "mathematical_branch_changed": false
+    },
+    {
+      "event_id": "pi3-s0-sympy-rank-2p-004",
+      "phase": "kernel_relation_exact_rank",
+      "backend": "SymPy exact integer row reduction after generic graph recovery",
+      "command": ["python3", "exactify/recover_relations.py", "--approx", "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json", "--block", "triple_sos.pi3.s_0", "--nullity", "2", "--output", "testcases/dlm-three-point-10/attempts/round-2/diagnostics/relations/triple_sos__pi3__s_0-2p.json", "--decimal-precision", "110", "--maximum-denominator-power", "8", "--accept-residual", "1e-18"],
+      "started_utc": "2026-08-19T15:39:40Z",
+      "ended_utc": "2026-08-19T15:52:34Z",
+      "exit_code": 130,
+      "signal": "SIGINT",
+      "elapsed_seconds": 774.0,
+      "resource_limits": {"wall_seconds": null, "memory_mib": null},
+      "last_durable_artifact": "diagnostics/relations/triple_sos__pi3__gram_determinant-2p.json",
+      "diagnostic": "The independent 2p graph recovery reached the same slow SymPy exact-rank phase and was manually interrupted.",
+      "recovery": "Use the same graph chart with bounded rational coordinates and FLINT-backed exact rank/nullspace, then validate against both public runs.",
+      "mathematical_branch_changed": false
+    }
+  ]
+}

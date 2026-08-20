@@ -1,0 +1,57 @@
+{
+  "format": "exactification-operational-failures-v1",
+  "events": [
+    {
+      "event_id": "emit-traces-001",
+      "phase": "exact_psd_trace_emission_and_affine_check",
+      "backend": "bundled verify symmetric-schur-v1 emitter",
+      "command": [
+        "python3",
+        "-m",
+        "verify",
+        "emit-traces",
+        "testcases/grzesik-pentagon/input/model.json",
+        "testcases/grzesik-pentagon/attempts/round-2/candidate.json",
+        "-o",
+        "testcases/grzesik-pentagon/attempts/round-2/certificate.json"
+      ],
+      "started_utc": "2026-08-19T15:26:05Z",
+      "ended_utc": "2026-08-19T15:26:06Z",
+      "exit_code": 1,
+      "signal": null,
+      "elapsed_seconds": 0.030483,
+      "resource_limits": {
+        "wall_seconds": null,
+        "memory_mib": null
+      },
+      "last_durable_artifact": "candidate.json",
+      "diagnostic": "Constraint five_vertex_case_03 had exact value -3419/22282920707136844948184236032000 and failed its ge sense. Both numerical runs classify this and nine other five_vertex_case inequalities as active: their slacks improve from about 1e-49 at p to 1e-99 at 2p.",
+      "recovery": "Add the ten p/2p-stable active scalar inequalities as exact face equalities and rerun affine reconstruction; retain the objective and all kernel subspaces.",
+      "mathematical_branch_changed": true
+    },
+    {
+      "event_id": "harness-invocation-001",
+      "phase": "manifest_aware_verification",
+      "backend": "Python 3.14 direct script invocation",
+      "command": [
+        "python3",
+        "validation/testcase_harness.py",
+        "testcases/grzesik-pentagon",
+        "round-2"
+      ],
+      "started_utc": "2026-08-19T15:37:00Z",
+      "ended_utc": "2026-08-19T15:37:00Z",
+      "exit_code": 1,
+      "signal": null,
+      "elapsed_seconds": null,
+      "resource_limits": {
+        "wall_seconds": null,
+        "memory_mib": null
+      },
+      "last_durable_artifact": "run.json",
+      "diagnostic": "Direct script-path invocation set validation/ as the import root and raised ModuleNotFoundError for the sibling verify package before reading the certificate.",
+      "recovery": "Invoke the documented module entry point from the blind workspace root with python3 -m validation.testcase_harness.",
+      "mathematical_branch_changed": false
+    }
+  ]
+}

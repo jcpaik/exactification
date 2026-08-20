@@ -1,0 +1,15 @@
+10000 unsigned int maxIteration;
+1e-80 double 0.0 < epsilonStar;
+1e4 double 0.0 < lambdaStar;
+2.0 double 1.0 < omegaStar;
+-1e5 double lowerBound;
+1e5 double upperBound;
+0.1 double 0.0 <= betaStar < 1.0;
+0.3 double 0.0 <= betaBar < 1.0, betaStar <= betaBar;
+0.9 double 0.0 < gammaStar < 1.0;
+1e-80 double 0.0 < epsilonDash;
+600 precision;
+%+100.80Fe char* xPrint;
+%+100.80Fe char* XPrint;
+%+100.80Fe char* YPrint;
+%+100.80Fe char* infPrint;

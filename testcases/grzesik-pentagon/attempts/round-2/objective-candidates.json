@@ -1,0 +1,17 @@
+{
+  "format": "exactification-objective-candidates-v1",
+  "case_id": "grzesik-pentagon",
+  "candidates": [
+    {
+      "value": "24/625",
+      "source": "manifest.fixed_objective",
+      "role": "target-binding equality only",
+      "p_claimed_objective": "3.84000000000000000000000000000000000000000000000007839543469097845425146269765504e-02",
+      "two_p_claimed_objective": "3.8400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007839543469097758388729650419091605365129712800156771096134103e-02",
+      "accepted_for_exact_feasibility": true,
+      "exact_certificate_objective": "24/625"
+    }
+  ],
+  "rejected_candidates": [],
+  "note": "No objective was inferred from an expected certificate or target matrix. The sole exact scalar is public manifest data."
+}

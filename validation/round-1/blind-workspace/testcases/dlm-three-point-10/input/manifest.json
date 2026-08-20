@@ -1,0 +1,126 @@
+{
+  "format": "exactification-testcase-v1",
+  "id": "dlm-three-point-10",
+  "title": "DLM rational three-point bound for the (4,10,1/6) spherical code",
+  "field": "Q",
+  "model": "model.json",
+  "approximate_solution": "approximate_solution.json",
+  "fixed_objective": "10",
+  "solution_side": "affine_psd_blocks",
+  "source": {
+    "paper_title": "Exact Semidefinite Programming Bounds for Packing Problems",
+    "paper_authors": [
+      "Maria Dostert",
+      "David de Laat",
+      "Philippe Moustrou"
+    ],
+    "paper_doi": "10.1137/20M1351692",
+    "result": "Theorem 4.3",
+    "arxiv_id": "2001.00256",
+    "ancillary_archive_sha256": "e3c76dae3f726b1b8acf98455899ca1cce23ab573cb86ec950e6e1bf38d0402f",
+    "source_file_sha256": {
+      "ThreePoint.jl": "2c4327789a62767ec4b28d22ee6ffc060200d5c45424d2f0e1ba9b0c5805a485",
+      "SemidefiniteProgramming.jl": "d9fafc434c03e2247ce5199114b8b59a21b969f3def85fe5b3cb9bb2e1c903ba",
+      "proofs.jl": "dae2712d8011207c1fef6c986cf1bbb1e44d982baab4271d2cb5fbd7f6527f1f"
+    },
+    "solver": "SDPA-GMP",
+    "solver_precision_bits": 300
+  },
+  "parameters": {
+    "n": 4,
+    "d": 6,
+    "N": 6,
+    "cos_theta": "1/6",
+    "fixed_objective": "10"
+  },
+  "structure": {
+    "muvt_basis_sizes": [
+      23,
+      16,
+      11,
+      7,
+      4,
+      2,
+      1
+    ],
+    "filtered_pi3_row_sizes": [
+      27,
+      18,
+      11,
+      6
+    ],
+    "triple_representative_coefficients": 116,
+    "single_polynomial_degree": 12,
+    "block_count": 31,
+    "block_sizes": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      7,
+      6,
+      23,
+      16,
+      16,
+      11,
+      7,
+      7,
+      4,
+      4,
+      2,
+      1,
+      27,
+      18,
+      18,
+      11,
+      6
+    ],
+    "scalar_upper_triangle_variables": 1641,
+    "equality_constraints": 130,
+    "constraint_matrix_nonzeros": 24462
+  },
+  "serialization": {
+    "exact": "model.json uses numerator/denominator strings over Q",
+    "sdpa_sparse_decimal_digits": 120,
+    "solver_precision_bits": 300,
+    "solver_epsilon": "1e-40"
+  },
+  "files": {
+    "model.json": {
+      "sha256": "f60c58fbb033c1d6da17040815641d99cb2bbc196eb2aa367aed1deb67de4c76"
+    },
+    "discovery.dat-s": {
+      "sha256": "ab22b160086d57240c6fcd8e956358607018bef3e9c679f4d22aa00be819a0d2"
+    },
+    "sdpa-gmp.params": {
+      "sha256": "5708108e258ac92d360c6bb14f51762f8243817a4e5fadd068e6eb0c5be2b498"
+    },
+    "discovery.result": {
+      "sha256": "e20117bad2781098c2ae65faa375341d773562bf5c3c71dac87189eb800603eb"
+    },
+    "approximate_solution.json": {
+      "sha256": "12af0b55fab96d3e2fe4ee28e30f6b89ac151cee590e1c7dff5a2513c77b6be0"
+    }
+  },
+  "blind_input_policy": {
+    "published_certificate_included": false,
+    "published_serialized_solution_read": false,
+    "note": "Only the ancillary SDP construction was ported; exact Gram matrices and published kernel relations are excluded."
+  },
+  "features": [
+    "rational_coefficients",
+    "rank_deficient_sharp_solution",
+    "large_multiblock_sos_model",
+    "fixed_objective_feasibility_discovery"
+  ]
+}

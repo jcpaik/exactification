@@ -1,0 +1,3394 @@
+{
+  "format": "exact-block-sdp-model-v1",
+  "blocks": [
+    {
+      "name": "moment_matrix",
+      "size": 10
+    }
+  ],
+  "constraints": [
+    {
+      "name": "moment_00",
+      "sense": "eq",
+      "expression": {
+        "constant": "89884965546581/48084958827",
+        "terms": [
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 0,
+            "coefficient": "-48"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 1,
+            "coefficient": "-20"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 2,
+            "coefficient": "-112"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 3,
+            "coefficient": "-52"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 4,
+            "coefficient": "-6"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 5,
+            "coefficient": "20"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 6,
+            "coefficient": "2"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 7,
+            "coefficient": "-24"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 8,
+            "coefficient": "-36"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 9,
+            "coefficient": "-18"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 1,
+            "coefficient": "50"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 2,
+            "coefficient": "44"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 3,
+            "coefficient": "-8"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 4,
+            "coefficient": "88"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 5,
+            "coefficient": "-24"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 6,
+            "coefficient": "112"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 7,
+            "coefficient": "-162"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 8,
+            "coefficient": "92"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 9,
+            "coefficient": "48"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 2,
+            "coefficient": "-39"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 3,
+            "coefficient": "-48"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 4,
+            "coefficient": "-82"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 5,
+            "coefficient": "-36"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 6,
+            "coefficient": "-28"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 7,
+            "coefficient": "40"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 8,
+            "coefficient": "70"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 9,
+            "coefficient": "-52"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 3,
+            "coefficient": "-29"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 4,
+            "coefficient": "108"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 5,
+            "coefficient": "-20"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 6,
+            "coefficient": "-34"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 7,
+            "coefficient": "-50"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 8,
+            "coefficient": "84"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 9,
+            "coefficient": "-94"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 4,
+            "coefficient": "-30"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 5,
+            "coefficient": "-76"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 6,
+            "coefficient": "-32"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 7,
+            "coefficient": "20"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 8,
+            "coefficient": "38"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 9,
+            "coefficient": "-110"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 5,
+            "coefficient": "28"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 6,
+            "coefficient": "16"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 7,
+            "coefficient": "-64"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 8,
+            "coefficient": "-64"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 9,
+            "coefficient": "70"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 6,
+            "coefficient": "-31"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 7,
+            "coefficient": "18"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 8,
+            "coefficient": "28"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 9,
+            "coefficient": "-100"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 7,
+            "coefficient": "3"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 8,
+            "coefficient": "136"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 9,
+            "coefficient": "-34"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 8,
+            "col": 8,
+            "coefficient": "-10"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 8,
+            "col": 9,
+            "coefficient": "-4"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 9,
+            "col": 9,
+            "coefficient": "-49"
+          }
+        ]
+      }
+    },
+    {
+      "name": "moment_01",
+      "sense": "eq",
+      "expression": {
+        "constant": "55063738521472/48084958827",
+        "terms": [
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 0,
+            "coefficient": "-44"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 1,
+            "coefficient": "-12"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 2,
+            "coefficient": "-56"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 3,
+            "coefficient": "-28"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 4,
+            "coefficient": "8"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 5,
+            "coefficient": "-22"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 6,
+            "coefficient": "18"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 7,
+            "coefficient": "-74"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 8,
+            "coefficient": "4"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 9,
+            "coefficient": "26"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 1,
+            "coefficient": "8"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 2,
+            "coefficient": "28"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 3,
+            "coefficient": "2"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 4,
+            "coefficient": "-16"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 5,
+            "coefficient": "-56"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 6,
+            "coefficient": "8"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 7,
+            "coefficient": "-62"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 8,
+            "coefficient": "104"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 9,
+            "coefficient": "-22"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 2,
+            "coefficient": "15"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 3,
+            "coefficient": "-10"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 4,
+            "coefficient": "-14"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 5,
+            "coefficient": "12"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 6,
+            "coefficient": "30"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 7,
+            "coefficient": "-28"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 8,
+            "coefficient": "24"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 9,
+            "coefficient": "16"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 3,
+            "coefficient": "15"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 4,
+            "coefficient": "92"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 5,
+            "coefficient": "100"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 6,
+            "coefficient": "-20"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 7,
+            "coefficient": "-18"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 8,
+            "coefficient": "38"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 9,
+            "coefficient": "4"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 4,
+            "coefficient": "12"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 5,
+            "coefficient": "-80"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 6,
+            "coefficient": "-22"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 7,
+            "coefficient": "-40"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 8,
+            "coefficient": "72"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 9,
+            "coefficient": "-144"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 5,
+            "coefficient": "38"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 6,
+            "coefficient": "-24"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 7,
+            "coefficient": "26"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 8,
+            "coefficient": "-44"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 9,
+            "coefficient": "14"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 6,
+            "coefficient": "-20"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 7,
+            "coefficient": "-12"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 8,
+            "coefficient": "66"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 9,
+            "coefficient": "-148"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 7,
+            "coefficient": "-55"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 8,
+            "coefficient": "54"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 9,
+            "coefficient": "-50"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 8,
+            "col": 8,
+            "coefficient": "-53"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 8,
+            "col": 9,
+            "coefficient": "64"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 9,
+            "col": 9,
+            "coefficient": "-18"
+          }
+        ]
+      }
+    },
+    {
+      "name": "moment_02",
+      "sense": "eq",
+      "expression": {
+        "constant": "3567689314835/5342773203",
+        "terms": [
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 0,
+            "coefficient": "-6"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 1,
+            "coefficient": "-22"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 2,
+            "coefficient": "38"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 3,
+            "coefficient": "-2"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 4,
+            "coefficient": "10"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 5,
+            "coefficient": "54"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 6,
+            "coefficient": "-30"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 7,
+            "coefficient": "-46"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 8,
+            "coefficient": "96"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 9,
+            "coefficient": "22"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 1,
+            "coefficient": "-30"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 2,
+            "coefficient": "-66"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 3,
+            "coefficient": "-14"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 4,
+            "coefficient": "-64"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 5,
+            "coefficient": "-28"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 6,
+            "coefficient": "-22"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 7,
+            "coefficient": "10"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 8,
+            "coefficient": "-64"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 9,
+            "coefficient": "46"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 2,
+            "coefficient": "13"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 3,
+            "coefficient": "20"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 4,
+            "coefficient": "68"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 5,
+            "coefficient": "-24"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 6,
+            "coefficient": "-46"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 7,
+            "coefficient": "12"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 8,
+            "coefficient": "-22"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 9,
+            "coefficient": "-14"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 3,
+            "coefficient": "-3"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 4,
+            "coefficient": "-72"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 5,
+            "coefficient": "10"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 6,
+            "coefficient": "38"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 7,
+            "coefficient": "30"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 8,
+            "coefficient": "34"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 9,
+            "coefficient": "40"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 4,
+            "coefficient": "-23"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 5,
+            "coefficient": "16"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 6,
+            "coefficient": "64"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 7,
+            "coefficient": "28"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 8,
+            "coefficient": "-22"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 9,
+            "coefficient": "-34"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 5,
+            "coefficient": "-30"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 6,
+            "coefficient": "-78"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 7,
+            "coefficient": "-20"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 8,
+            "coefficient": "-50"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 9,
+            "coefficient": "6"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 6,
+            "coefficient": "28"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 7,
+            "coefficient": "22"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 8,
+            "coefficient": "-82"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 9,
+            "coefficient": "-10"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 7,
+            "coefficient": "-11"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 8,
+            "coefficient": "76"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 9,
+            "coefficient": "50"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 8,
+            "col": 8,
+            "coefficient": "4"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 8,
+            "col": 9,
+            "coefficient": "-64"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 9,
+            "col": 9,
+            "coefficient": "10"
+          }
+        ]
+      }
+    },
+    {
+      "name": "moment_03",
+      "sense": "eq",
+      "expression": {
+        "constant": "-9071852406175/16028319609",
+        "terms": [
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 0,
+            "coefficient": "83"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 1,
+            "coefficient": "-2"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 2,
+            "coefficient": "76"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 3,
+            "coefficient": "12"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 4,
+            "coefficient": "-12"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 5,
+            "coefficient": "-4"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 6,
+            "coefficient": "-26"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 7,
+            "coefficient": "40"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 8,
+            "coefficient": "-18"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 9,
+            "coefficient": "-66"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 1,
+            "coefficient": "20"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 2,
+            "coefficient": "92"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 3,
+            "coefficient": "-20"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 4,
+            "coefficient": "26"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 5,
+            "coefficient": "42"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 6,
+            "coefficient": "78"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 7,
+            "coefficient": "6"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 8,
+            "coefficient": "-24"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 9,
+            "coefficient": "28"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 2,
+            "coefficient": "32"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 3,
+            "coefficient": "-54"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 4,
+            "coefficient": "-12"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 5,
+            "coefficient": "88"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 6,
+            "coefficient": "16"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 7,
+            "coefficient": "26"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 8,
+            "coefficient": "2"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 9,
+            "coefficient": "-76"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 3,
+            "coefficient": "5"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 4,
+            "coefficient": "40"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 5,
+            "coefficient": "-50"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 6,
+            "coefficient": "-88"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 7,
+            "coefficient": "-98"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 8,
+            "coefficient": "-86"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 9,
+            "coefficient": "4"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 4,
+            "coefficient": "6"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 5,
+            "coefficient": "70"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 6,
+            "coefficient": "38"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 7,
+            "coefficient": "18"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 8,
+            "coefficient": "44"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 9,
+            "coefficient": "114"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 5,
+            "coefficient": "-14"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 6,
+            "coefficient": "54"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 7,
+            "coefficient": "2"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 8,
+            "coefficient": "-8"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 9,
+            "coefficient": "6"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 6,
+            "coefficient": "11"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 7,
+            "coefficient": "-48"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 8,
+            "coefficient": "38"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 9,
+            "coefficient": "84"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 7,
+            "coefficient": "3"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 8,
+            "coefficient": "10"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 9,
+            "coefficient": "-12"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 8,
+            "col": 8,
+            "coefficient": "41"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 8,
+            "col": 9,
+            "coefficient": "8"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 9,
+            "col": 9,
+            "coefficient": "28"
+          }
+        ]
+      }
+    },
+    {
+      "name": "moment_04",
+      "sense": "eq",
+      "expression": {
+        "constant": "170409069893/16028319609",
+        "terms": [
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 0,
+            "coefficient": "-1"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 1,
+            "coefficient": "40"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 2,
+            "coefficient": "8"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 3,
+            "coefficient": "4"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 4,
+            "coefficient": "-30"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 5,
+            "coefficient": "-18"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 6,
+            "coefficient": "-8"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 7,
+            "coefficient": "-58"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 8,
+            "coefficient": "34"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 9,
+            "coefficient": "78"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 1,
+            "coefficient": "-25"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 2,
+            "coefficient": "6"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 3,
+            "coefficient": "48"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 4,
+            "coefficient": "-20"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 5,
+            "coefficient": "-6"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 6,
+            "coefficient": "-66"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 7,
+            "coefficient": "38"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 8,
+            "coefficient": "2"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 9,
+            "coefficient": "-66"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 2,
+            "coefficient": "18"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 3,
+            "coefficient": "4"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 4,
+            "coefficient": "56"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 5,
+            "coefficient": "4"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 6,
+            "coefficient": "42"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 7,
+            "coefficient": "-54"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 8,
+            "coefficient": "-12"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 9,
+            "coefficient": "58"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 3,
+            "coefficient": "-9"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 4,
+            "coefficient": "-2"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 5,
+            "coefficient": "84"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 6,
+            "coefficient": "18"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 7,
+            "coefficient": "12"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 8,
+            "coefficient": "-42"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 9,
+            "coefficient": "54"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 4,
+            "coefficient": "24"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 5,
+            "coefficient": "4"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 6,
+            "coefficient": "10"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 7,
+            "coefficient": "-24"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 8,
+            "coefficient": "28"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 9,
+            "coefficient": "-32"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 5,
+            "coefficient": "-18"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 6,
+            "coefficient": "8"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 7,
+            "coefficient": "24"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 8,
+            "coefficient": "6"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 9,
+            "coefficient": "-16"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 6,
+            "coefficient": "3"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 7,
+            "coefficient": "16"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 8,
+            "coefficient": "6"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 9,
+            "coefficient": "6"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 7,
+            "coefficient": "-40"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 8,
+            "coefficient": "-48"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 9,
+            "coefficient": "-50"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 8,
+            "col": 8,
+            "coefficient": "-36"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 8,
+            "col": 9,
+            "coefficient": "36"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 9,
+            "col": 9,
+            "coefficient": "9"
+          }
+        ]
+      }
+    },
+    {
+      "name": "moment_05",
+      "sense": "eq",
+      "expression": {
+        "constant": "-50661973956767/48084958827",
+        "terms": [
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 0,
+            "coefficient": "34"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 1,
+            "coefficient": "58"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 2,
+            "coefficient": "86"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 3,
+            "coefficient": "28"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 4,
+            "coefficient": "-30"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 5,
+            "coefficient": "-24"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 6,
+            "coefficient": "-22"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 7,
+            "coefficient": "-66"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 8,
+            "coefficient": "84"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 9,
+            "coefficient": "106"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 1,
+            "coefficient": "-61"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 2,
+            "coefficient": "-28"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 3,
+            "coefficient": "58"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 4,
+            "coefficient": "-84"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 5,
+            "coefficient": "6"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 6,
+            "coefficient": "-140"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 7,
+            "coefficient": "140"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 8,
+            "coefficient": "-62"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 9,
+            "coefficient": "-90"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 2,
+            "coefficient": "52"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 3,
+            "coefficient": "24"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 4,
+            "coefficient": "130"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 5,
+            "coefficient": "26"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 6,
+            "coefficient": "56"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 7,
+            "coefficient": "-80"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 8,
+            "coefficient": "-58"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 9,
+            "coefficient": "86"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 3,
+            "coefficient": "6"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 4,
+            "coefficient": "-78"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 5,
+            "coefficient": "112"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 6,
+            "coefficient": "42"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 7,
+            "coefficient": "40"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 8,
+            "coefficient": "-94"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 9,
+            "coefficient": "124"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 4,
+            "coefficient": "39"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 5,
+            "coefficient": "52"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 6,
+            "coefficient": "48"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 7,
+            "coefficient": "-24"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 8,
+            "coefficient": "10"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 9,
+            "coefficient": "22"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 5,
+            "coefficient": "-45"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 6,
+            "coefficient": "-10"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 7,
+            "coefficient": "62"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 8,
+            "coefficient": "36"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 9,
+            "coefficient": "-52"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 6,
+            "coefficient": "33"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 7,
+            "coefficient": "8"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 8,
+            "coefficient": "-24"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 9,
+            "coefficient": "74"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 7,
+            "coefficient": "-50"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 8,
+            "coefficient": "-118"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 9,
+            "coefficient": "-22"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 8,
+            "col": 8,
+            "coefficient": "-30"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 8,
+            "col": 9,
+            "coefficient": "30"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 9,
+            "col": 9,
+            "coefficient": "41"
+          }
+        ]
+      }
+    },
+    {
+      "name": "moment_06",
+      "sense": "eq",
+      "expression": {
+        "constant": "16293441928811/48084958827",
+        "terms": [
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 0,
+            "coefficient": "-48"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 1,
+            "coefficient": "-24"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 2,
+            "coefficient": "8"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 3,
+            "coefficient": "6"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 4,
+            "coefficient": "30"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 5,
+            "coefficient": "46"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 6,
+            "coefficient": "-2"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 7,
+            "coefficient": "-28"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 8,
+            "coefficient": "82"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 9,
+            "coefficient": "36"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 1,
+            "coefficient": "-45"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 2,
+            "coefficient": "-132"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 3,
+            "coefficient": "-14"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 4,
+            "coefficient": "-84"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 5,
+            "coefficient": "-36"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 6,
+            "coefficient": "-80"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 7,
+            "coefficient": "42"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 8,
+            "coefficient": "-64"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 9,
+            "coefficient": "28"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 2,
+            "coefficient": "-11"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 3,
+            "coefficient": "66"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 4,
+            "coefficient": "64"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 5,
+            "coefficient": "-70"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 6,
+            "coefficient": "-54"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 7,
+            "coefficient": "2"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 8,
+            "coefficient": "-36"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 9,
+            "coefficient": "34"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 3,
+            "coefficient": "4"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 4,
+            "coefficient": "-120"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 5,
+            "coefficient": "10"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 6,
+            "coefficient": "94"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 7,
+            "coefficient": "104"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 8,
+            "coefficient": "76"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 9,
+            "coefficient": "34"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 4,
+            "coefficient": "-25"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 5,
+            "coefficient": "-12"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 6,
+            "coefficient": "28"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 7,
+            "coefficient": "16"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 8,
+            "coefficient": "-76"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 9,
+            "coefficient": "-52"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 5,
+            "coefficient": "-18"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 6,
+            "coefficient": "-104"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 7,
+            "coefficient": "-8"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 8,
+            "coefficient": "-12"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 9,
+            "coefficient": "-16"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 6,
+            "coefficient": "21"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 7,
+            "coefficient": "38"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 8,
+            "coefficient": "-102"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 9,
+            "coefficient": "-30"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 7,
+            "coefficient": "5"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 8,
+            "coefficient": "24"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 9,
+            "coefficient": "80"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 8,
+            "col": 8,
+            "coefficient": "-8"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 8,
+            "col": 9,
+            "coefficient": "-70"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 9,
+            "col": 9,
+            "coefficient": "-3"
+          }
+        ]
+      }
+    },
+    {
+      "name": "moment_07",
+      "sense": "eq",
+      "expression": {
+        "constant": "-48275911010218/48084958827",
+        "terms": [
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 0,
+            "coefficient": "44"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 1,
+            "coefficient": "42"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 2,
+            "coefficient": "38"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 3,
+            "coefficient": "-64"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 4,
+            "coefficient": "-8"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 5,
+            "coefficient": "-104"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 6,
+            "coefficient": "-24"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 7,
+            "coefficient": "-6"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 8,
+            "coefficient": "-32"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 9,
+            "coefficient": "8"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 1,
+            "coefficient": "37"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 2,
+            "coefficient": "20"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 3,
+            "coefficient": "42"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 4,
+            "coefficient": "8"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 5,
+            "coefficient": "-34"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 6,
+            "coefficient": "4"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 7,
+            "coefficient": "2"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 8,
+            "coefficient": "10"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 9,
+            "coefficient": "-22"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 2,
+            "coefficient": "27"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 3,
+            "coefficient": "-60"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 4,
+            "coefficient": "-48"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 5,
+            "coefficient": "-18"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 6,
+            "coefficient": "-32"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 7,
+            "coefficient": "-16"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 8,
+            "coefficient": "8"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 9,
+            "coefficient": "22"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 3,
+            "coefficient": "3"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 4,
+            "coefficient": "42"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 5,
+            "coefficient": "32"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 6,
+            "coefficient": "4"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 7,
+            "coefficient": "-70"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 8,
+            "coefficient": "-50"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 9,
+            "coefficient": "-22"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 4,
+            "coefficient": "3"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 5,
+            "coefficient": "-28"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 6,
+            "coefficient": "-24"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 7,
+            "coefficient": "-32"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 8,
+            "coefficient": "88"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 9,
+            "coefficient": "20"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 5,
+            "coefficient": "1"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 6,
+            "coefficient": "98"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 7,
+            "coefficient": "74"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 8,
+            "coefficient": "88"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 9,
+            "coefficient": "46"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 7,
+            "coefficient": "-14"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 8,
+            "coefficient": "36"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 9,
+            "coefficient": "50"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 7,
+            "coefficient": "21"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 8,
+            "coefficient": "-82"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 9,
+            "coefficient": "28"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 8,
+            "col": 8,
+            "coefficient": "24"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 8,
+            "col": 9,
+            "coefficient": "34"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 9,
+            "col": 9,
+            "coefficient": "12"
+          }
+        ]
+      }
+    },
+    {
+      "name": "fixed_objective",
+      "sense": "eq",
+      "expression": {
+        "constant": "-2224093617954365/48084958827",
+        "terms": [
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 0,
+            "coefficient": "386666800253962/144254876481"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 1,
+            "coefficient": "233616305388128/144254876481"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 2,
+            "coefficient": "96845273356762/48084958827"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 3,
+            "coefficient": "-127493909673808/144254876481"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 4,
+            "coefficient": "-118264798542836/144254876481"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 5,
+            "coefficient": "-157543346755844/48084958827"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 6,
+            "coefficient": "-86887994803754/144254876481"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 7,
+            "coefficient": "7662131760650/16028319609"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 8,
+            "coefficient": "-86811867428456/48084958827"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 0,
+            "col": 9,
+            "coefficient": "-57438128775976/144254876481"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 1,
+            "coefficient": "167939984467636/144254876481"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 2,
+            "coefficient": "152139150090676/48084958827"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 3,
+            "coefficient": "175100486196506/144254876481"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 4,
+            "coefficient": "142207498405114/144254876481"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 5,
+            "coefficient": "20392959263644/48084958827"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 6,
+            "coefficient": "115155839393626/144254876481"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 7,
+            "coefficient": "13724124950228/16028319609"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 8,
+            "coefficient": "35085662596006/48084958827"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 1,
+            "col": 9,
+            "coefficient": "-221288675030170/144254876481"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 2,
+            "coefficient": "23402938621780/16028319609"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 3,
+            "coefficient": "-115684174935602/48084958827"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 4,
+            "coefficient": "-59052712460836/48084958827"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 5,
+            "coefficient": "31834172549090/16028319609"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 6,
+            "coefficient": "51151683053384/48084958827"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 7,
+            "coefficient": "-4411726675406/5342773203"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 8,
+            "coefficient": "3174631195910/16028319609"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 2,
+            "col": 9,
+            "coefficient": "501233175310/48084958827"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 3,
+            "coefficient": "46033207662589/144254876481"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 4,
+            "coefficient": "367278535340746/144254876481"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 5,
+            "coefficient": "43763603268394/48084958827"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 6,
+            "coefficient": "-284515184363108/144254876481"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 7,
+            "coefficient": "-56099452380412/16028319609"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 8,
+            "coefficient": "-184062882867014/48084958827"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 3,
+            "col": 9,
+            "coefficient": "7271365678580/144254876481"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 4,
+            "coefficient": "141098377192798/144254876481"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 5,
+            "coefficient": "30102714580838/48084958827"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 6,
+            "coefficient": "-68388861477418/144254876481"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 7,
+            "coefficient": "-17672326970186/16028319609"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 8,
+            "coefficient": "160798546743596/48084958827"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 4,
+            "col": 9,
+            "coefficient": "383415969291958/144254876481"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 5,
+            "coefficient": "772763656582/16028319609"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 6,
+            "coefficient": "195986827990952/48084958827"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 7,
+            "coefficient": "12842336696500/5342773203"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 8,
+            "coefficient": "39553445254010/16028319609"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 5,
+            "col": 9,
+            "coefficient": "26953892196358/48084958827"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 6,
+            "coefficient": "-3141940628288/144254876481"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 7,
+            "coefficient": "-24073311181118/16028319609"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 8,
+            "coefficient": "137416318207040/48084958827"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 6,
+            "col": 9,
+            "coefficient": "396625552255888/144254876481"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 7,
+            "coefficient": "17470401334/1780924401"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 8,
+            "coefficient": "-18121561260572/5342773203"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 7,
+            "col": 9,
+            "coefficient": "-15705944021104/16028319609"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 8,
+            "col": 8,
+            "coefficient": "11640159165019/16028319609"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 8,
+            "col": 9,
+            "coefficient": "115687694772226/48084958827"
+          },
+          {
+            "block": "moment_matrix",
+            "row": 9,
+            "col": 9,
+            "coefficient": "130345034297728/144254876481"
+          }
+        ]
+      }
+    }
+  ],
+  "objective": {
+    "sense": "minimize",
+    "expression": {
+      "constant": "0",
+      "terms": [
+        {
+          "block": "moment_matrix",
+          "row": 0,
+          "col": 0,
+          "coefficient": "386666800253962/144254876481"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 0,
+          "col": 1,
+          "coefficient": "233616305388128/144254876481"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 0,
+          "col": 2,
+          "coefficient": "96845273356762/48084958827"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 0,
+          "col": 3,
+          "coefficient": "-127493909673808/144254876481"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 0,
+          "col": 4,
+          "coefficient": "-118264798542836/144254876481"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 0,
+          "col": 5,
+          "coefficient": "-157543346755844/48084958827"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 0,
+          "col": 6,
+          "coefficient": "-86887994803754/144254876481"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 0,
+          "col": 7,
+          "coefficient": "7662131760650/16028319609"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 0,
+          "col": 8,
+          "coefficient": "-86811867428456/48084958827"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 0,
+          "col": 9,
+          "coefficient": "-57438128775976/144254876481"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 1,
+          "col": 1,
+          "coefficient": "167939984467636/144254876481"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 1,
+          "col": 2,
+          "coefficient": "152139150090676/48084958827"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 1,
+          "col": 3,
+          "coefficient": "175100486196506/144254876481"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 1,
+          "col": 4,
+          "coefficient": "142207498405114/144254876481"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 1,
+          "col": 5,
+          "coefficient": "20392959263644/48084958827"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 1,
+          "col": 6,
+          "coefficient": "115155839393626/144254876481"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 1,
+          "col": 7,
+          "coefficient": "13724124950228/16028319609"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 1,
+          "col": 8,
+          "coefficient": "35085662596006/48084958827"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 1,
+          "col": 9,
+          "coefficient": "-221288675030170/144254876481"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 2,
+          "col": 2,
+          "coefficient": "23402938621780/16028319609"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 2,
+          "col": 3,
+          "coefficient": "-115684174935602/48084958827"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 2,
+          "col": 4,
+          "coefficient": "-59052712460836/48084958827"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 2,
+          "col": 5,
+          "coefficient": "31834172549090/16028319609"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 2,
+          "col": 6,
+          "coefficient": "51151683053384/48084958827"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 2,
+          "col": 7,
+          "coefficient": "-4411726675406/5342773203"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 2,
+          "col": 8,
+          "coefficient": "3174631195910/16028319609"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 2,
+          "col": 9,
+          "coefficient": "501233175310/48084958827"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 3,
+          "col": 3,
+          "coefficient": "46033207662589/144254876481"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 3,
+          "col": 4,
+          "coefficient": "367278535340746/144254876481"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 3,
+          "col": 5,
+          "coefficient": "43763603268394/48084958827"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 3,
+          "col": 6,
+          "coefficient": "-284515184363108/144254876481"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 3,
+          "col": 7,
+          "coefficient": "-56099452380412/16028319609"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 3,
+          "col": 8,
+          "coefficient": "-184062882867014/48084958827"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 3,
+          "col": 9,
+          "coefficient": "7271365678580/144254876481"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 4,
+          "col": 4,
+          "coefficient": "141098377192798/144254876481"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 4,
+          "col": 5,
+          "coefficient": "30102714580838/48084958827"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 4,
+          "col": 6,
+          "coefficient": "-68388861477418/144254876481"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 4,
+          "col": 7,
+          "coefficient": "-17672326970186/16028319609"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 4,
+          "col": 8,
+          "coefficient": "160798546743596/48084958827"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 4,
+          "col": 9,
+          "coefficient": "383415969291958/144254876481"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 5,
+          "col": 5,
+          "coefficient": "772763656582/16028319609"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 5,
+          "col": 6,
+          "coefficient": "195986827990952/48084958827"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 5,
+          "col": 7,
+          "coefficient": "12842336696500/5342773203"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 5,
+          "col": 8,
+          "coefficient": "39553445254010/16028319609"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 5,
+          "col": 9,
+          "coefficient": "26953892196358/48084958827"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 6,
+          "col": 6,
+          "coefficient": "-3141940628288/144254876481"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 6,
+          "col": 7,
+          "coefficient": "-24073311181118/16028319609"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 6,
+          "col": 8,
+          "coefficient": "137416318207040/48084958827"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 6,
+          "col": 9,
+          "coefficient": "396625552255888/144254876481"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 7,
+          "col": 7,
+          "coefficient": "17470401334/1780924401"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 7,
+          "col": 8,
+          "coefficient": "-18121561260572/5342773203"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 7,
+          "col": 9,
+          "coefficient": "-15705944021104/16028319609"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 8,
+          "col": 8,
+          "coefficient": "11640159165019/16028319609"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 8,
+          "col": 9,
+          "coefficient": "115687694772226/48084958827"
+        },
+        {
+          "block": "moment_matrix",
+          "row": 9,
+          "col": 9,
+          "coefficient": "130345034297728/144254876481"
+        }
+      ]
+    }
+  }
+}

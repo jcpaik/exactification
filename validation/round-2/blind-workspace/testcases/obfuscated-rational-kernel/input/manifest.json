@@ -1,0 +1,228 @@
+{
+  "format": "exactification-testcase-v1",
+  "id": "obfuscated-rational-kernel",
+  "title": "Obfuscated supporting face with a rational kernel",
+  "field": "Q",
+  "model": "model.json",
+  "approximate_solution": "numerical/2p/approximate_solution.json",
+  "fixed_objective": "2224093617954365/48084958827",
+  "solution_side": "affine_psd_blocks",
+  "source": {
+    "solver": {
+      "name": "SDPA-GMP",
+      "repository": "https://github.com/nakatamaho/sdpa-gmp.git",
+      "commit": "ca110db5ea1cc46e811b70dfea9cbb25db74448d",
+      "binary_sha256": "c17c133367fff473f1683ea3fd4131d295a73038229231a0c6a1b725b27fd3f0"
+    }
+  },
+  "structure": {
+    "block_count": 1,
+    "block_sizes": [
+      10
+    ],
+    "scalar_upper_triangle_variables": 55,
+    "equality_constraints": 9
+  },
+  "workflow": {
+    "primary_run": "2p",
+    "additional_approximate_solutions": [
+      "numerical/p/approximate_solution.json"
+    ],
+    "numerical_runs": [
+      {
+        "id": "p",
+        "approximate_solution": "numerical/p/approximate_solution.json",
+        "run_record": {
+          "path": "numerical/p/run.json",
+          "sha256": "061a898ec73206709f8fed40e18959da3a4ddc14fe50fa5f34db9818a28388a5"
+        },
+        "solver_precision_bits": 256,
+        "printed_decimal_digits": 40,
+        "coefficient_decimal_digits": 90,
+        "epsilon": "1e-35",
+        "equivalent_row_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "equivalent_row_scales": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "arguments": [
+          "/private/tmp/sdpa-gmp-exactification/sdpa_gmp",
+          "-ds",
+          "testcases/obfuscated-rational-kernel/input/numerical/p/problem.dat-s",
+          "-o",
+          "testcases/obfuscated-rational-kernel/input/numerical/p/result.txt",
+          "-p",
+          "testcases/obfuscated-rational-kernel/input/numerical/p/sdpa-gmp.params"
+        ],
+        "status": "pdFEAS",
+        "iterations": 46,
+        "runtime_seconds": "0.243005",
+        "primal_feasibility_error": "5.3626288642858954e-73",
+        "dual_feasibility_error": "1.7521372750012048e-39",
+        "artifacts": {
+          "sdpa_sparse": {
+            "path": "numerical/p/problem.dat-s",
+            "sha256": "2b0d6ab43fc1e703f54e7836ebe449a39eaef9cbd94e0567d46321bbb9096cf0"
+          },
+          "parameters": {
+            "path": "numerical/p/sdpa-gmp.params",
+            "sha256": "2dd08176e641f5d83e666b048a7fcebe36aa7b7550fb8692b1a4999f7ec7e63e"
+          },
+          "raw_result": {
+            "path": "numerical/p/result.txt",
+            "sha256": "2be51a6a0c61ee16ecbf0f82817b5a23e281018cf9db43e9c20ae1745bbd687d"
+          },
+          "approximate_solution": {
+            "path": "numerical/p/approximate_solution.json",
+            "sha256": "06630bf1bad06b88be9615143fbbfbe6789cd1bc15dc94b751ffaeccaeb9b6b1"
+          }
+        }
+      },
+      {
+        "id": "2p",
+        "approximate_solution": "numerical/2p/approximate_solution.json",
+        "run_record": {
+          "path": "numerical/2p/run.json",
+          "sha256": "6d9f14152b30cfee91de5c09851b71205704a945fa0bf6659be57f7d7ea982eb"
+        },
+        "solver_precision_bits": 512,
+        "printed_decimal_digits": 40,
+        "coefficient_decimal_digits": 170,
+        "epsilon": "1e-60",
+        "equivalent_row_order": [
+          8,
+          3,
+          0,
+          6,
+          1,
+          7,
+          4,
+          2,
+          5
+        ],
+        "equivalent_row_scales": [
+          2,
+          3,
+          5,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23
+        ],
+        "arguments": [
+          "/private/tmp/sdpa-gmp-exactification/sdpa_gmp",
+          "-ds",
+          "testcases/obfuscated-rational-kernel/input/numerical/2p/problem.dat-s",
+          "-o",
+          "testcases/obfuscated-rational-kernel/input/numerical/2p/result.txt",
+          "-p",
+          "testcases/obfuscated-rational-kernel/input/numerical/2p/sdpa-gmp.params"
+        ],
+        "status": "pdFEAS",
+        "iterations": 77,
+        "runtime_seconds": "0.583834",
+        "primal_feasibility_error": "6.9326785145533081e-132",
+        "dual_feasibility_error": "9.3526057563396770e-70",
+        "artifacts": {
+          "sdpa_sparse": {
+            "path": "numerical/2p/problem.dat-s",
+            "sha256": "701d24487890ae7edfe859a54cee2c2058551028020c03fa6b8afdd49910e445"
+          },
+          "parameters": {
+            "path": "numerical/2p/sdpa-gmp.params",
+            "sha256": "7675b0f850037e59243b8a9ca5b2c1d58f5d4bda19ba423a34844593383cec11"
+          },
+          "raw_result": {
+            "path": "numerical/2p/result.txt",
+            "sha256": "d96740e5bcd2f2645513406922875f13d4b01fc9f023d0965c580cd820ceb6b8"
+          },
+          "approximate_solution": {
+            "path": "numerical/2p/approximate_solution.json",
+            "sha256": "002a634bed38d1ebea6e1380d87fba6a35725a8bd7a003b69863cc8a953f0f0c"
+          }
+        }
+      }
+    ]
+  },
+  "serialization": {
+    "exact": "model.json uses canonical numerator/denominator strings over Q",
+    "solver_matrix_printed_decimal_digits": 40,
+    "note": "Internal solver precision exceeds the 40 digits printed by SDPA-GMP; approximate files claim only printed digits."
+  },
+  "files": {
+    "model.json": {
+      "sha256": "982232f11d994b787d9f2fba0c3e94599d9f931fa7ce7b3e8c49eaafe21a0171"
+    },
+    "numerical/p/problem.dat-s": {
+      "sha256": "2b0d6ab43fc1e703f54e7836ebe449a39eaef9cbd94e0567d46321bbb9096cf0"
+    },
+    "numerical/p/sdpa-gmp.params": {
+      "sha256": "2dd08176e641f5d83e666b048a7fcebe36aa7b7550fb8692b1a4999f7ec7e63e"
+    },
+    "numerical/p/result.txt": {
+      "sha256": "2be51a6a0c61ee16ecbf0f82817b5a23e281018cf9db43e9c20ae1745bbd687d"
+    },
+    "numerical/p/approximate_solution.json": {
+      "sha256": "06630bf1bad06b88be9615143fbbfbe6789cd1bc15dc94b751ffaeccaeb9b6b1"
+    },
+    "numerical/2p/problem.dat-s": {
+      "sha256": "701d24487890ae7edfe859a54cee2c2058551028020c03fa6b8afdd49910e445"
+    },
+    "numerical/2p/sdpa-gmp.params": {
+      "sha256": "7675b0f850037e59243b8a9ca5b2c1d58f5d4bda19ba423a34844593383cec11"
+    },
+    "numerical/2p/result.txt": {
+      "sha256": "d96740e5bcd2f2645513406922875f13d4b01fc9f023d0965c580cd820ceb6b8"
+    },
+    "numerical/2p/approximate_solution.json": {
+      "sha256": "002a634bed38d1ebea6e1380d87fba6a35725a8bd7a003b69863cc8a953f0f0c"
+    },
+    "numerical/p/run.json": {
+      "sha256": "061a898ec73206709f8fed40e18959da3a4ddc14fe50fa5f34db9818a28388a5"
+    },
+    "numerical/2p/run.json": {
+      "sha256": "6d9f14152b30cfee91de5c09851b71205704a945fa0bf6659be57f7d7ea982eb"
+    }
+  },
+  "blind_input_policy": {
+    "exact_certificate_included": false,
+    "exact_kernel_included": false,
+    "exact_projector_included": false,
+    "construction_mounted": false,
+    "previous_attempts_mounted": false,
+    "note": "Construction-only generator, supporting identity, and oracle certificate are excluded from blind input."
+  },
+  "leakage_policy": {
+    "single_model_row_may_expose_supporting_projector": false,
+    "supporting_face_requires_fixed_objective_and_generic_equalities": true,
+    "construction_self_check_present": true
+  },
+  "features": [
+    "rational_coefficients",
+    "rank_deficient",
+    "rational_kernel_subspace",
+    "obfuscated_supporting_face",
+    "two_precision_runs",
+    "independently_scaled_solver_projections",
+    "nonunique_relative_interior"
+  ]
+}

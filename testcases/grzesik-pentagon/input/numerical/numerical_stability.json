@@ -1,0 +1,90 @@
+{
+  "format": "numerical-face-stability-v1",
+  "method": {
+    "relative_eigenvalue_threshold": "1.0E-12",
+    "projector_distance_tolerance": "1.0E-08",
+    "approximate_psd_tolerance": "1.0E-10",
+    "eigensolver": "numpy.linalg.eigh (2.4.3)",
+    "warning": "This is numerical face evidence, not an exact rank or kernel oracle."
+  },
+  "runs": {
+    "p": {
+      "solver_internal_precision_bits": 512,
+      "printed_digits": 80,
+      "phase": "pdOPT",
+      "iterations": 67,
+      "primal_feasibility_error_reported": "5.7056160196971368e-152",
+      "dual_feasibility_error_reported": "9.7711288157222207e-115",
+      "runtime_seconds_reported": "1.216",
+      "check_tolerance": "1E-40",
+      "max_equality_residual": "0.00000000E+00",
+      "max_inequality_violation": "0.00000000E+00",
+      "objective_error_to_fixed_target": "7.83954347E-52"
+    },
+    "2p": {
+      "solver_internal_precision_bits": 1024,
+      "printed_digits": 160,
+      "phase": "pdOPT",
+      "iterations": 117,
+      "primal_feasibility_error_reported": "6.5584727506184056e-306",
+      "dual_feasibility_error_reported": "7.9864015367356260e-218",
+      "runtime_seconds_reported": "3.998",
+      "check_tolerance": "1E-80",
+      "max_equality_residual": "0.00000000E+00",
+      "max_inequality_violation": "0.00000000E+00",
+      "objective_error_to_fixed_target": "7.83954347E-102"
+    }
+  },
+  "summary": {
+    "stable_nullities": true,
+    "stable_kernel_projectors": true,
+    "worst_projector_distance_operator_norm": "4.96429243E-15",
+    "worst_projector_block": "Q"
+  },
+  "blocks": [
+    {
+      "block": "U",
+      "size": 1,
+      "nullity_p": 0,
+      "nullity_2p": 0,
+      "projector_distance_operator_norm": null,
+      "p_max_relative_null_eigenvalue": "0.00000000E+00",
+      "p_min_relative_positive_eigenvalue": "3.84000000E-02",
+      "2p_max_relative_null_eigenvalue": "0.00000000E+00",
+      "2p_min_relative_positive_eigenvalue": "3.84000000E-02"
+    },
+    {
+      "block": "P",
+      "size": 8,
+      "nullity_p": 4,
+      "nullity_2p": 4,
+      "projector_distance_operator_norm": "3.61967365E-15",
+      "p_max_relative_null_eigenvalue": "7.52022546E-17",
+      "p_min_relative_positive_eigenvalue": "2.07726235E-02",
+      "2p_max_relative_null_eigenvalue": "1.64363555E-16",
+      "2p_min_relative_positive_eigenvalue": "2.07867648E-02"
+    },
+    {
+      "block": "Q",
+      "size": 6,
+      "nullity_p": 1,
+      "nullity_2p": 1,
+      "projector_distance_operator_norm": "4.96429243E-15",
+      "p_max_relative_null_eigenvalue": "6.41443035E-17",
+      "p_min_relative_positive_eigenvalue": "7.45201483E-03",
+      "2p_max_relative_null_eigenvalue": "2.37198928E-17",
+      "2p_min_relative_positive_eigenvalue": "7.45494477E-03"
+    },
+    {
+      "block": "R",
+      "size": 5,
+      "nullity_p": 2,
+      "nullity_2p": 2,
+      "projector_distance_operator_norm": "8.64340961E-16",
+      "p_max_relative_null_eigenvalue": "1.34017005E-16",
+      "p_min_relative_positive_eigenvalue": "5.48340208E-02",
+      "2p_max_relative_null_eigenvalue": "2.06693178E-16",
+      "2p_min_relative_positive_eigenvalue": "5.48253299E-02"
+    }
+  ]
+}

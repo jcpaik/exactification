@@ -1,0 +1,42 @@
+{
+  "format": "exactification-kernel-projector-recovery-v1",
+  "method": "full one-dimensional numerical null block",
+  "blocks": {
+    "bound_scalar.B": {
+      "candidate_nullity": 1,
+      "status": "recovered",
+      "kernel_basis_columns": [[1]],
+      "provenance": "numerical_graph_chart"
+    },
+    "gegenbauer_scalar.a_3": {
+      "candidate_nullity": 1,
+      "status": "recovered",
+      "kernel_basis_columns": [[1]],
+      "provenance": "numerical_graph_chart"
+    },
+    "gegenbauer_scalar.a_4": {
+      "candidate_nullity": 1,
+      "status": "recovered",
+      "kernel_basis_columns": [[1]],
+      "provenance": "numerical_graph_chart"
+    },
+    "gegenbauer_scalar.a_5": {
+      "candidate_nullity": 1,
+      "status": "recovered",
+      "kernel_basis_columns": [[1]],
+      "provenance": "numerical_graph_chart"
+    },
+    "gegenbauer_scalar.a_6": {
+      "candidate_nullity": 1,
+      "status": "recovered",
+      "kernel_basis_columns": [[1]],
+      "provenance": "numerical_graph_chart"
+    },
+    "three_point_kernel.F_6": {
+      "candidate_nullity": 1,
+      "status": "recovered",
+      "kernel_basis_columns": [[1]],
+      "provenance": "numerical_graph_chart"
+    }
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "format": "exactification-kernels-v1",
+  "method": "basis-invariant numerical projector rational reconstruction, with row-relation recovery where required",
+  "blocks": {
+    "U": {
+      "candidate_nullity": 0,
+      "precision_runs_used": [
+        "input/approximate_solution.json"
+      ],
+      "status": "full_rank_no_kernel_recovery_required",
+      "provenance": "mixed",
+      "relation_matrix": null,
+      "relation_exact_rank": null,
+      "exact_kernel_basis_columns": [],
+      "relation_height": null,
+      "normalized_relation_residual_max": null,
+      "subspace_projection_residual_frobenius": null,
+      "face_equations_added": 0,
+      "face_equation_rank": 0
+    },
+    "P": {
+      "candidate_nullity": 4,
+      "precision_runs_used": [
+        "input/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "provenance": "mixed",
+      "relation_matrix": [
+        [
+          0,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0
+        ],
+        [
+          2,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          -3
+        ]
+      ],
+      "relation_exact_rank": 4,
+      "exact_kernel_basis_columns": [
+        [
+          21,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          12
+        ],
+        [
+          4,
+          28,
+          -1,
+          -1,
+          -1,
+          -1,
+          28,
+          -6
+        ],
+        [
+          4,
+          -1,
+          28,
+          -1,
+          -1,
+          28,
+          -1,
+          -6
+        ],
+        [
+          4,
+          -1,
+          -1,
+          28,
+          28,
+          -1,
+          -1,
+          -6
+        ]
+      ],
+      "relation_height": 3,
+      "normalized_relation_residual_max": "3.6936858543572793876500052605624455e-39",
+      "subspace_projection_residual_frobenius": "1.0707435356655983314640303753231269e-38",
+      "face_equations_added": 32,
+      "face_equation_rank": 26
+    },
+    "Q": {
+      "candidate_nullity": 1,
+      "precision_runs_used": [
+        "input/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "provenance": "mixed",
+      "relation_matrix": [
+        [
+          1,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ]
+      ],
+      "relation_exact_rank": 5,
+      "exact_kernel_basis_columns": [
+        [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ]
+      ],
+      "relation_height": 1,
+      "normalized_relation_residual_max": "1.4366988495634528047472568426194667e-39",
+      "subspace_projection_residual_frobenius": "1.817863450665069271647598876192578e-39",
+      "face_equations_added": 6,
+      "face_equation_rank": 6
+    },
+    "R": {
+      "candidate_nullity": 2,
+      "precision_runs_used": [
+        "input/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "provenance": "mixed",
+      "relation_matrix": [
+        [
+          2,
+          2,
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -1,
+          0
+        ],
+        [
+          2,
+          1,
+          0,
+          0,
+          -1
+        ]
+      ],
+      "relation_exact_rank": 3,
+      "exact_kernel_basis_columns": [
+        [
+          7,
+          -6,
+          2,
+          -6,
+          8
+        ],
+        [
+          -2,
+          3,
+          2,
+          3,
+          -1
+        ]
+      ],
+      "relation_height": 2,
+      "normalized_relation_residual_max": "8.4008603496496435045159983826639723e-40",
+      "subspace_projection_residual_frobenius": "3.1219652226362560662882417647392321e-39",
+      "face_equations_added": 10,
+      "face_equation_rank": 9
+    }
+  }
+}

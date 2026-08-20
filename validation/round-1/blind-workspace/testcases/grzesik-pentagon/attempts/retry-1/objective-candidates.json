@@ -1,0 +1,13 @@
+{
+  "format": "exactification-objective-candidates-v1",
+  "discovery_required": false,
+  "candidates": [
+    {
+      "value": "24/625",
+      "source": "manifest.fixed_objective",
+      "status": "accepted",
+      "numerical_value": "0.0384",
+      "reason": "The fixed-objective affine system is consistent and the resulting exact certificate passes all verifier gates."
+    }
+  ]
+}

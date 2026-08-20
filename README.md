@@ -9,10 +9,108 @@ independently checkable exact proof. The project covers both classical benchmark
 problems and open problems where the extremal construction or sharp bound is not
 known in advance.
 
-> **Project status:** early research scaffold. The first benchmark now
-> [reproduces Grzesik's pentagon bound](problems/pentagons-triangle-free/README.md)
-> with a native 512-bit SDPA-GMP run and an exact post-solve checker; the general
-> pipeline and certificate format are still to be built.
+> **Project status:** active workflow validation. The isolated Round 1 retry
+> produced exact SDP certificates for the transparent rotated control,
+> Grzesik's pentagon SDP at `24/625`, and the DLM three-point SDP at `10`.
+> After a fixture audit reclassified the rotated control, the isolated Round 2
+> run recovered exact SDP certificates for the stronger held-out
+> `obfuscated-rational-kernel` p/2p fixture, Grzesik, and DLM. The strengthened
+> rational three-case validation requirement is complete. These are
+> `EXACT_SDP_CERTIFICATE` results, not independent theorem-level certificates.
+> See the [acceptance record](validation/ACCEPTANCE.md),
+> [Round 2 executor report](validation/round-2/executor-report-round-2.md), and
+> [combined-suite record](validation/round-2/SUITE.md).
+
+## User-facing surface: input and output
+
+The currently implemented surface begins with an **exact rational block SDP**
+and one or more high-precision numerical solutions. It does not yet accept only
+an informal extremal-graph statement such as “maximize the pentagon density”
+and automatically generate all types, flags, and density identities. That
+problem-to-SDP layer remains problem-specific.
+
+This is presently an artifact-oriented research interface rather than a single
+`exactify` command. A user prepares a testcase input, runs the reconstruction
+tools or workflow, and then checks the resulting attempt with the independent
+verifier and manifest-aware harness.
+
+### Input
+
+The public input is a directory of the following form:
+
+```text
+testcases/<case-id>/input/
+├── manifest.json                 # routing, target, field, and blind-input policy
+├── model.json                    # exact rational affine block-SDP model
+├── approximate_solution.json     # normalized high-precision decimal matrices
+└── numerical/                    # recommended discovery provenance
+    ├── p/                        # solver parameters, raw result, normalized result
+    └── 2p/                       # independent higher-precision run
+```
+
+The required logical inputs are:
+
+| Input | Meaning |
+| --- | --- |
+| Exact model | Named PSD blocks, exact rational affine constraints, objective direction, and objective expression in `exact-block-sdp-model-v1` format. |
+| Numerical solution | Full decimal block matrices from SDPA-GMP or another high-precision solver. Independent `p` and `2p` runs are expected for singular-face recovery. These numbers are discovery evidence, not proof data. |
+| Manifest | Paths, field, solution side, blind-input policy, and the fixed exact objective for a target-bound run. In rational v1, a successful attempt requires a non-null canonical rational target; `null` is exploration only. |
+| Provenance | Solver input, parameters, raw output, precision, commands, and hashes sufficient to reproduce or audit the numerical run. |
+
+The current trusted proof path is over \(\mathbb Q\). The workflow documents
+quadratic-field discovery, but rational v1 cannot issue a proof-level
+certificate over a number field. Public input must not contain a golden exact
+matrix, recovered kernel, PSD trace, or oracle certificate.
+
+### Output
+
+Reconstruction writes only a new attempt directory and does not modify the
+public input:
+
+```text
+testcases/<case-id>/attempts/<attempt-id>/
+├── objective-candidates.json     # objective reconstruction evidence
+├── spectra.json                  # p/2p eigenvalue and nullity diagnostics
+├── kernels.json                  # recovered exact face/subspace evidence
+├── affine-system.json            # exact enlarged affine reconstruction, when used
+├── candidate.json                # exact rational matrices before PSD traces
+├── certificate.json              # exact matrices plus replayable PSD proof traces
+├── verifier-output.json          # raw exact-verifier report
+├── verification.json             # manifest-bound status
+├── run.json                      # hashes and complete run provenance
+└── proof.md                      # human-readable reconstruction account
+```
+
+The principal user-visible result is `certificate.json`: an exact objective,
+exact rational PSD matrices, and exact Schur-complement traces. A successful
+harness report also returns every exact constraint value, every block rank, the
+model and certificate hashes, and status `EXACT_SDP_CERTIFICATE`.
+
+Check an output from the repository root with:
+
+```sh
+python3 -m verify check \
+  testcases/<case-id>/input/model.json \
+  testcases/<case-id>/attempts/<attempt-id>/certificate.json \
+  --json
+
+python3 -m validation.testcase_harness \
+  testcases/<case-id> <attempt-id>
+```
+
+The first command proves exact feasibility, the submitted objective, and PSD.
+The second additionally binds those facts to the manifest target and checks the
+artifact and provenance contract. `EXACT_SDP_CERTIFICATE` proves the serialized
+SDP result; turning it into a claimed extremal-graph theorem additionally
+requires an independently checked flag-algebra/model adapter and, for
+sharpness, a matching construction or witness.
+
+Coding agents can invoke the repository-local
+[`$exactify-flag-algebra-sdp` skill](.agents/skills/exactify-flag-algebra-sdp/SKILL.md)
+to execute this interface. The skill routes each phase to the authoritative
+workflow and contract, uses the supplied reconstruction tools, and enforces the
+distinction between numerical discovery, an exact SDP certificate, a rigorous
+problem bound, and a sharpness claim.
 
 ## Research goals
 
@@ -121,7 +219,8 @@ This layout is provisional and will evolve with the implementation.
 - [ ] Build precision-aware diagnostics for rank, kernels, and near-zero terms.
 - [ ] Implement rational reconstruction and PSLQ-based relation discovery.
 - [ ] Reconstruct exact PSD decompositions and dual certificates.
-- [ ] Build a deterministic exact-arithmetic verifier.
+- [x] Build a deterministic exact-arithmetic verifier for rational v1
+  certificates.
 - [ ] Reproduce several classical flag algebra bounds end to end.
 - [ ] Package complete, independently verifiable certificates for new results.
 
@@ -136,6 +235,29 @@ Committed results should distinguish three classes of artifact:
 
 Large generated files may eventually live outside Git, but every result should
 include stable metadata and a documented way to regenerate or retrieve them.
+
+## Workflow validation
+
+The reusable cases live in [`testcases/`](testcases/README.md). They cover
+Grzesik's flag-algebra SDP, the rational three-point SDP used in Theorem 4.3 of
+Dostert--de Laat--Moustrou, the transparent rotated control used in Round 1,
+and the stronger obfuscated rational-kernel fixture completed in Round 2. The
+exact pass conditions and author/executor isolation protocol are in
+[`validation/ACCEPTANCE.md`](validation/ACCEPTANCE.md).
+
+The proof checker uses only Python's exact `Fraction` arithmetic. It verifies
+every original affine condition, the exact objective, and every full PSD block
+through a replayable exact Schur-complement trace. Numerical solutions and
+kernel relations are deliberately outside its trusted input.
+
+The validation layer also provides a deterministic certificate-free
+[blind-workspace builder](validation/README.md#build-a-blind-workspace), a
+manifest-aware [target-binding harness](validation/README.md#check-one-attempt),
+and a fresh-process [suite runner](validation/README.md#run-the-complete-suite).
+The combined suite verifies six immutable or promoted attempts: the Round 1
+DLM, Grzesik, and rotated-control certificates and the Round 2 DLM, Grzesik,
+and obfuscated-fixture certificates. It also checks the frozen Round 2 blind
+workspace inventory before accepting the Round 2 results.
 
 ## Contributing
 
@@ -163,3 +285,8 @@ a rigorous proof.
 These ingredients are complementary: flag algebras define the proof search
 space, high-precision SDP exposes a candidate solution, exactification recovers
 its symbolic structure, and exact verification closes the proof.
+
+See [Exactifying Singular Flag-Algebra SDPs](docs/exactification-strategies.md)
+for a survey of the rounding, kernel-recovery, facial-reduction, and algebraic
+methods used in existing work. The operational version is the
+[Agent Workflow for Exactifying Singular SDPs](manual/EXACTIFICATION_WORKFLOW.md).

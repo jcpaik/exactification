@@ -1,0 +1,355 @@
+{
+  "format": "exactification-kernels-v1",
+  "method": "basis-invariant numerical graph-coordinate recovery",
+  "blocks": {
+    "moment_matrix": {
+      "candidate_nullity": 3,
+      "precision_runs_used": [
+        "testcases/obfuscated-rational-kernel/input/numerical/p/approximate_solution.json",
+        "testcases/obfuscated-rational-kernel/input/numerical/2p/approximate_solution.json"
+      ],
+      "status": "recovered",
+      "recovery_method": "numerical_graph_chart",
+      "provenance": "numerical_graph_chart",
+      "independent_recoveries_have_equal_exact_row_space": true,
+      "relation_matrix": [
+        [
+          5616,
+          8891,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1534,
+          0,
+          1078
+        ],
+        [
+          19880,
+          0,
+          -168929,
+          0,
+          0,
+          0,
+          0,
+          22560,
+          0,
+          63064
+        ],
+        [
+          49815,
+          0,
+          0,
+          -168929,
+          0,
+          0,
+          0,
+          -8050,
+          0,
+          67952
+        ],
+        [
+          34050,
+          0,
+          0,
+          0,
+          -168929,
+          0,
+          0,
+          -59930,
+          0,
+          -2792
+        ],
+        [
+          51307,
+          0,
+          0,
+          0,
+          0,
+          168929,
+          0,
+          37150,
+          0,
+          -76462
+        ],
+        [
+          79867,
+          0,
+          0,
+          0,
+          0,
+          0,
+          168929,
+          -16094,
+          0,
+          90274
+        ],
+        [
+          116971,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          19214,
+          -168929,
+          1115
+        ]
+      ],
+      "relation_exact_rank": 7,
+      "relation_height": 168929,
+      "exact_kernel_basis_columns": [
+        [
+          19214,
+          -32318,
+          -13360,
+          11240,
+          45370,
+          19888,
+          -20228,
+          -116971,
+          0,
+          0
+        ],
+        [
+          168929,
+          -106704,
+          19880,
+          49815,
+          34050,
+          -51307,
+          -79867,
+          0,
+          116971,
+          0
+        ],
+        [
+          1115,
+          13478,
+          -43536,
+          -46723,
+          2158,
+          -53283,
+          61981,
+          0,
+          0,
+          -116971
+        ]
+      ],
+      "exact_kernel_rank": 3,
+      "exact_relation_times_kernel_zero": true,
+      "graph_chart": {
+        "kernel_coordinate_indices_Q": [
+          0,
+          7,
+          9
+        ],
+        "positive_coordinate_indices_P": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8
+        ],
+        "selection_rule": "maximum-volume kernel-coordinate minor; complementary positive-space minor validated at both precisions",
+        "exact_graph_basis_columns": [
+          [
+            "1",
+            "-5616/8891",
+            "19880/168929",
+            "49815/168929",
+            "34050/168929",
+            "-51307/168929",
+            "-79867/168929",
+            "0",
+            "116971/168929",
+            "0"
+          ],
+          [
+            "0",
+            "1534/8891",
+            "22560/168929",
+            "-8050/168929",
+            "-59930/168929",
+            "-37150/168929",
+            "16094/168929",
+            "1",
+            "19214/168929",
+            "0"
+          ],
+          [
+            "0",
+            "-1078/8891",
+            "63064/168929",
+            "67952/168929",
+            "-2792/168929",
+            "76462/168929",
+            "-90274/168929",
+            "0",
+            "1115/168929",
+            "1"
+          ]
+        ],
+        "exact_graph_coordinates_G_rows_P": [
+          [
+            "-5616/8891",
+            "1534/8891",
+            "-1078/8891"
+          ],
+          [
+            "19880/168929",
+            "22560/168929",
+            "63064/168929"
+          ],
+          [
+            "49815/168929",
+            "-8050/168929",
+            "67952/168929"
+          ],
+          [
+            "34050/168929",
+            "-59930/168929",
+            "-2792/168929"
+          ],
+          [
+            "-51307/168929",
+            "-37150/168929",
+            "76462/168929"
+          ],
+          [
+            "-79867/168929",
+            "16094/168929",
+            "-90274/168929"
+          ],
+          [
+            "116971/168929",
+            "19214/168929",
+            "1115/168929"
+          ]
+        ],
+        "exact_Q_minor_is_identity": true
+      },
+      "validation": [
+        {
+          "label": "p",
+          "source": "testcases/obfuscated-rational-kernel/input/numerical/p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "1.34293315221926829239025406257e-41",
+          "normalized_relation_residual_operator": "9.60697624614679097651135895307535081499906825e-42",
+          "normalized_block_kernel_residual_operator": "6.89511566753285909790158314196009937980121717e-42",
+          "largest_principal_angle_sine": "1.72740182408871605666395944600850570638959958e-41",
+          "maximum_graph_coordinate_absolute_error": "2.32824361655407042621943647348566120233032156e-41",
+          "largest_structural_zero_normalized": "6.15499602589129072176301477653754033760319215e-42",
+          "smallest_positive_normalized": "0.218462073604011669880084973221294392937370029",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8
+            ],
+            "smallest_singular_value": "0.6289936936943393162643650764455530471137",
+            "condition_estimate_2": "1.589841058861159115344783890897024173895"
+          },
+          "block_positive_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8
+            ],
+            "smallest_singular_value": "1.31321139747035701726222727763693199843",
+            "condition_estimate_2": "8.384822257218856512295083067429098006922"
+          }
+        },
+        {
+          "label": "2p",
+          "source": "testcases/obfuscated-rational-kernel/input/numerical/2p/approximate_solution.json",
+          "maximum_normalized_relation_residual_rowwise": "7.46711776994743728943165364846e-42",
+          "normalized_relation_residual_operator": "9.76531469955328744094930862368998334587249784e-42",
+          "normalized_block_kernel_residual_operator": "4.9147069716825323706457732005635556515325206e-42",
+          "largest_principal_angle_sine": "1.41768993483174802385811989864732739262505733e-41",
+          "maximum_graph_coordinate_absolute_error": "1.01983931604871709578030577982953121490827521e-41",
+          "largest_structural_zero_normalized": "4.12854174422323117866925063860549882768633667e-42",
+          "smallest_positive_normalized": "0.218462073603761264938523570545846347180167592",
+          "positive_space_coordinate_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8
+            ],
+            "smallest_singular_value": "0.6289936936943393162643650764455530471137",
+            "condition_estimate_2": "1.589841058861159115344783890897024173895"
+          },
+          "block_positive_minor": {
+            "indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8
+            ],
+            "smallest_singular_value": "1.313211397469116582009779432004706539695",
+            "condition_estimate_2": "8.38482225722213748394208261599729842498"
+          }
+        }
+      ],
+      "residual_improvement_factors_p_over_2p": {
+        "maximum_rowwise_relation": "1.79846253078277282740326877215",
+        "relation": "0.983785627163276199545187767726",
+        "block_kernel": "1.40295559984776485800921729587",
+        "principal_angle_sine": "1.21846236024362037713800089793",
+        "graph_coordinate_error": "2.28295142177363523328130353022"
+      },
+      "relation_height_ladder": [
+        {
+          "denominator_bound": "10",
+          "maximum_normalized_relation_residual": "0.0384929697577815862460488250984",
+          "relation_height": 90
+        },
+        {
+          "denominator_bound": "100",
+          "maximum_normalized_relation_residual": "0.00211655316587498142480179804524",
+          "relation_height": 187209
+        },
+        {
+          "denominator_bound": "1000",
+          "maximum_normalized_relation_residual": "0.0000144816428447865496187540338067",
+          "relation_height": 380061864
+        },
+        {
+          "denominator_bound": "10000",
+          "maximum_normalized_relation_residual": "0.0000000497029239761452261068533043317",
+          "relation_height": 456489708818
+        },
+        {
+          "denominator_bound": "100000",
+          "maximum_normalized_relation_residual": "4.28499860839581480572030601241e-10",
+          "relation_height": 566878663021335
+        },
+        {
+          "denominator_bound": "1000000",
+          "maximum_normalized_relation_residual": "7.46711776994743728943165364846e-42",
+          "relation_height": 168929
+        }
+      ],
+      "face_equations_added": 30,
+      "face_equation_rank": 27
+    }
+  }
+}

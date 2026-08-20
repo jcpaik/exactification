@@ -1,0 +1,70 @@
+{
+  "format": "exactification-verification-v1",
+  "case_id": "dlm-three-point-10",
+  "attempt_id": "retry-1",
+  "model_sha256": "f60c58fbb033c1d6da17040815641d99cb2bbc196eb2aa367aed1deb67de4c76",
+  "candidate_sha256": "2d044fd7c80f3bf9b732d685b21d8e6fa0f7329ca83ead79b808316202698de7",
+  "certificate_sha256": "f65c289dae39dfdd51dc9bd62402fa50051deaf3483abc961c279dfcada940e6",
+  "verifier_command": [
+    "python3", "-m", "verify", "check",
+    "testcases/dlm-three-point-10/input/model.json",
+    "testcases/dlm-three-point-10/attempts/retry-1/certificate.json",
+    "--json"
+  ],
+  "exit_code": 0,
+  "bundled_report": {
+    "blocks_checked": 31,
+    "constraints_checked": 130,
+    "objective": "10",
+    "ranks": {
+      "bound_scalar.B": 0,
+      "gegenbauer_scalar.a_1": 1,
+      "gegenbauer_scalar.a_2": 1,
+      "gegenbauer_scalar.a_3": 0,
+      "gegenbauer_scalar.a_4": 0,
+      "gegenbauer_scalar.a_5": 0,
+      "gegenbauer_scalar.a_6": 0,
+      "single_interval_sos.q_0": 5,
+      "single_interval_sos.q_1": 5,
+      "three_point_kernel.F_0": 6,
+      "three_point_kernel.F_1": 6,
+      "three_point_kernel.F_2": 4,
+      "three_point_kernel.F_3": 3,
+      "three_point_kernel.F_4": 2,
+      "three_point_kernel.F_5": 1,
+      "three_point_kernel.F_6": 0,
+      "triple_sos.pi1.gram_determinant": 8,
+      "triple_sos.pi1.s_0": 20,
+      "triple_sos.pi1.s_1": 14,
+      "triple_sos.pi1.s_2": 10,
+      "triple_sos.pi1.s_3": 7,
+      "triple_sos.pi2.gram_determinant": 2,
+      "triple_sos.pi2.s_0": 7,
+      "triple_sos.pi2.s_1": 4,
+      "triple_sos.pi2.s_2": 2,
+      "triple_sos.pi2.s_3": 1,
+      "triple_sos.pi3.gram_determinant": 9,
+      "triple_sos.pi3.s_0": 25,
+      "triple_sos.pi3.s_1": 16,
+      "triple_sos.pi3.s_2": 10,
+      "triple_sos.pi3.s_3": 6
+    },
+    "status": "verified"
+  },
+  "coverage": {
+    "model_blocks": 31,
+    "checked_blocks": 31,
+    "model_constraints": 130,
+    "checked_constraints": 130,
+    "complete": true
+  },
+  "gates": {
+    "A_integrity_and_coverage": "pass",
+    "B_affine_constraints": "pass",
+    "C_objective": "pass",
+    "D_exact_psd": "pass",
+    "E_theorem_semantics": "not_separately_checked_in_blind_workspace",
+    "F_sharpness": "not_separately_checked_in_blind_workspace"
+  },
+  "final_status": "EXACT_SDP_CERTIFICATE"
+}

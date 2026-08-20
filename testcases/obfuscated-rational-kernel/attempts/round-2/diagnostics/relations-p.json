@@ -1,0 +1,171 @@
+{
+  "format": "exactification-row-relation-recovery-v1",
+  "block": "moment_matrix",
+  "candidate_nullity": 3,
+  "status": "recovered",
+  "pivot_rows": [
+    0,
+    7,
+    9
+  ],
+  "denominator_bound": "1000000",
+  "relation_matrix": [
+    [
+      5616,
+      8891,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -1534,
+      0,
+      1078
+    ],
+    [
+      19880,
+      0,
+      -168929,
+      0,
+      0,
+      0,
+      0,
+      22560,
+      0,
+      63064
+    ],
+    [
+      49815,
+      0,
+      0,
+      -168929,
+      0,
+      0,
+      0,
+      -8050,
+      0,
+      67952
+    ],
+    [
+      34050,
+      0,
+      0,
+      0,
+      -168929,
+      0,
+      0,
+      -59930,
+      0,
+      -2792
+    ],
+    [
+      51307,
+      0,
+      0,
+      0,
+      0,
+      168929,
+      0,
+      37150,
+      0,
+      -76462
+    ],
+    [
+      79867,
+      0,
+      0,
+      0,
+      0,
+      0,
+      168929,
+      -16094,
+      0,
+      90274
+    ],
+    [
+      116971,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      19214,
+      -168929,
+      1115
+    ]
+  ],
+  "relation_exact_rank": 7,
+  "relation_height": 168929,
+  "maximum_normalized_relation_residual": "1.34293315221926829239025406257e-41",
+  "kernel_basis_columns": [
+    [
+      19214,
+      -32318,
+      -13360,
+      11240,
+      45370,
+      19888,
+      -20228,
+      -116971,
+      0,
+      0
+    ],
+    [
+      168929,
+      -106704,
+      19880,
+      49815,
+      34050,
+      -51307,
+      -79867,
+      0,
+      116971,
+      0
+    ],
+    [
+      1115,
+      13478,
+      -43536,
+      -46723,
+      2158,
+      -53283,
+      61981,
+      0,
+      0,
+      -116971
+    ]
+  ],
+  "ladder": [
+    {
+      "denominator_bound": "10",
+      "maximum_normalized_relation_residual": "0.0384929697577815862460488250984",
+      "relation_height": 90
+    },
+    {
+      "denominator_bound": "100",
+      "maximum_normalized_relation_residual": "0.00211655316587498142480179804524",
+      "relation_height": 187209
+    },
+    {
+      "denominator_bound": "1000",
+      "maximum_normalized_relation_residual": "0.0000144816428447865496187540338067",
+      "relation_height": 380061864
+    },
+    {
+      "denominator_bound": "10000",
+      "maximum_normalized_relation_residual": "0.0000000497029239761452261068533043317",
+      "relation_height": 456489708818
+    },
+    {
+      "denominator_bound": "100000",
+      "maximum_normalized_relation_residual": "4.28499860839581480572030601241e-10",
+      "relation_height": 566878663021335
+    },
+    {
+      "denominator_bound": "1000000",
+      "maximum_normalized_relation_residual": "1.34293315221926829239025406257e-41",
+      "relation_height": 168929
+    }
+  ]
+}

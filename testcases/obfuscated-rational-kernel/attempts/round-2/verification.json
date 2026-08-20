@@ -1,0 +1,47 @@
+{
+  "format": "exactification-verification-v1",
+  "case_id": "obfuscated-rational-kernel",
+  "attempt_id": "round-2",
+  "model_sha256": "982232f11d994b787d9f2fba0c3e94599d9f931fa7ce7b3e8c49eaafe21a0171",
+  "candidate_sha256": "32e5dc373186c2689a2222a95e442a383f5b769a061a6a5c4f96981762bcd811",
+  "certificate_sha256": "945f086744c3428413a607efa07943f52c152a54126952a0d0561d5399dc75b9",
+  "verifier_command": [
+    "python3",
+    "-B",
+    "-m",
+    "verify",
+    "check",
+    "testcases/obfuscated-rational-kernel/input/model.json",
+    "testcases/obfuscated-rational-kernel/attempts/round-2/certificate.json",
+    "--json"
+  ],
+  "verifier_exit_code": 0,
+  "bundled_report": {
+    "blocks_checked": 1,
+    "constraints_checked": 9,
+    "objective": "2224093617954365/48084958827",
+    "ranks": {
+      "moment_matrix": 7
+    },
+    "status": "verified"
+  },
+  "blocks_covered": true,
+  "constraints_covered": true,
+  "coverage": {
+    "model_blocks": 1,
+    "checked_blocks": 1,
+    "model_constraints": 9,
+    "checked_constraints": 9,
+    "complete": true
+  },
+  "gates": {
+    "A_integrity_and_coverage": "pass",
+    "B_affine_constraints": "pass",
+    "C_objective": "pass",
+    "D_exact_psd": "pass",
+    "E_theorem_semantics": "not_declared_by_claim_metadata",
+    "F_sharpness": "not_declared_by_claim_metadata"
+  },
+  "operational_failures_recorded": true,
+  "final_status": "EXACT_SDP_CERTIFICATE"
+}

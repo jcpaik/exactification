@@ -1,0 +1,41 @@
+{
+  "format": "exactification-verification-v1",
+  "case_id": "grzesik-pentagon",
+  "attempt_id": "round-2",
+  "model_sha256": "d8ec26f3cc9590612af0d121a868825896b4f646a79e292d4ed3998ee16321ae",
+  "certificate_sha256": "a0fbf43ad114dfea0cd4c943ce050c13c1d6f36adf2baab8c3929a93c7585a71",
+  "verifier_command": [
+    "python3",
+    "-m",
+    "verify",
+    "check",
+    "testcases/grzesik-pentagon/input/model.json",
+    "testcases/grzesik-pentagon/attempts/round-2/certificate.json",
+    "--json"
+  ],
+  "verifier_exit_code": 0,
+  "parsed_verifier_output": {
+    "blocks_checked": 4,
+    "constraints_checked": 14,
+    "objective": "24/625",
+    "ranks": {
+      "P": 4,
+      "Q": 5,
+      "R": 3,
+      "U": 1
+    },
+    "status": "verified"
+  },
+  "blocks_covered": true,
+  "constraints_covered": true,
+  "exact_objective_matches_manifest": true,
+  "candidate_certificate_identity": true,
+  "gates": {
+    "A_integrity_and_coverage": true,
+    "B_all_original_constraints": true,
+    "C_exact_objective": true,
+    "D_all_complete_blocks_psd": true
+  },
+  "operational_failure_events_retained": 2,
+  "final_status": "EXACT_SDP_CERTIFICATE"
+}

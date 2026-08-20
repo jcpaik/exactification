@@ -1,0 +1,295 @@
+{
+  "format": "exactification-run-v1",
+  "case_id": "dlm-three-point-10",
+  "attempt_id": "retry-1",
+  "started_utc": "2026-08-19T11:17:34.287175Z",
+  "ended_utc": "2026-08-19T12:33:10.787201Z",
+  "repository": {
+    "commit": null,
+    "dirty_worktree": null,
+    "note": "Git history and worktree metadata were deliberately not inspected under the blind-workspace allowlist."
+  },
+  "platform": {
+    "system": "Darwin",
+    "release": "23.6.0",
+    "machine": "arm64",
+    "python": "3.14.3 (v3.14.3:323c59a5e34, Feb  3 2026, 11:41:37) [Clang 16.0.0 (clang-1600.0.26.6)]"
+  },
+  "tool_versions": {
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "numpy": "2.4.3",
+    "python_flint": "0.9.0"
+  },
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_projectors.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/approximate_solution.json",
+        "--nullities",
+        "testcases/dlm-three-point-10/attempts/retry-1/nullities.json",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/retry-1/kernel-recovery.json",
+        "--decimal-precision",
+        "90",
+        "--maximum-denominator-power",
+        "12"
+      ],
+      "exit_code": 0,
+      "purpose": "initial rational projector ladder"
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_projectors.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/approximate_solution.json",
+        "--nullities",
+        "testcases/dlm-three-point-10/attempts/retry-1/nullities.json",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/retry-1/kernel-recovery.json",
+        "--decimal-precision",
+        "90",
+        "--maximum-denominator-power",
+        "18"
+      ],
+      "exit_code": 0,
+      "purpose": "extended rational projector ladder"
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_projectors.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/approximate_solution.json",
+        "--nullities",
+        "testcases/dlm-three-point-10/attempts/retry-1/nullity-pi1-s0.json",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/retry-1/kernel-recovery-pi1-s0.json",
+        "--decimal-precision",
+        "90",
+        "--maximum-denominator-power",
+        "25"
+      ],
+      "exit_code": 0,
+      "purpose": "targeted projector ladder",
+      "note": "Completed operationally but did not recover this projector; preserved diagnostic triggered row-relation recovery."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/recover_relations.py",
+        "--approx",
+        "testcases/dlm-three-point-10/input/approximate_solution.json",
+        "--block",
+        "triple_sos.pi1.s_0",
+        "--nullity",
+        "3",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/retry-1/kernel-relations-pi1-s0.json",
+        "--decimal-precision",
+        "90",
+        "--maximum-denominator-power",
+        "12",
+        "--accept-residual",
+        "1e-30"
+      ],
+      "exit_code": 0,
+      "purpose": "DLM-style exact row-relation recovery"
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/build_affine_config.py",
+        "--fixed-objective",
+        "10",
+        "--projectors",
+        "testcases/dlm-three-point-10/attempts/retry-1/kernel-recovery.json",
+        "--relation-override",
+        "testcases/dlm-three-point-10/attempts/retry-1/kernel-relations-pi1-s0.json",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/retry-1/discovery-config.json"
+      ],
+      "exit_code": 0,
+      "purpose": "assemble accepted kernel branch"
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/affine_round.py",
+        "--model",
+        "testcases/dlm-three-point-10/input/model.json",
+        "--approx",
+        "testcases/dlm-three-point-10/input/approximate_solution.json",
+        "--config",
+        "testcases/dlm-three-point-10/attempts/retry-1/discovery-config.json",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/retry-1/candidate.json",
+        "--system-output",
+        "testcases/dlm-three-point-10/attempts/retry-1/affine-system.json",
+        "--denominator-bits",
+        "100"
+      ],
+      "exit_code": 130,
+      "purpose": "first dense face-rank backend",
+      "note": "Recoverably interrupted after approximately 480 seconds; see operational-failures.json event 1."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/affine_round.py",
+        "--model",
+        "testcases/dlm-three-point-10/input/model.json",
+        "--approx",
+        "testcases/dlm-three-point-10/input/approximate_solution.json",
+        "--config",
+        "testcases/dlm-three-point-10/attempts/retry-1/discovery-config.json",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/retry-1/candidate.json",
+        "--system-output",
+        "testcases/dlm-three-point-10/attempts/retry-1/affine-system.json",
+        "--denominator-bits",
+        "100"
+      ],
+      "exit_code": 130,
+      "purpose": "row-cleared integer sparse RREF backend",
+      "note": "Recoverably interrupted after approximately 360 seconds; see operational-failures.json event 2."
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/affine_modular_solve.py",
+        "--model",
+        "testcases/dlm-three-point-10/input/model.json",
+        "--approx",
+        "testcases/dlm-three-point-10/input/approximate_solution.json",
+        "--config",
+        "testcases/dlm-three-point-10/attempts/retry-1/discovery-config.json",
+        "--output",
+        "testcases/dlm-three-point-10/attempts/retry-1/candidate.json",
+        "--system-output",
+        "testcases/dlm-three-point-10/attempts/retry-1/affine-system.json",
+        "--denominator-bits",
+        "100"
+      ],
+      "exit_code": 0,
+      "purpose": "two-prime modular pivots and exact FLINT square solve with shared dyadic rounding",
+      "note": "Two earlier development invocations exposed and then eliminated an interpreter digit guard and independent-denominator coefficient explosion; the preserved large candidate records the latter diagnostic."
+    },
+    {
+      "argv": [
+        "python3",
+        "-m",
+        "verify",
+        "emit-traces",
+        "testcases/dlm-three-point-10/input/model.json",
+        "testcases/dlm-three-point-10/attempts/retry-1/candidate.json",
+        "-o",
+        "testcases/dlm-three-point-10/attempts/retry-1/certificate.json"
+      ],
+      "exit_code": 0,
+      "purpose": "emit deterministic exact PSD traces"
+    },
+    {
+      "argv": [
+        "python3",
+        "-m",
+        "verify",
+        "check",
+        "testcases/dlm-three-point-10/input/model.json",
+        "testcases/dlm-three-point-10/attempts/retry-1/certificate.json",
+        "--json"
+      ],
+      "exit_code": 0,
+      "purpose": "fresh exact certificate check"
+    },
+    {
+      "argv": [
+        "python3",
+        "exactify/make_discovery_artifacts.py",
+        "--model",
+        "testcases/dlm-three-point-10/input/model.json",
+        "--approx",
+        "testcases/dlm-three-point-10/input/approximate_solution.json",
+        "--config",
+        "testcases/dlm-three-point-10/attempts/retry-1/discovery-config.json",
+        "--spectra-output",
+        "testcases/dlm-three-point-10/attempts/retry-1/spectra.json",
+        "--kernels-output",
+        "testcases/dlm-three-point-10/attempts/retry-1/kernels.json",
+        "--decimal-precision",
+        "90"
+      ],
+      "exit_code": 0,
+      "purpose": "persist numerical discovery diagnostics"
+    }
+  ],
+  "seeds": [],
+  "precision_ladder": {
+    "public_solver_bits": [
+      300
+    ],
+    "public_decimal_digits": [
+      40
+    ],
+    "projector_working_decimal_digits": [
+      90
+    ]
+  },
+  "relation_height_ladder": {
+    "projector_denominator_powers": [
+      1,
+      12,
+      18,
+      25
+    ],
+    "row_relation_denominator_powers": [
+      1,
+      8
+    ]
+  },
+  "denominator_ladder_bits": [
+    100
+  ],
+  "objective_branches": [
+    {
+      "value": "10",
+      "source": "fixed",
+      "status": "accepted"
+    }
+  ],
+  "nullity_branches": "See nullities.json; the accepted branch covers all 31 blocks.",
+  "public_matching_construction_used": false,
+  "consumed_file_sha256": {
+    "testcases/dlm-three-point-10/input/README.md": "b7493f77d634c7d87b2254c9ea2fb6a8be9d6928fb554d22ec3948b1156a5626",
+    "testcases/dlm-three-point-10/input/approximate_solution.json": "12af0b55fab96d3e2fe4ee28e30f6b89ac151cee590e1c7dff5a2513c77b6be0",
+    "testcases/dlm-three-point-10/input/discovery.dat-s": "ab22b160086d57240c6fcd8e956358607018bef3e9c679f4d22aa00be819a0d2",
+    "testcases/dlm-three-point-10/input/discovery.result": "e20117bad2781098c2ae65faa375341d773562bf5c3c71dac87189eb800603eb",
+    "testcases/dlm-three-point-10/input/manifest.json": "3b6500fc8ce782924298b07e04a26980d126627ec1ca914378b00ccf20f2a9bf",
+    "testcases/dlm-three-point-10/input/model.json": "f60c58fbb033c1d6da17040815641d99cb2bbc196eb2aa367aed1deb67de4c76",
+    "testcases/dlm-three-point-10/input/sdpa-gmp.params": "5708108e258ac92d360c6bb14f51762f8243817a4e5fadd068e6eb0c5be2b498"
+  },
+  "generated_file_sha256": {
+    "testcases/dlm-three-point-10/attempts/retry-1/affine-system-large-denominators.json": "f491c726bc4385d32c5a951d2c65b664ffa9a6fe54a825c9de2878c98d186f6f",
+    "testcases/dlm-three-point-10/attempts/retry-1/affine-system.json": "9bf4643a1c25f6d59473500cd62b67f1ecd37c061058b88b93278ba2cbff99d8",
+    "testcases/dlm-three-point-10/attempts/retry-1/candidate-large-denominators.json": "17662c9a9f54841f7ec03012f16d8e91847d1f1c7b8ed9f5fdd367b30181de2f",
+    "testcases/dlm-three-point-10/attempts/retry-1/candidate.json": "2d044fd7c80f3bf9b732d685b21d8e6fa0f7329ca83ead79b808316202698de7",
+    "testcases/dlm-three-point-10/attempts/retry-1/certificate.json": "f65c289dae39dfdd51dc9bd62402fa50051deaf3483abc961c279dfcada940e6",
+    "testcases/dlm-three-point-10/attempts/retry-1/discovery-config.json": "aab76ccdacc381ca7419f699e12d8e462b3aa68690939c540aa7ed7bd121cf0d",
+    "testcases/dlm-three-point-10/attempts/retry-1/kernel-recovery-pi1-s0.json": "6b177c52008a32953a09021a90fa09065a72a08be0534d6fcb536dd910ae10d1",
+    "testcases/dlm-three-point-10/attempts/retry-1/kernel-recovery.json": "65621a869b0c01249a9e7d1a829d442c6664350aaaab74329e342faa26f33bdf",
+    "testcases/dlm-three-point-10/attempts/retry-1/kernel-relations-pi1-s0.json": "6942f7bac2914824c09906104143fab469f474795f2ffb7b7196308e1a974146",
+    "testcases/dlm-three-point-10/attempts/retry-1/kernels.json": "b2eb597299088131ebcf98944e73819de3ba633f1fb257d796470e6ad725e91b",
+    "testcases/dlm-three-point-10/attempts/retry-1/nullities.json": "5c5e09643fbc6ccda1dd0b38ea143f90a984f7b06dfb2df666e264d171553228",
+    "testcases/dlm-three-point-10/attempts/retry-1/nullity-pi1-s0.json": "2de89b45ef5396817ee5ce2305c6c547a4b52051982476dc7dc4c7e876a365ad",
+    "testcases/dlm-three-point-10/attempts/retry-1/objective-candidates.json": "ea7788ba03668eaf3bb8587cfc4cf81008c08759bedbb8b11ee52058c36a8259",
+    "testcases/dlm-three-point-10/attempts/retry-1/operational-failures.json": "d8943df11a2bfe2d7da11e319a64f28b14d0325e1687f71592cdfd144408dbfc",
+    "testcases/dlm-three-point-10/attempts/retry-1/proof.md": "d2df49eff849bc58673d6e7ab1d0fae590286b193384f396c51c2bb944010723",
+    "testcases/dlm-three-point-10/attempts/retry-1/spectra.json": "206a086387a73ac14787f5adfa4b6496ff33656f580d9102513912053fe76bf6",
+    "testcases/dlm-three-point-10/attempts/retry-1/verification.json": "6bb6525671b491ff915c88f6ce1feefe9f20bc6b0026c668c8fa3f7ec30adb80",
+    "testcases/dlm-three-point-10/attempts/retry-1/verifier-output.json": "20507f0432fca0b71f1c3c44d144216d4ed065ffdd4bc8ec6e2c2d9fda66178e"
+  },
+  "hash_note": "run.json excludes its own hash to avoid a self-reference."
+}

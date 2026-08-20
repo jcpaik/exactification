@@ -1,0 +1,102 @@
+{
+  "format": "exactification-row-relation-recovery-v1",
+  "block": "three_point_kernel.F_0",
+  "candidate_nullity": 1,
+  "status": "recovered",
+  "pivot_rows": [
+    0
+  ],
+  "denominator_bound": "10000",
+  "relation_matrix": [
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      -4,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      -72,
+      0,
+      0,
+      0
+    ],
+    [
+      23,
+      0,
+      0,
+      0,
+      -144,
+      0,
+      0
+    ],
+    [
+      157,
+      0,
+      0,
+      0,
+      0,
+      -2592,
+      0
+    ],
+    [
+      655,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -5184
+    ]
+  ],
+  "relation_exact_rank": 6,
+  "relation_height": 5184,
+  "maximum_normalized_relation_residual": "2.84148321533997470854248511332e-39",
+  "kernel_basis_columns": [
+    [
+      5184,
+      0,
+      1296,
+      72,
+      828,
+      314,
+      655
+    ]
+  ],
+  "ladder": [
+    {
+      "denominator_bound": "10",
+      "maximum_normalized_relation_residual": "0.0372749623305358195275593118053",
+      "relation_height": 10
+    },
+    {
+      "denominator_bound": "100",
+      "maximum_normalized_relation_residual": "0.000138624961931004164668691530213",
+      "relation_height": 95
+    },
+    {
+      "denominator_bound": "1000",
+      "maximum_normalized_relation_residual": "0.000000418141928745404307349127168749",
+      "relation_height": 926
+    },
+    {
+      "denominator_bound": "10000",
+      "maximum_normalized_relation_residual": "2.84148321533997470854248511332e-39",
+      "relation_height": 5184
+    }
+  ]
+}

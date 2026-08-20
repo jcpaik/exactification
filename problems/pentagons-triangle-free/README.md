@@ -135,6 +135,10 @@ python3 problems/pentagons-triangle-free/grzesik_sdp.py verify-paper
 The numerical solve does not use these matrices or an initial point derived
 from them.
 
+The literature-backed strategy for recovering an exact certificate from a
+non-unique or singular numerical optimizer is documented in
+[`../../docs/exactification-strategies.md`](../../docs/exactification-strategies.md).
+
 The next HHKNR symmetry-adapted experiment will test block reduction and the
 relationship between a singular full-basis solution and positive-definite
 reduced blocks.

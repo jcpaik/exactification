@@ -1,0 +1,38 @@
+{
+  "format": "exactification-verification-v1",
+  "case_id": "rotated-rational-kernel",
+  "attempt_id": "retry-1",
+  "model_sha256": "fe1dc2c0cab87f526503655a9b9408192684730884e7b9f81d7836dcce1a2615",
+  "candidate_sha256": "2ae985a0c3cfd22470dbd615d3454f904fb55cb046d3bb207c1dbb70a29245fa",
+  "certificate_sha256": "fe2825989f522281facb57e5619938074cb8765fbf19c46c531d2529e677db1e",
+  "verifier_command": [
+    "python3", "-m", "verify", "check",
+    "testcases/rotated-rational-kernel/input/model.json",
+    "testcases/rotated-rational-kernel/attempts/retry-1/certificate.json",
+    "--json"
+  ],
+  "exit_code": 0,
+  "bundled_report": {
+    "blocks_checked": 1,
+    "constraints_checked": 2,
+    "objective": "0",
+    "ranks": {"X": 3},
+    "status": "verified"
+  },
+  "coverage": {
+    "model_blocks": 1,
+    "checked_blocks": 1,
+    "model_constraints": 2,
+    "checked_constraints": 2,
+    "complete": true
+  },
+  "gates": {
+    "A_integrity_and_coverage": "pass",
+    "B_affine_constraints": "pass",
+    "C_objective": "pass",
+    "D_exact_psd": "pass",
+    "E_theorem_semantics": "not_declared",
+    "F_sharpness": "not_declared"
+  },
+  "final_status": "EXACT_SDP_CERTIFICATE"
+}

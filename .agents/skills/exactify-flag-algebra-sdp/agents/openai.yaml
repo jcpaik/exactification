@@ -1,0 +1,4 @@
+interface:
+  display_name: "Exactify Flag-Algebra SDPs"
+  short_description: "Recover and verify exact rational SDP certificates"
+  default_prompt: "Use $exactify-flag-algebra-sdp to turn this high-precision SDP solution into a manifest-bound exact certificate."

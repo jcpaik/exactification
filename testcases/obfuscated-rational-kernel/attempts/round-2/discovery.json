@@ -1,0 +1,23 @@
+{
+  "seeds": [],
+  "precision_ladder": {
+    "public_solver_bits": [256, 512],
+    "public_printed_decimal_digits": [40, 40],
+    "independent_normalized_runs": 2,
+    "diagnostic_decimal_precision": 100
+  },
+  "relation_height_ladder": [10, 100, 1000, 10000, 100000, 1000000],
+  "denominator_ladder": [64],
+  "objective_branches": [
+    {
+      "value": "2224093617954365/48084958827",
+      "source": "manifest.fixed_objective",
+      "status": "accepted"
+    }
+  ],
+  "nullity_branches": {
+    "moment_matrix": [3]
+  },
+  "public_matching_construction_used": false,
+  "notes": "The face was recovered independently from the p and 2p numerical kernels by graph-coordinate integer relations; no exact public face constraint, construction, oracle, or prior attempt was used. One recovered diagnostics API error is preserved in operational-failures.json."
+}

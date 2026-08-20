@@ -1,0 +1,7 @@
+# Solver transcripts and frozen blind workspaces are byte-exact provenance.
+# Preserve their original whitespace instead of treating it as source style.
+*.result -whitespace
+result.out -whitespace
+result.txt -whitespace
+*.sdpa -whitespace
+validation/round-*/blind-workspace/** -whitespace

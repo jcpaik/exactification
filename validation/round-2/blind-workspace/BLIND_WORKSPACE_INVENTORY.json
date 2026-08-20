@@ -1,0 +1,395 @@
+{
+  "case_ids": [
+    "dlm-three-point-10",
+    "grzesik-pentagon",
+    "obfuscated-rational-kernel"
+  ],
+  "files": [
+    {
+      "category": "exactify_runtime",
+      "path": "exactify/affine_modular_solve.py",
+      "sha256": "bcb2841b4847b874664fbfc887d3dce04b328ba9b261d4bd8a6a2105fb9874e1",
+      "size": 10611,
+      "source": "exactify/affine_modular_solve.py"
+    },
+    {
+      "category": "exactify_runtime",
+      "path": "exactify/affine_round.py",
+      "sha256": "615e0cb6727f00c36477c6e5eb1ea86b2b297c0e6bf50d4c400e3c0b19c0eb20",
+      "size": 8030,
+      "source": "exactify/affine_round.py"
+    },
+    {
+      "category": "exactify_runtime",
+      "path": "exactify/build_affine_config.py",
+      "sha256": "e80ca9374681c90a75f4208880038191314b61146cdc0a38776348463b340b17",
+      "size": 1438,
+      "source": "exactify/build_affine_config.py"
+    },
+    {
+      "category": "exactify_runtime",
+      "path": "exactify/make_discovery_artifacts.py",
+      "sha256": "4d756c13b35a9227a5e09b1c8a5fda0632fc67e01e2d5eda3f09f4e0faf5ea41",
+      "size": 7641,
+      "source": "exactify/make_discovery_artifacts.py"
+    },
+    {
+      "category": "exactify_runtime",
+      "path": "exactify/make_run_records.py",
+      "sha256": "c57f54967573764c9bc8b3354ce19528e0a840c731029528ff72458eb406c882",
+      "size": 15425,
+      "source": "exactify/make_run_records.py"
+    },
+    {
+      "category": "exactify_runtime",
+      "path": "exactify/recover_projectors.py",
+      "sha256": "3f67e145d9b3d3c5e5ef9f69981b4556dcc2bedaafaf076c1e8bf1bb6e34c3c1",
+      "size": 5599,
+      "source": "exactify/recover_projectors.py"
+    },
+    {
+      "category": "exactify_runtime",
+      "path": "exactify/recover_relations.py",
+      "sha256": "b183d23463b6b17fa54dac1e1f6340596d0ef6a9c298699cf45b42a1e9b170b9",
+      "size": 5458,
+      "source": "exactify/recover_relations.py"
+    },
+    {
+      "category": "trusted_runtime",
+      "path": "manual/EXACTIFICATION_WORKFLOW.md",
+      "sha256": "53b139ea30648ac9633666c7797267bf230ba3b4f184847bf2e9c5e46b931849",
+      "size": 45353,
+      "source": "manual/EXACTIFICATION_WORKFLOW.md"
+    },
+    {
+      "category": "trusted_runtime",
+      "path": "manual/TESTCASE_CONTRACT.md",
+      "sha256": "349238a1b854f3745853a8cfba5cd3522d25dcbd5e91d2019fbecccf4a9ed26b",
+      "size": 27511,
+      "source": "manual/TESTCASE_CONTRACT.md"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/dlm-three-point-10/input/README.md",
+      "sha256": "10e53b88280f4de5534dd61840940764344e223e43ccd4de939dc0b9088be273",
+      "size": 3536,
+      "source": "testcases/dlm-three-point-10/input/README.md"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/dlm-three-point-10/input/approximate_solution.json",
+      "sha256": "aa79d7e2cd5c4ea5dcde7f11370c698c6f44015c3c67d2b27fcc5603662e7757",
+      "size": 192094,
+      "source": "testcases/dlm-three-point-10/input/approximate_solution.json"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/dlm-three-point-10/input/discovery.dat-s",
+      "sha256": "ab22b160086d57240c6fcd8e956358607018bef3e9c679f4d22aa00be819a0d2",
+      "size": 1201530,
+      "source": "testcases/dlm-three-point-10/input/discovery.dat-s"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/dlm-three-point-10/input/discovery.result",
+      "sha256": "e20117bad2781098c2ae65faa375341d773562bf5c3c71dac87189eb800603eb",
+      "size": 329225,
+      "source": "testcases/dlm-three-point-10/input/discovery.result"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/dlm-three-point-10/input/manifest.json",
+      "sha256": "906ef5de7beace16e9c13895453e7b968ce9b0ac5f342716a97b9a15053bd2a1",
+      "size": 7353,
+      "source": "testcases/dlm-three-point-10/input/manifest.json"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/dlm-three-point-10/input/model.json",
+      "sha256": "f60c58fbb033c1d6da17040815641d99cb2bbc196eb2aa367aed1deb67de4c76",
+      "size": 3674616,
+      "source": "testcases/dlm-three-point-10/input/model.json"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json",
+      "sha256": "8afc7f5d68778b4e36958cb621940ad869ba32f848fe6a8e2fa3efef68f748ea",
+      "size": 314677,
+      "source": "testcases/dlm-three-point-10/input/numerical/2p/approximate_solution.json"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/dlm-three-point-10/input/numerical/2p/params.sdpa",
+      "sha256": "95785ff82ec346d06faba177a850dfdac2f1539b07b6ba5de3f93f601999f161",
+      "size": 440,
+      "source": "testcases/dlm-three-point-10/input/numerical/2p/params.sdpa"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/dlm-three-point-10/input/numerical/2p/result.out",
+      "sha256": "2925ad3e65e51fbc444b1727d0bce034e9d8a596ffdcd31e8fba5d4ea3eba49e",
+      "size": 645925,
+      "source": "testcases/dlm-three-point-10/input/numerical/2p/result.out"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/dlm-three-point-10/input/numerical/numerical_stability.json",
+      "sha256": "0cde28aedd5640a2d40f90bcaf302059a365da2c4f6025924c26cd6085f3df74",
+      "size": 14254,
+      "source": "testcases/dlm-three-point-10/input/numerical/numerical_stability.json"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json",
+      "sha256": "aa79d7e2cd5c4ea5dcde7f11370c698c6f44015c3c67d2b27fcc5603662e7757",
+      "size": 192094,
+      "source": "testcases/dlm-three-point-10/input/numerical/p/approximate_solution.json"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/dlm-three-point-10/input/numerical/p/params.sdpa",
+      "sha256": "5708108e258ac92d360c6bb14f51762f8243817a4e5fadd068e6eb0c5be2b498",
+      "size": 338,
+      "source": "testcases/dlm-three-point-10/input/numerical/p/params.sdpa"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/dlm-three-point-10/input/numerical/p/result.out",
+      "sha256": "e20117bad2781098c2ae65faa375341d773562bf5c3c71dac87189eb800603eb",
+      "size": 329225,
+      "source": "testcases/dlm-three-point-10/input/numerical/p/result.out"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/dlm-three-point-10/input/sdpa-gmp.params",
+      "sha256": "5708108e258ac92d360c6bb14f51762f8243817a4e5fadd068e6eb0c5be2b498",
+      "size": 338,
+      "source": "testcases/dlm-three-point-10/input/sdpa-gmp.params"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/grzesik-pentagon/input/README.md",
+      "sha256": "89dd30bc3674bfb693f69ece8186cb6ff1f94eddc5e4db4e4a3f2f3e9f5b5230",
+      "size": 2047,
+      "source": "testcases/grzesik-pentagon/input/README.md"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/grzesik-pentagon/input/approximate_solution.json",
+      "sha256": "91a26b06422e89264ad8cec093bd93c486b1c5b05c583e90307512b1e0082ef6",
+      "size": 13577,
+      "source": "testcases/grzesik-pentagon/input/approximate_solution.json"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/grzesik-pentagon/input/discovery.dat-s",
+      "sha256": "c4ca3642d4227676c15f88ebb0c9889c7e5b1bf8850be8e5300664e6ec68824d",
+      "size": 2587,
+      "source": "testcases/grzesik-pentagon/input/discovery.dat-s"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/grzesik-pentagon/input/discovery.result",
+      "sha256": "770371d603f88b298a59fadd3f3ab7dc8df826f7eedd00a12e561a357dc8632d",
+      "size": 43670,
+      "source": "testcases/grzesik-pentagon/input/discovery.result"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/grzesik-pentagon/input/manifest.json",
+      "sha256": "d08a4499d50905834d1bac9ec0de11585f73ab1fa5e623d78a776f4b8192ad5a",
+      "size": 5381,
+      "source": "testcases/grzesik-pentagon/input/manifest.json"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/grzesik-pentagon/input/model.json",
+      "sha256": "d8ec26f3cc9590612af0d121a868825896b4f646a79e292d4ed3998ee16321ae",
+      "size": 17948,
+      "source": "testcases/grzesik-pentagon/input/model.json"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/grzesik-pentagon/input/numerical/2p/approximate_solution.json",
+      "sha256": "d399c4062d7280f1bea921cdbe937762fa03e0d109534e6a7729b5c7d7dc91fa",
+      "size": 23739,
+      "source": "testcases/grzesik-pentagon/input/numerical/2p/approximate_solution.json"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/grzesik-pentagon/input/numerical/2p/params.sdpa",
+      "sha256": "6f537729ab66f410ca067fdbd210ebe65085175d8f8682a198da02b7a1999584",
+      "size": 500,
+      "source": "testcases/grzesik-pentagon/input/numerical/2p/params.sdpa"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/grzesik-pentagon/input/numerical/2p/result.out",
+      "sha256": "02f1f5b1efb98dc923da4d662bfb22ec271eb4dd28192b952c6fe11f8e4c464a",
+      "size": 75479,
+      "source": "testcases/grzesik-pentagon/input/numerical/2p/result.out"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/grzesik-pentagon/input/numerical/numerical_stability.json",
+      "sha256": "cf3dc985bcb20ab197f2f66fabd2299dd8964d7081048572a90bc6afd3ed559e",
+      "size": 3160,
+      "source": "testcases/grzesik-pentagon/input/numerical/numerical_stability.json"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/grzesik-pentagon/input/numerical/p/approximate_solution.json",
+      "sha256": "91a26b06422e89264ad8cec093bd93c486b1c5b05c583e90307512b1e0082ef6",
+      "size": 13577,
+      "source": "testcases/grzesik-pentagon/input/numerical/p/approximate_solution.json"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/grzesik-pentagon/input/numerical/p/params.sdpa",
+      "sha256": "d1eb42d4a2ddc00c3f4d0985737aae9dd311d089c5b6b9a6ebb051ea9b94b1f0",
+      "size": 485,
+      "source": "testcases/grzesik-pentagon/input/numerical/p/params.sdpa"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/grzesik-pentagon/input/numerical/p/result.out",
+      "sha256": "770371d603f88b298a59fadd3f3ab7dc8df826f7eedd00a12e561a357dc8632d",
+      "size": 43670,
+      "source": "testcases/grzesik-pentagon/input/numerical/p/result.out"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/obfuscated-rational-kernel/input/README.md",
+      "sha256": "7524f53af8e0de7a96885d0e36c4519f2173cea56f7b240bb1fc55d1fc9921f4",
+      "size": 1564,
+      "source": "testcases/obfuscated-rational-kernel/input/README.md"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/obfuscated-rational-kernel/input/manifest.json",
+      "sha256": "169924cff32c03c4d246f96ca689349384c2084b8491c2c3cb10a521cb9c5e90",
+      "size": 7654,
+      "source": "testcases/obfuscated-rational-kernel/input/manifest.json"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/obfuscated-rational-kernel/input/model.json",
+      "sha256": "982232f11d994b787d9f2fba0c3e94599d9f931fa7ce7b3e8c49eaafe21a0171",
+      "size": 80341,
+      "source": "testcases/obfuscated-rational-kernel/input/model.json"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/obfuscated-rational-kernel/input/numerical/2p/approximate_solution.json",
+      "sha256": "002a634bed38d1ebea6e1380d87fba6a35725a8bd7a003b69863cc8a953f0f0c",
+      "size": 6523,
+      "source": "testcases/obfuscated-rational-kernel/input/numerical/2p/approximate_solution.json"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/obfuscated-rational-kernel/input/numerical/2p/problem.dat-s",
+      "sha256": "701d24487890ae7edfe859a54cee2c2058551028020c03fa6b8afdd49910e445",
+      "size": 92314,
+      "source": "testcases/obfuscated-rational-kernel/input/numerical/2p/problem.dat-s"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/obfuscated-rational-kernel/input/numerical/2p/result.txt",
+      "sha256": "d96740e5bcd2f2645513406922875f13d4b01fc9f023d0965c580cd820ceb6b8",
+      "size": 19402,
+      "source": "testcases/obfuscated-rational-kernel/input/numerical/2p/result.txt"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/obfuscated-rational-kernel/input/numerical/2p/run.json",
+      "sha256": "6d9f14152b30cfee91de5c09851b71205704a945fa0bf6659be57f7d7ea982eb",
+      "size": 1807,
+      "source": "testcases/obfuscated-rational-kernel/input/numerical/2p/run.json"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/obfuscated-rational-kernel/input/numerical/2p/sdpa-gmp.params",
+      "sha256": "7675b0f850037e59243b8a9ca5b2c1d58f5d4bda19ba423a34844593383cec11",
+      "size": 337,
+      "source": "testcases/obfuscated-rational-kernel/input/numerical/2p/sdpa-gmp.params"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/obfuscated-rational-kernel/input/numerical/p/approximate_solution.json",
+      "sha256": "06630bf1bad06b88be9615143fbbfbe6789cd1bc15dc94b751ffaeccaeb9b6b1",
+      "size": 6523,
+      "source": "testcases/obfuscated-rational-kernel/input/numerical/p/approximate_solution.json"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/obfuscated-rational-kernel/input/numerical/p/problem.dat-s",
+      "sha256": "2b0d6ab43fc1e703f54e7836ebe449a39eaef9cbd94e0567d46321bbb9096cf0",
+      "size": 52074,
+      "source": "testcases/obfuscated-rational-kernel/input/numerical/p/problem.dat-s"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/obfuscated-rational-kernel/input/numerical/p/result.txt",
+      "sha256": "2be51a6a0c61ee16ecbf0f82817b5a23e281018cf9db43e9c20ae1745bbd687d",
+      "size": 17089,
+      "source": "testcases/obfuscated-rational-kernel/input/numerical/p/result.txt"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/obfuscated-rational-kernel/input/numerical/p/run.json",
+      "sha256": "061a898ec73206709f8fed40e18959da3a4ddc14fe50fa5f34db9818a28388a5",
+      "size": 1792,
+      "source": "testcases/obfuscated-rational-kernel/input/numerical/p/run.json"
+    },
+    {
+      "category": "case_input",
+      "path": "testcases/obfuscated-rational-kernel/input/numerical/p/sdpa-gmp.params",
+      "sha256": "2dd08176e641f5d83e666b048a7fcebe36aa7b7550fb8692b1a4999f7ec7e63e",
+      "size": 337,
+      "source": "testcases/obfuscated-rational-kernel/input/numerical/p/sdpa-gmp.params"
+    },
+    {
+      "category": "trusted_runtime",
+      "path": "validation/__init__.py",
+      "sha256": "14b87e3c209e607d2cca7154777dca66d2cb72d6549864ecde9fc96141e3581f",
+      "size": 873,
+      "source": "validation/__init__.py"
+    },
+    {
+      "category": "trusted_runtime",
+      "path": "validation/testcase_harness.py",
+      "sha256": "81009ea11061c1213ceaaef3982f71f0e50deb88c85a6cdeaa6a3e7dd27efa7a",
+      "size": 37739,
+      "source": "validation/testcase_harness.py"
+    },
+    {
+      "category": "trusted_runtime",
+      "path": "verify/FORMAT.md",
+      "sha256": "cd90c06c965ec9388cd7fda7dd620224bb389965b4892aff1c2bb6003f9b580e",
+      "size": 5282,
+      "source": "verify/FORMAT.md"
+    },
+    {
+      "category": "trusted_runtime",
+      "path": "verify/__init__.py",
+      "sha256": "593b4a73129d3c7cde85e8dafd059bdc8f82da29c9d668b24d6971ea831cc4db",
+      "size": 532,
+      "source": "verify/__init__.py"
+    },
+    {
+      "category": "trusted_runtime",
+      "path": "verify/__main__.py",
+      "sha256": "1fbdadc914136bb2b0c9b2c6a161da21b76794c219cb1f9f1f5679663d45e273",
+      "size": 2632,
+      "source": "verify/__main__.py"
+    },
+    {
+      "category": "trusted_runtime",
+      "path": "verify/exact_sdp.py",
+      "sha256": "a2fac9c2c138f2c98af6897c4d34d2878958583ea2b2f68caf4d6843767ea4ca",
+      "size": 20887,
+      "source": "verify/exact_sdp.py"
+    }
+  ],
+  "format": "exactification-blind-workspace-inventory-v1"
+}

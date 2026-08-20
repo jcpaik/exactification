@@ -1,0 +1,40 @@
+{
+  "commands": [
+    {
+      "argv": ["python3", "exactify/recover_relations.py", "--approx", "testcases/obfuscated-rational-kernel/input/numerical/p/approximate_solution.json", "--block", "moment_matrix", "--nullity", "3", "--output", "testcases/obfuscated-rational-kernel/attempts/round-2/diagnostics/relations-p.json", "--decimal-precision", "100", "--maximum-denominator-power", "6", "--accept-residual", "1e-35"],
+      "exit_code": 0,
+      "purpose": "independent p graph-coordinate relation recovery"
+    },
+    {
+      "argv": ["python3", "exactify/recover_relations.py", "--approx", "testcases/obfuscated-rational-kernel/input/numerical/2p/approximate_solution.json", "--block", "moment_matrix", "--nullity", "3", "--output", "testcases/obfuscated-rational-kernel/attempts/round-2/diagnostics/relations-2p.json", "--decimal-precision", "100", "--maximum-denominator-power", "6", "--accept-residual", "1e-35"],
+      "exit_code": 0,
+      "purpose": "independent 2p graph-coordinate relation recovery"
+    },
+    {
+      "argv": ["python3", "testcases/obfuscated-rational-kernel/attempts/round-2/diagnostics/analyze_two_precision.py", "--model", "testcases/obfuscated-rational-kernel/input/model.json", "--p", "testcases/obfuscated-rational-kernel/input/numerical/p/approximate_solution.json", "--two-p", "testcases/obfuscated-rational-kernel/input/numerical/2p/approximate_solution.json", "--relations-p", "testcases/obfuscated-rational-kernel/attempts/round-2/diagnostics/relations-p.json", "--relations-two-p", "testcases/obfuscated-rational-kernel/attempts/round-2/diagnostics/relations-2p.json", "--spectra-output", "testcases/obfuscated-rational-kernel/attempts/round-2/spectra.json", "--kernels-output", "testcases/obfuscated-rational-kernel/attempts/round-2/kernels.json", "--decimal-precision", "100"],
+      "exit_code": 1,
+      "purpose": "first p/2p validation diagnostic attempt",
+      "note": "Recovered operational error is preserved in operational-failures.json."
+    },
+    {
+      "argv": ["python3", "testcases/obfuscated-rational-kernel/attempts/round-2/diagnostics/analyze_two_precision.py", "--model", "testcases/obfuscated-rational-kernel/input/model.json", "--p", "testcases/obfuscated-rational-kernel/input/numerical/p/approximate_solution.json", "--two-p", "testcases/obfuscated-rational-kernel/input/numerical/2p/approximate_solution.json", "--relations-p", "testcases/obfuscated-rational-kernel/attempts/round-2/diagnostics/relations-p.json", "--relations-two-p", "testcases/obfuscated-rational-kernel/attempts/round-2/diagnostics/relations-2p.json", "--spectra-output", "testcases/obfuscated-rational-kernel/attempts/round-2/spectra.json", "--kernels-output", "testcases/obfuscated-rational-kernel/attempts/round-2/kernels.json", "--decimal-precision", "100"],
+      "exit_code": 0,
+      "purpose": "persist corrected p/2p spectra and kernel validation"
+    },
+    {
+      "argv": ["python3", "exactify/affine_modular_solve.py", "--model", "testcases/obfuscated-rational-kernel/input/model.json", "--approx", "testcases/obfuscated-rational-kernel/input/numerical/2p/approximate_solution.json", "--config", "testcases/obfuscated-rational-kernel/attempts/round-2/diagnostics/affine-config.json", "--output", "testcases/obfuscated-rational-kernel/attempts/round-2/candidate.json", "--system-output", "testcases/obfuscated-rational-kernel/attempts/round-2/affine-system.json", "--denominator-bits", "64"],
+      "exit_code": 0,
+      "purpose": "exact kernel-face affine reconstruction"
+    },
+    {
+      "argv": ["python3", "-B", "-m", "verify", "emit-traces", "testcases/obfuscated-rational-kernel/input/model.json", "testcases/obfuscated-rational-kernel/attempts/round-2/candidate.json", "-o", "testcases/obfuscated-rational-kernel/attempts/round-2/certificate.json"],
+      "exit_code": 0,
+      "purpose": "emit deterministic exact PSD trace"
+    },
+    {
+      "argv": ["python3", "-B", "-m", "verify", "check", "testcases/obfuscated-rational-kernel/input/model.json", "testcases/obfuscated-rational-kernel/attempts/round-2/certificate.json", "--json"],
+      "exit_code": 0,
+      "purpose": "fresh exact certificate check"
+    }
+  ]
+}
