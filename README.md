@@ -105,6 +105,13 @@ SDP result; turning it into a claimed extremal-graph theorem additionally
 requires an independently checked flag-algebra/model adapter and, for
 sharpness, a matching construction or witness.
 
+Coding agents can invoke the repository-local
+[`$exactify-flag-algebra-sdp` skill](.agents/skills/exactify-flag-algebra-sdp/SKILL.md)
+to execute this interface. The skill routes each phase to the authoritative
+workflow and contract, uses the supplied reconstruction tools, and enforces the
+distinction between numerical discovery, an exact SDP certificate, a rigorous
+problem bound, and a sharpness claim.
+
 ## Research goals
 
 - Express known and open extremal graph theory problems as flag algebra SDPs.
